@@ -30,7 +30,7 @@
 			</section> 
 			<div class="account text-center">
 						<h2> Don' have an account? Log in with! </h2>
-						<div class="span"><a href="<?php echo site_url(); ?>home/login"><img src="<?php echo theme_url();?>img/facebook.png" alt=""><i>Sign In with Facebook</i><div class="clear"></div></a></div>							
+						<div class="span"><a href="<?php echo site_url(); ?>home/facebook_login"><img src="<?php echo theme_url();?>img/facebook.png" alt=""><i>Sign In with Facebook</i><div class="clear"></div></a></div>							
 						<div class="span2"><a href="<?php echo base_url();?>home/google_login"><img src="<?php echo theme_url();?>img/gplus.png" alt=""><i>Sign In with Google+</i><div class="clear"></div></a></div>
 					</div>
 
