@@ -31,7 +31,17 @@
 				 <div class="bg leftDetailsSec">
 				 <?php 
 				if ($userifo[0]->profile_image != "") {
-					$img=base_url()."uploaded_files/profile_img/".$userifo[0]->profile_image;
+
+                       $img=substr($userifo[0]->profile_image, 0,5);
+                         /* echo $img; die;*/
+                                if(!$img=='https'){
+
+                                   $img=base_url().'uploaded_files/profile_img/'.'$userifo[0]->profile_image';
+                                }else{
+                                    $img=$userifo[0]->profile_image;
+                                }
+
+					/*$img=base_url()."uploaded_files/profile_img/".$userifo[0]->profile_image;*/
 				} else {
 					$img=base_url()."uploaded_files/def_user/index.jpg";
 				} ?>

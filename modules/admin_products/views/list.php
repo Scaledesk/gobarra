@@ -74,8 +74,18 @@
 				 <div class="partnerResult Productpage">
 					<div class="partnerPhoto">
 					<?php if($userData[0]['profile_image'] !='')
+
 					{
-						$img=base_url()."uploaded_files/profile_img/".$userData[0]['profile_image'];
+
+                             $img=substr($userData[0]['profile_image'], 0,5);
+                                if(!$img='https'){
+                                   $img=base_url().'uploaded_files/profile_img/'.$userData[0]['profile_image'];
+                                }else{
+                                    $img=$userData[0]['profile_image'];
+                                }
+
+
+						/*$img=base_url()."uploaded_files/profile_img/".$userData[0]['profile_image'];*/
 					}
 					else{
 					$img=base_url()."uploaded_files/def_user/index.jpg";

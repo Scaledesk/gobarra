@@ -39,7 +39,18 @@
 				 $products = $this->products_model->record_count($id);
 				 $total_products = count($products);
 				if ($userData[0]->profile_image != "") {
-				$img=base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;
+
+
+                       $img=substr($userData[0]->profile_image, 0,5);
+                         /* echo $img; die;*/
+                                if(!$img=='https'){
+
+                                 $img=base_url().'uploaded_files/profile_img/'.'$userData[0]->profile_image';
+                                }else{
+                                    $img=$userData[0]->profile_image;
+                                }
+
+				/*$img=base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;*/
 				} else {
 				$img=base_url()."uploaded_files/def_user/index.jpg";
 				} ?>
@@ -164,7 +175,20 @@
 				<div class="partnerResult">
 				<?php if($userData[0]->profile_image !='')
 					{
-					$img =base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;
+                        
+                       $img=substr($userData[0]->profile_image, 0,5);
+                         /* echo $img; die;*/
+                                if(!$img=='https'){
+
+                                 $img=base_url().'uploaded_files/profile_img/'.'$userData[0]->profile_image';
+                                }else{
+                                    $img=$userData[0]->profile_image;
+                                }
+
+
+				/*	$img =base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;*/
+
+
 					}
 					else{
 					$img =base_url()."uploaded_files/def_user/index.jpg";
