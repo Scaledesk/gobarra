@@ -70,6 +70,7 @@
 		if($Myvalue['profile_image'] !='') {
 
                        $MyImage=substr($Myvalue['profile_image'],0,5);
+                      /*  echo "string";*/
                                 if($MyImage=='https'){
                                   
                                     $MyImage=$Myvalue['profile_image'];
@@ -97,7 +98,7 @@
 			$qury_result= $query->result_array();
 		foreach($qury_result as $keyVal => $Myvalue ){ 
 		if($Myvalue['profile_image'] !='') {
-
+                 
 			 $MyImage=substr($Myvalue['profile_image'],0,5);
                                 if($MyImage=='https'){
                                   
@@ -153,7 +154,7 @@
 		foreach($res as $val) {
 		if($val['profile_image'] !='') {
 
-             
+            
 			          $userImage=substr($val['profile_image'],0,5);
                                 if($userImage=='https'){
                                   
@@ -179,7 +180,7 @@
 		$qury_result= $query->result_array();
 		foreach($qury_result as $keyVal => $Myvalue ) {
 		if($Myvalue['profile_image'] !='') {
-
+          	
 			$MyImage=substr($Myvalue['profile_image'],0,5);
                                 if($MyImage=='https'){
                                   
@@ -207,7 +208,7 @@
 		foreach($qury_result as $keyVal => $Myvalue ) {
 		if($Myvalue['profile_image'] !='') {
 			/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/
-
+           
 			$MyImage =substr($Myvalue['profile_image'],0,5);
                                 if($MyImage =='https'){
                                   
@@ -221,7 +222,7 @@
 			$MyImage =base_url()."uploaded_files/def_user/index.jpg";
 		} ?>
 	<a href="javascript:void(0)" class="inbox-avatar" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id'] ; ?>')">
-	<img src="<?php echo $MyImage; ?>" alt=""></a> 
+	<img src="<?php echo  $MyImage; ?>" alt=""></a> 
 	<div class="user-name">
 	<h5><a href="javascript:void(0)" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id'] ; ?>')"><?php echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name'];?></a></h5>                            
 	</div> 
@@ -300,11 +301,13 @@
 	<?php
 		foreach($result as $key=>$value){ 						
 		if($value['profile_image'] !='') {
-		/*	$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];*/	
-              $MyImage =substr($value['profile_image'],0,5);
+		/*	$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];*/
+               /* echo "string";*/
+              $MyImage =substr($value['profile_image'], 0,5);
                                 if($MyImage =='https'){
                                   
                                   $MyImage=$value['profile_image'];
+
                                 }else{
                                  $MyImage=base_url().'uploaded_files/profile_img/'.$value['profile_image'];
                                    
@@ -376,7 +379,7 @@
 		$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 		?>	
 		<div class="preview">
-		<span><p><a><img class="group2" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>" width="40%"></a></p></span>
+		<span><p><a><img class="group2" href="<?php echo  $Image; ?>" src="<?php echo $Image; ?>" width="40%"></a></p></span>
 		</div>
 	<?php } ?>										
 	</div>

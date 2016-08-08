@@ -187,7 +187,20 @@
 					//print_r($userId);
 					if($userifo[0]['profile_image'] !='')
 					{
-						$userImage = base_url()."uploaded_files/profile_img/".$userifo[0]['profile_image'];
+
+                        $userImage=substr($userifo[0]['profile_image'],0,5);
+
+                               
+
+                                if($userImage=='https'){
+                                  
+                                    $userImage=$userifo[0]['profile_image'];
+                                }else{
+                                    $userImage=base_url().'uploaded_files/profile_img/'.$userifo[0]['profile_image'];
+                                   
+                                }
+
+						/*$userImage = base_url()."uploaded_files/profile_img/".$userifo[0]['profile_image'];*/
 					}
 					else
 					{
