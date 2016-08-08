@@ -27,7 +27,19 @@
 			 $total_products = count($products);				 
 			if ($user[0]->profile_image != "")
 			{
-			$img=base_url()."uploaded_files/profile_img/".$user[0]->profile_image;
+
+
+			/*$img=base_url()."uploaded_files/profile_img/".$user[0]->profile_image;*/
+                         $img=substr($user[0]->profile_image,0,5);
+                        if($img=='https'){
+                                  
+                              $img=$user[0]->profile_image;
+
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$user[0]->profile_image ;
+                                   
+                                }
+
 			}
 			else
 			{
@@ -159,7 +171,17 @@
 				
 				if ($kvalue['profile_image'] != "")
 				{
-				$img=base_url()."uploaded_files/profile_img/".$kvalue['profile_image'];
+                       $img=substr($kvalue['profile_image'],0,5);
+                        if($img=='https'){
+                                  
+                              $img=$kvalue['profile_image'];
+
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$kvalue['profile_image'];
+                                   
+                                }
+
+				/*$img=base_url()."uploaded_files/profile_img/".$kvalue['profile_image'];*/
 				}
 				else
 				{

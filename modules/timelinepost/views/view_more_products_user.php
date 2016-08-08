@@ -34,12 +34,20 @@
 
                        $img=substr($userifo[0]->profile_image, 0,5);
                          /* echo $img; die;*/
-                                if(!$img=='https'){
+
+                                  if($img=='https'){
+                                  /*  echo "string";*/
+                                    $img=$userifo[0]->profile_image;
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$userifo[0]->profile_image;
+                                   
+                                }
+                               /* if(!$img='https'){
 
                                    $img=base_url().'uploaded_files/profile_img/'.'$userifo[0]->profile_image';
                                 }else{
                                     $img=$userifo[0]->profile_image;
-                                }
+                                }*/
 
 					/*$img=base_url()."uploaded_files/profile_img/".$userifo[0]->profile_image;*/
 				} else {

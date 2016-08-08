@@ -101,10 +101,15 @@
                               $usrinfo   =$this->users_model->getuserInfo($email);
 
                                 $img=substr($usrinfo[0]['profile_image'],0,5);
-                                if(!$img='https'){
-                                   $img=base_url().'uploaded_files/profile_img/'.$usrinfo[0]['profile_image'];
-                                }else{
+
+                               
+
+                                if($img=='https'){
+                                  
                                     $img=$usrinfo[0]['profile_image'];
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$usrinfo[0]['profile_image'];
+                                   
                                 }
                             
                               $name=$usrinfo[0]['first_name'];

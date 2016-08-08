@@ -125,7 +125,21 @@
 				<div class="partnerResult">
 					<?php if($pageVal['profile_image'] !='')
 					{
-					$img =base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];
+
+
+						 $img=substr($pageVal['profile_image'],0,5);
+
+                               
+
+                                if($img=='https'){
+                                  
+                                    $img=$pageVal['profile_image'];
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$pageVal['profile_image'];
+                                   
+                                }
+
+					/*$img =base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
 					}
 					else{
 					$img =base_url()."uploaded_files/def_user/index.jpg";
@@ -304,7 +318,19 @@
 						<div class='abox'>
 						<?php if($Connected_user->profile_image !='') 
 						{
-						$img = base_url()."uploaded_files/profile_img/".$Connected_user->profile_image;
+
+							 $img=substr($Connected_user->profile_image,0,5);
+
+                               
+
+                                if($img=='https'){
+                                  
+                                    $img=$Connected_user->profile_image;
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$Connected_user->profile_image;
+                                   
+                                }
+						/*$img = base_url()."uploaded_files/profile_img/".$Connected_user->profile_image;*/
 						}
 						else
 						{
