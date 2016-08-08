@@ -53,7 +53,22 @@
 							{
 								if($pageValue['profile_image'] !='')
 								{
-									$userImage =base_url()."uploaded_files/profile_img/".$pageValue['profile_image'];									
+
+									 $userImage=substr($pageValue['profile_image'],0,5);
+
+                               
+
+                                if($userImage=='https'){
+                                  
+                                    $userImage=$pageValue['profile_image'];
+
+                                }else{
+
+                               $userImage=base_url().'uploaded_files/profile_img/'.$pageValue['profile_image'];
+                                   
+                                }
+
+									/*$userImage =base_url()."uploaded_files/profile_img/".$pageValue['profile_image'];*/									
 								}
 								else
 								{
@@ -75,7 +90,20 @@
 									{
 									if($Myvalue['profile_image'] !='')
 									{
-										$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];									
+
+										 $MyImage=substr($Myvalue['profile_image'],0,5);
+
+                               
+
+		                                if($MyImage=='https'){
+		                                  
+		                                    $MyImage=$Myvalue['profile_image'];
+
+		                                }else{
+
+		                             $MyImage=base_url().'uploaded_files/profile_img/'.$Myvalue['profile_image'];
+		                              }
+										/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/								
 									}
 									else
 									{
@@ -118,7 +146,22 @@
 					{
 						if($pageValue['profile_image'] !='')
 						{
-							$userImage =base_url()."uploaded_files/profile_img/".$pageValue['profile_image'];									
+
+
+
+										 $userImage=substr($pageValue['profile_image'],0,5);
+
+                               
+
+		                                if($userImage=='https'){
+		                                  
+		                                    $userImage=$pageValue['profile_image'];
+
+		                                }else{
+
+		                             $userImage=base_url().'uploaded_files/profile_img/'.$pageValue['profile_image'];
+		                              }
+							/*$userImage =base_url()."uploaded_files/profile_img/".$pageValue['profile_image'];*/									
 						}
 						else
 						{
@@ -138,7 +181,20 @@
 									{
 									if($Myvalue['profile_image'] !='')
 									{
-										$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];									
+										 $MyImage=substr($Myvalue['profile_image'],0,5);
+
+                               
+
+		                                if($MyImage=='https'){
+		                                  
+		                                    $MyImage=$Myvalue['profile_image'];
+
+		                                }else{
+
+		                             $MyImage=base_url().'uploaded_files/profile_img/'.$Myvalue['profile_image'];
+		                              }
+
+										/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/								
 									}
 									else
 									{
@@ -226,7 +282,21 @@
 						{
 						if($value['profile_image'] !='')
 						{
-							$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];									
+                             $MyImage=substr($value['profile_image'],0,5);
+
+                               
+
+		                                if($MyImage=='https'){
+		                                  
+		                                    $MyImage=$value['profile_image'];
+
+		                                }else{
+
+		                             $MyImage=base_url().'uploaded_files/profile_img/'.$value['profile_image'];
+		                              }
+		                              
+
+							/*$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];	*/								
 						}
 						else
 						{

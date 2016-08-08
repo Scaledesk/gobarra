@@ -79,7 +79,24 @@
 						{	
 						if( $product_value['profile_image'] !='')
 						{
-						$img=base_url().'uploaded_files/profile_img/'.$product_value['profile_image'];
+                                $img=substr($product_value['profile_image'],0,5);
+
+                               
+
+                                if($img=='https'){
+                                  
+                                    $img=$product_value['profile_image'];
+
+                                }else{
+
+                               $img=base_url().'uploaded_files/profile_img/'.$product_value['profile_image'];
+                                   
+                                }
+
+						/*$img=base_url().'uploaded_files/profile_img/'.$product_value['profile_image'];*/
+
+
+
 						}
 						else
 						{
@@ -214,7 +231,21 @@
                                     <div class='abox b1'>
 									<?php if($Connected_user->profile_image !='') 
 									{
-									$img = base_url()."uploaded_files/profile_img/".$Connected_user->profile_image;
+                                           $img=substr($Connected_user->profile_image,0,5);
+
+                                     if($img=='https'){
+                                  
+                                    $img=$Connected_user->profile_image;
+
+                                       }else{
+
+                                      $img=base_url().'uploaded_files/profile_img/'.$Connected_user->profile_image;
+                                   
+                                        }
+                                           
+
+
+									/*$img = base_url()."uploaded_files/profile_img/".$Connected_user->profile_image;*/
 									}
 									else
 									{
@@ -246,7 +277,23 @@
                                     <div class='abox b1'>
 									<?php if($Connected_user->profile_image !='') 
 									{
-									$img = base_url()."uploaded_files/profile_img/".$Connected_user->profile_image;
+                                     
+                                      $img=substr($Connected_user->profile_image,0,5);
+
+                                     if($img=='https'){
+                                  
+                                         $img=$Connected_user->profile_image;
+
+                                       }else{
+
+                                  $img=base_url().'uploaded_files/profile_img/'.$Connected_user->profile_image;
+                                   
+                                        }
+
+
+									/*$img = base_url()."uploaded_files/profile_img/".$Connected_user->profile_image;
+*/
+
 									}
 									else
 									{
