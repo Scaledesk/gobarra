@@ -22,7 +22,22 @@
 	<div class="imageFrame timeline col-md-6">
 	<?php if($UserInfo->profile_image !='')
 	{
-		$userImage = base_url()."uploaded_files/profile_img/".$UserInfo->profile_image;
+
+
+		/*$userImage = base_url()."uploaded_files/profile_img/".$UserInfo->profile_image;*/
+
+            $userImage=substr($UserInfo->profile_image,0,5);
+
+                               
+
+                                if($userImage=='https'){
+                                  
+                                    $userImage=$UserInfo->profile_image;
+                                }else{
+                                    $userImage=base_url().'uploaded_files/profile_img/'.$UserInfo->profile_image;
+                                   
+                                }
+
 	}else{
 		$userImage = base_url()."uploaded_files/def_user/index.jpg" ;
 	}		?>
@@ -133,7 +148,19 @@
 					<div class="partnerPhoto">
 					<?php if($pageVal['profile_image'] !='')
 					{
-						$img=base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];
+
+						  $img=substr($pageVal['profile_image'],0,5);
+
+                               
+
+                                if($img=='https'){
+                                  
+                                    $img=$pageVal['profile_image'];
+                                }else{
+                                    $img=base_url().'uploaded_files/profile_img/'.$pageVal['profile_image'];
+                                   
+                                }
+						/*$img=base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
 					}
 					else{
 					$img=base_url()."uploaded_files/def_user/index.jpg";

@@ -61,7 +61,8 @@ class User extends Public_Controller
 				 if($validate)
 				 {			
 					$this->users_model->update_password($data['email'],$data1);				
-					// Set your email information							
+					// Set your email information	
+
 					$to=$mail;
 					$subject="Forget Password";
 					$from = 'social@gobarra.com';
@@ -71,8 +72,11 @@ class User extends Public_Controller
 					$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";	 
 					mail($to,$subject,$body,$headers);					
 					// Raise error message
-					$this->session->set_flashdata('item', array('message' => 'Forget Password Sent Successfully','class' => 'alert alert-success'));
-					redirect('user/forgotpassword');					
+
+					$this->session->set_flashdata('item', array('message' => 'Kindly check your email to reset password','class' => 'alert alert-success'));
+					redirect('user/forgotpassword');
+
+
 					} else{
 					$this->session->set_flashdata('item', array('message' => 'Email Not Send','class' => 'alert alert-error'));
 					redirect('user/forgotpassword');
@@ -275,7 +279,8 @@ class User extends Public_Controller
 			$to=$mail;
 			$subject="Welcome To Gobarra";
 			$from = 'social@gobarra.com';
-			$body='Hi, <br/> <br/>Thank You For Register With Us Now You Login With Your Email And Password<br/>';
+            $massage=$this->load->view('registration_message',$mail,true);
+		    $body=$massage;
 			$headers = "From: " . strip_tags($from) . "\r\n";				
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";	 

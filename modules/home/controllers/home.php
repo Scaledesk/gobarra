@@ -788,7 +788,7 @@ public function set_session($user)
 
 
 
-public function facebook_login1()
+public function facebook_login()
 {
 	
 include_once("./facebook/inc/facebook.php"); //include facebook SDK
@@ -807,23 +807,27 @@ $facebook = new Facebook(array(
 /*$user_profile = $facebook->api('/me','GET');*/
 
 $fbuser = $facebook->getUser();
-
-
-/*if (isset($_GET['code'])) {
-
-  $client=$_GET['code'];*/
-  /*echo "dsjkhfs";
+  
+   
+if (isset($_GET['code'])) {
+   
+   echo $fbuser; die;
+  $client=$_GET['code'];
+ /* echo "dsjkhfs";
   print_r($client); die;*/
-/*  $_SESSION['access_token'] = $client->getAccessToken();*/
-  /* echo  $_SESSION['access_token']; die;
-  header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
-  exit;*/
-/* print_r($client);
-  echo "jkghahgda"; *//*die;*/
-/*}*/
 
-/*
-if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
+ /*$_SESSION['access_token'] = $client->getAccessToken();
+ */
+ /* $token=$accessToken->getValue();*/
+/*   echo  $_SESSION['access_token']; die;*/
+ /* header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));*/
+ /*  exit;*/
+   print_r($client);
+  echo "jkghahgda"; 
+}
+
+
+/*if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
   $client->setAccessToken($_SESSION['access_token']);
 
 
@@ -840,7 +844,7 @@ if(!$fbuser){
 
 }else{
 
-	/*  echo "dsjkfhisdfsdf"; die;*/
+	/*  echo "dsjkfhisdfsdf"; die;*//*me?fields=id,name,gender,email,picture*/
 	$user_profile = $facebook->api('/me?fields=id,first_name,last_name,email,gender,locale,picture');
 	$user = new Users();
 	$user_data = $user->checkUser('facebook',$user_profile['id'],$user_profile['first_name'],$user_profile['last_name'],$user_profile['email'],$user_profile['gender'],$user_profile['locale'],$user_profile['picture']['data']['url']);
@@ -867,7 +871,7 @@ if(!$fbuser){
  }
 
 
-public function facebook_login()
+public function facebook_login1()
 {
 	require_once ('./facebook/src/Facebook/autoload.php');
 $fb = new Facebook\Facebook([
