@@ -5,8 +5,8 @@ class Users {
 	function __construct(){
 		//database configuration
 		$dbServer = 'localhost'; //Define database server host
-		$dbUsername = 'root'; //Define database username
-		$dbPassword = ''; //Define database password
+		$dbUsername = 'nitesh'; //Define database username
+		$dbPassword = 'q1w2e3r4'; //Define database password
 		$dbName = 'codexworld'; //Define database name
 		
 		//connect databse

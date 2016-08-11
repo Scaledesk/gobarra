@@ -790,209 +790,82 @@ public function set_session($user)
 
 public function facebook_login()
 {
-	
+
 include_once("./facebook/inc/facebook.php"); //include facebook SDK
 ######### Facebook API Configuration ##########
-$appId = '1059462100806468'; //Facebook App ID
-$appSecret = 'b4e92e95eb820dbf09d6bbc1fe4360ac'; // Facebook App Secret
-$homeurl = 'http://localhost/gobarra/home/facebook_login/';  //return to home
-$fbPermissions = 'email';  //Required facebook permissions
+$appId = '266150530435918'; //Facebook App ID
+$appSecret = '8a40cba44c6c71e03332174a7e60f80c'; // Facebook App Secret
+$homeurl = 'http://localhost/gobarra/facebook/';  //return to home
+$fbPermissions = 'email';  //Reomequired facebook permissions
 
 //Call Facebook API
 $facebook = new Facebook(array(
   'appId'  => $appId,
   'secret' => $appSecret
+
 ));
-
-/*$user_profile = $facebook->api('/me','GET');*/
-
+  $fbuser=null;
 $fbuser = $facebook->getUser();
   
-   
-if (isset($_GET['code'])) {
-   
-   echo $fbuser; die;
-  $client=$_GET['code'];
- /* echo "dsjkhfs";
-  print_r($client); die;*/
+ 
 
- /*$_SESSION['access_token'] = $client->getAccessToken();
- */
- /* $token=$accessToken->getValue();*/
-/*   echo  $_SESSION['access_token']; die;*/
- /* header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));*/
- /*  exit;*/
-   print_r($client);
-  echo "jkghahgda"; 
-}
-
-
-/*if (isset($_SESSION['access_token']) && $_SESSION['access_token']) {
-  $client->setAccessToken($_SESSION['access_token']);
-
-
-} else {
-  $authUrl = $client->createAuthUrl();
-}*/
-
-/*print_r($fbuser); die;*/
 if(!$fbuser){
 	$fbuser = null;
 	$loginUrl = $facebook->getLoginUrl(array('redirect_uri'=>$homeurl,'scope'=>$fbPermissions));
-      redirect($loginUrl);
-	//$output = '<a href="'.$loginUrl.'"><img src="images/fb_login.png"></a>'; 
 
-}else{
-
-	/*  echo "dsjkfhisdfsdf"; die;*//*me?fields=id,name,gender,email,picture*/
-	$user_profile = $facebook->api('/me?fields=id,first_name,last_name,email,gender,locale,picture');
-	$user = new Users();
-	$user_data = $user->checkUser('facebook',$user_profile['id'],$user_profile['first_name'],$user_profile['last_name'],$user_profile['email'],$user_profile['gender'],$user_profile['locale'],$user_profile['picture']['data']['url']);
-	if(!empty($user_data)){
-
-		  $this->session->set_flashdata('item', array('message' => 'Login Successfully','class' => 'success'));
-			               redirect('home');
-		$output = '<h1>Facebook Profile Details </h1>';
-		$output .= '<img src="'.$user_data['picture'].'">';
-        $output .= '<br/>Facebook ID : ' . $user_data['oauth_uid'];
-        $output .= '<br/>Name : ' . $user_data['fname'].' '.$user_data['lname'];
-        $output .= '<br/>Email : ' . $user_data['email'];
-        $output .= '<br/>Gender : ' . $user_data['gender'];
-        $output .= '<br/>Locale : ' . $user_data['locale'];
-        $output .= '<br/>You are login with : Facebook';
-        $output .= '<br/>Logout from <a href="logout.php?logout">Facebook</a>'; 
-	}else{
-		/*$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';*/
-		  $this->session->set_flashdata('item', array('message' => 'Some problem occurred, please try again','class' => 'alert alert-error'));
-			               redirect('home');
-	}
+	  redirect($loginUrl);
+	$output = '<a href="'.$loginUrl.'"><img src="images/fb_login.png"></a>'; 	
 }
+
+else{
+	/*$user_profile = $facebook->api('/me?fields=id,first_name,last_name,email,gender,locale,picture');
+
+	  print_r($user_profile); die;*/
+
+	  redirect('home');
 
  }
 
 
-public function facebook_login1()
-{
-	require_once ('./facebook/src/Facebook/autoload.php');
-$fb = new Facebook\Facebook([
-    'app_id' => '1059462100806468',
-    'app_secret' => 'b4e92e95eb820dbf09d6bbc1fe4360ac',
-    'default_graph_version' => 'v2.4',
-]);
-
-$helper = $fb->getRedirectLoginHelper();
-
-$permissions = ['email']; // Optional permissions
-$loginUrl = $helper->getLoginUrl(base_url().'home/fb_callback', $permissions);
-
-/*echo $loginUrl; die;*/
-redirect($loginUrl);
-
-//echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
-     }
 
 
-   public function fb_callback(){
+ }
+ public function facebook_login_do(){
 
+        
 
+      if(!$this->home_model->getFacebookUser()){
+            
+          
+              
+              $this->home_model->createFacebookUser();
 
+                       set_cookie('userName',$_SESSION["email"], time()+60*60*24*30 );
+                        /*set_cookie('pwd',$this->input->post('password'), time()+60*60*24*30 );*/
+                          $data = array(
+				              'email' =>  $_SESSION["email"],
+				              'is_logged_in'=> TRUE
+			                    );
+			               $this->session->set_userdata($data);
+			               $this->session->set_flashdata('item', array('message' => 'Login Successfully','class' => 'success'));
+			               redirect('home');
 
-require_once ('./facebook/src/Facebook/autoload.php');
-
-    $fb = new Facebook\Facebook([
-      'app_id' => '1059462100806468',
-      'app_secret' => 'b4e92e95eb820dbf09d6bbc1fe4360ac',
-      'default_graph_version' => 'v2.4',
-      ]);
-
-    $helper = $fb->getRedirectLoginHelper();
-
-    try {
-      $accessToken = $helper->getAccessToken();
-    } catch(Facebook\Exceptions\FacebookResponseException $e) {
-      // When Graph returns an error
-      echo 'Graph returned an error: ' . $e->getMessage();
-      exit;
-    } catch(Facebook\Exceptions\FacebookSDKException $e) {
-      // When validation fails or other local issues
-      echo 'Facebook SDK returned an error: ' . $e->getMessage();
-      exit;
-    }
-
-    if (! isset($accessToken)) {
-      if ($helper->getError()) {
-        header('HTTP/1.0 401 Unauthorized');
-        echo "Error: " . $helper->getError() . "\n";
-        echo "Error Code: " . $helper->getErrorCode() . "\n";
-        echo "Error Reason: " . $helper->getErrorReason() . "\n";
-        echo "Error Description: " . $helper->getErrorDescription() . "\n";
-      } else {
-        header('HTTP/1.0 400 Bad Request');
-        echo 'Bad request';
-      }
-      exit;
-    }
-
-    // Logged in
-    //echo '<h3>Access Token</h3>';
-    //var_dump($accessToken->getValue());
-
-    $token=$accessToken->getValue();
-    //header("Location:index.php?token=".$accessToken->getValue());
-    //redirect(bsae_url().'Facebook/', 'refresh');
-// ...............................................................
-
-//require_once 'facebook/src/Facebook/autoload.php';
-
-    $fb = new Facebook\Facebook([
-      'app_id' => '1059462100806468',
-      'app_secret' => 'b4e92e95eb820dbf09d6bbc1fe4360ac',
-      'default_graph_version' => 'v2.4',
-      //'default_access_token' => '', // optional
-    ]);
        
-    try {
-      // Get the Facebook\GraphNodes\GraphUser object for the current user.
-      // If you provided a 'default_access_token', the '{access-token}' is optional.
-      $response = $fb->get('/me?fields=id,name,email', $token);
-    } catch(Facebook\Exceptions\FacebookResponseException $e) {
-      // When Graph returns an error
-      echo 'Graph returned an error: ' . $e->getMessage();
-      exit;
-    } catch(Facebook\Exceptions\FacebookSDKException $e) {
-      // When validation fails or other local issues
-      echo 'Facebook SDK returned an error: ' . $e->getMessage();
-      exit;
-    }
+      }else{
 
-    $me = $response->getGraphUser();
-    //echo var_dump($me);
-   // echo 'Logged in as ' . $me->getName();
-    
-     $name=$me->getName();
-       $email=$me["email"];
-     
-    echo $name=$me->getName(); die;
-    echo $name=$me->getName();
-      
-     if ($this->User_model->facebook_data($name,$email))
-     {
+            $data = array(
+				              'email' =>  $_SESSION["email"],
+				              'is_logged_in'=> TRUE
+			                    );
+			               $this->session->set_userdata($data);
+			               $this->session->set_flashdata('item', array('message' => 'Login Successfully','class' => 'success'));
+			               redirect('home');
+      }
 
-        //$this->session->set_userdata('userdata',$name);
-         //$this->session->set_userdata('userdata',$email);
-          $user['user']=$this->User_model->select_user($email);
-          
-         print_r($user['user']);
-          
-           die();
 
-           $this->set_session($user);
-            redirect('auth/home','refresh');
-           
-           }
-   
-      
-   }
+
+ }
+
 
 
 

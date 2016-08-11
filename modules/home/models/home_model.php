@@ -230,5 +230,33 @@ public function createGoogleUser($id,$name,$email,$picture){
 
 }
 
+public function createFacebookUser(){
+    
+        /* $_SESSION["id"];
+         $_SESSION["first_name"];
+         $_SESSION["last_name"];
+         $_SESSION["gender"];
+         $_SESSION["email"];*/
+
+        $data=['facebook_user_id'=>$_SESSION["id"],
+                'first_name'=>$_SESSION["first_name"],
+                'last_name'=>$_SESSION["last_name"],
+                'email'=> $_SESSION["email"],
+                 'profile_image'=>$_SESSION["picture"]
+                 ];
+       return $this->db->insert('tbl_users',$data)? true : false;       
+
+}
+  public function getFacebookUser(){
+
+            $this->db->select('*');
+			$this->db->from('tbl_users');
+			$this->db->where('facebook_user_id',$_SESSION["id"]);
+			$result=$this->db->get();
+			//print_r($result); die();
+			if($result->num_rows > 0){
+				return $result->num_rows();	
+			}
+  }
 
    }

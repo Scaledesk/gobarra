@@ -1,9 +1,9 @@
 <?php
 include_once("inc/facebook.php"); //include facebook SDK
 ######### Facebook API Configuration ##########
-$appId = 'Insert Facebook App ID'; //Facebook App ID
-$appSecret = 'Insert Facebook App Secret'; // Facebook App Secret
-$homeurl = 'http://localhost/facebook_login_with_php/';  //return to home
+$appId = '266150530435918'; //Facebook App ID
+$appSecret = '8a40cba44c6c71e03332174a7e60f80c'; // Facebook App Secret
+$homeurl = 'http://localhost/facebook_login_with/';  //return to home
 $fbPermissions = 'email';  //Required facebook permissions
 
 //Call Facebook API
