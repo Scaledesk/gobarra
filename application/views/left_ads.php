@@ -8,7 +8,24 @@
 				  <div class="bg leftbanner">  
                    <?php 
 					foreach ($list as $key => $value) {
-						$img=base_url().'uploaded_files/left_panel/'.$value['image'];
+
+
+                        $img=substr($value['image'],0,5);
+
+
+
+                        if($img=='https'){
+
+                            $img=$value['image'];
+                        }else{
+                            $img=base_url().'uploaded_files/profile_img/'.$value['image'];
+
+                        }
+
+						/*$img=base_url().'uploaded_files/left_panel/'.$value['image'];*/
+
+
+
 					?>
 				       
                    <div class="col-sm-4 col-xs-4 col-md-4"><a href="<?php echo $value['url'];?>"><img src="<?php echo $img; ?>" class="img-responsive " style="margin:2px;"></a></div>                   

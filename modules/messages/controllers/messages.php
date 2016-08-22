@@ -392,7 +392,21 @@ class Messages extends Public_Controller
 										
 										if($Myvalue['profile_image'] !='')
 										{
-											$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];									
+
+											$MyImage=substr($Myvalue['profile_image'],0,5);
+
+
+
+											if($MyImage=='https'){
+
+												$MyImage=$Myvalue['profile_image'];
+											}else{
+												$MyImage=base_url().'uploaded_files/profile_img/'.$Myvalue['profile_image'];
+
+											}
+
+
+											/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image']*/;
 										}
 										else
 										{

@@ -11,7 +11,18 @@
                   <div class="bg topbanner">
 				  <?php  foreach($res1 as $val)
 					{
-					$img1=base_url().'uploaded_files/top_list/'.$val['image'];
+						$img1=substr($val['image'],0,5);
+
+
+
+						if($img1=='https'){
+
+							$img1=$val['image'];
+						}else{
+							$img1=base_url().'uploaded_files/profile_img/'.$val['image'];
+
+						}
+					/*$img1=base_url().'uploaded_files/top_list/'.$val['image'];*/
 				?>
 					<a href="<?php echo $val['url'];?>" class="responsive-img"><img src="<?php echo $img1;?>"></a> 					
 				<?php } ?>
