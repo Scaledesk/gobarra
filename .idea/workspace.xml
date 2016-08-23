@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0445762-7e88-4f76-bdb7-b566dc1c3c77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/images/Thumbs.db" afterPath="$PROJECT_DIR$/facebook/images/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/images/fb_login.png" afterPath="$PROJECT_DIR$/facebook/images/fb_login.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/message_image/Screenshot_from_2016-04-21_19:55:16R4r9.png" afterPath="$PROJECT_DIR$/uploaded_files/message_image/Screenshot_from_2016-04-21_19:55:16R4r9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/product_image1/Screenshot from 2016-04-21 19:55:16.png" afterPath="$PROJECT_DIR$/uploaded_files/product_image1/Screenshot from 2016-04-21 19:55:16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/profile_img/Screenshot_from_2016-04-21_19:55:16g7N3.png" afterPath="$PROJECT_DIR$/uploaded_files/profile_img/Screenshot_from_2016-04-21_19:55:16g7N3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gobarra.iml" afterPath="$PROJECT_DIR$/.idea/gobarra.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/CodexWorld-License.txt" afterPath="$PROJECT_DIR$/facebook/CodexWorld-License.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/ReadMe.txt" afterPath="$PROJECT_DIR$/facebook/ReadMe.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/config.php" afterPath="$PROJECT_DIR$/facebook/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/inc/base_facebook.php" afterPath="$PROJECT_DIR$/facebook/inc/base_facebook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/inc/facebook.php" afterPath="$PROJECT_DIR$/facebook/inc/facebook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/inc/fb_ca_chain_bundle.crt" afterPath="$PROJECT_DIR$/facebook/inc/fb_ca_chain_bundle.crt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/includes/functions.php" afterPath="$PROJECT_DIR$/facebook/includes/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/index.php" afterPath="$PROJECT_DIR$/facebook/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/logout.php" afterPath="$PROJECT_DIR$/facebook/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebook/users.sql" afterPath="$PROJECT_DIR$/facebook/users.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/home/views/facebook_login.php" afterPath="$PROJECT_DIR$/modules/home/views/facebook_login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/user/views/registration_message.php" afterPath="$PROJECT_DIR$/modules/user/views/registration_message.php" />
     </list>
     <ignored path="gobarra.iws" />
@@ -116,7 +96,7 @@
       <file leaf-file-name="messages.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="5415">
               <caret line="361" column="18" selection-start-line="361" selection-start-column="18" selection-end-line="361" selection-end-column="18" />
               <folding>
                 <marker date="1471846363915" expanded="true" signature="4774:4814" placeholder="SELECT * FRO... tbl_users" />
@@ -130,12 +110,9 @@
       <file leaf-file-name="registration_message.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/user/views/registration_message.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +120,7 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="540">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -153,7 +130,7 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/user/controllers/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="4215">
               <caret line="281" column="60" selection-start-line="281" selection-start-column="40" selection-end-line="281" selection-end-column="60" />
               <folding />
             </state>
@@ -186,9 +163,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -215,8 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,6 +302,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,6 +327,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -378,18 +361,19 @@
       <workItem from="1471843375279" duration="1137000" />
       <workItem from="1471845277042" duration="2410000" />
       <workItem from="1471851923969" duration="36000" />
-      <workItem from="1471955099069" duration="836000" />
+      <workItem from="1471955099069" duration="1336000" />
+      <workItem from="1471956935978" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5925000" />
+    <option name="totallyTimeSpent" value="6459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27649403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2812749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -488,7 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -580,7 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +792,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="5415">
           <caret line="361" column="18" selection-start-line="361" selection-start-column="18" selection-end-line="361" selection-end-column="18" />
           <folding>
             <marker date="1471846363915" expanded="true" signature="4774:4814" placeholder="SELECT * FRO... tbl_users" />
@@ -829,7 +804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/controllers/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="4215">
           <caret line="281" column="60" selection-start-line="281" selection-start-column="40" selection-end-line="281" selection-end-column="60" />
           <folding />
         </state>
@@ -837,7 +812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="540">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
@@ -845,12 +820,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/views/registration_message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
