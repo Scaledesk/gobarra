@@ -256,6 +256,8 @@ class User extends Public_Controller
 	
 	public function create_member()
 	{
+		/*echo base_url();
+		die;*/
 		$this->load->library('form_validation');		            
 		// field name, error message, validation rules
 		$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
