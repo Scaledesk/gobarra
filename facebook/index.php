@@ -49,7 +49,7 @@ if(!$fbuser){
 
        /*  $newUR="http://localhost/gobarra/home/facebook_login_do/";*/
 
-         header("Location: http://localhost/gobarra/home/facebook_login_do/");
+         header("Location: http://gobarra.com/home/facebook_login_do/");
          exit();
       /*echo base_url();*/
          /*echo  $_SESSION["email"];*/
