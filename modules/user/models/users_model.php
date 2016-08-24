@@ -166,4 +166,32 @@ public function getStateModel($id){
 			return TRUE;
 		}
 	}
+
+	public function CheckUser($email){
+
+		$this->db->select('*');
+		$this->db->from('tbl_users');
+		$this->db->where('email', $email);
+		$query = $this->db->get()->result_array();
+        $facebook='facebook';
+		$google='google';
+		$data='no';
+      /*    print_r($query);
+		echo $query[0]['google_user_id'];
+		echo $query[0]['facebook_user_id'];
+
+		die;*/
+		if(!$query[0]['google_user_id']==null){
+
+		/*	echo $query[0]['google_user_id']; die;*/
+
+           return $google;
+
+		}elseif (!$query[0]['facebook_user_id']==null){
+			 return $facebook;
+		} else{
+			return $data;
+		}
+
+	}
 }

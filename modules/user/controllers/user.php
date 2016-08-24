@@ -215,38 +215,58 @@ class User extends Public_Controller
 	/*Function for validate credentials for login */ 
 	
 	public function validate_credentials()
-	{	
+	{
 		$this->load->model('Users_model');
 		$email = $this->input->post('email');
-                $password = $this->input->post('password');
-				$decript = md5($password);
-                $rember    =  ($this->input->post('remember')!="") ? TRUE : FALSE;
+		$password = $this->input->post('password');
+		$decript = md5($password);
+		$rember = ($this->input->post('remember') != "") ? TRUE : FALSE;
 		$is_valid = $this->Users_model->validate($email, $decript);
-                if( $this->input->post('remember')=="Y" )
-                 {
-                        set_cookie('userName',$this->input->post('email'), time()+60*60*24*30 );
-                        set_cookie('pwd',$this->input->post('password'), time()+60*60*24*30 );
-                  }
-                  else
-                  {                      
-                        delete_cookie('userName');
-                        delete_cookie('pwd');
-                  }
-		if($is_valid)
-		{
+
+		if ($this->input->post('remember') == "Y") {
+			set_cookie('userName', $this->input->post('email'), time() + 60 * 60 * 24 * 30);
+			set_cookie('pwd', $this->input->post('password'), time() + 60 * 60 * 24 * 30);
+		} else {
+			delete_cookie('userName');
+			delete_cookie('pwd');
+		}
+
+		$userData=$this->Users_model->CheckUser($email);
+		/*echo $userData; die;*/
+		if ($userData=='no') {
+
+		if ($is_valid) {
+
+
 			$data = array(
-				'email' 		=> $email,
-				'is_logged_in' 	=> TRUE
+				'email' => $email,
+				'is_logged_in' => TRUE
 			);
 			$this->session->set_userdata($data);
-			$this->session->set_flashdata('item', array('message' => 'Login Successfully','class' => 'success'));
+			$this->session->set_flashdata('item', array('message' => 'Login Successfully', 'class' => 'success'));
 			redirect('home');
+
+
+		} else // incorrect username or password
+		{
+			$this->session->set_flashdata('item', array('message' => 'Invalid Email Or Password', 'class' => 'alert alert-danger'));
+			redirect('user/login');
 		}
-		else // incorrect username or password
-		{	
-			$this->session->set_flashdata('item', array('message' => 'Invalid Email Or Password','class' => 'alert alert-danger'));			
-            redirect('user/login');  			
-		}
+	}
+	else{
+
+		  if($userData=='google') {
+			  $this->session->set_flashdata('item', array('message' => 'Your account has been registered, Please Login with Google account', 'class' => 'alert alert-danger'));
+			  redirect('user/login');
+
+		  } else{
+			  $this->session->set_flashdata('item', array('message' => 'Your account has been registered, Please Login with Facebook account', 'class' => 'alert alert-danger'));
+			  redirect('user/login');
+
+		  }
+
+	}
+
 	}
 	public function signup()
 	{
