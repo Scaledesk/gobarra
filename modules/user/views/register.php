@@ -8,34 +8,34 @@
 		<form class="form-2 register" id="createform" name="createform" method="post" action="<?php echo base_url(); ?>user/create_member">				
 					<h1 class=" text-center"><span class="log-in">Register With Gobarra</span></h1>
 					<p class="float"> 
-						<input type="text" name="first_name" placeholder="First Name" id="fname">
+						<input type="text" name="first_name" placeholder="First Name" id="fname" required>
 						 
 					</p>
 					<p class="float"> 
-						<input type="text" name="last_name" placeholder="Last Name" id="lname">
+						<input type="text" name="last_name" placeholder="Last Name" id="lname" required>
 					</p>
 					<p class="float full"> 
 					
-						<input type="text" name="email" placeholder="Email ID" id="useremail">
+						<input type="email" name="email" placeholder="Email ID" id="useremail" required>
 						 
 					</p>
 					<p class="float"> 
-						<input type="password" name="password" placeholder="password" id="password">
+						<input type="password" name="password" placeholder="password" id="password" required>
 						 
 					</p>
 					<p class="float">
 					<span id='message' class="hidemsg"></span>	
-						<input type="password" name="cpassword" placeholder="Re-enter Password" id="cpassword">
+						<input type="password" name="cpassword" placeholder="Re-enter Password" id="cpassword" required>
 						 
 					</p>
 					<p class="float"> 
 						 <input type="text" name="country_name" placeholder="Enter Country" id="country" title="Select Your Country">						   
 					</p>
 					<p class="float"> 
-					 <input type="text" name="city_name" id="cities" placeholder="Enter City">                            
+					 <input type="text" name="city_name" id="cities" placeholder="Enter City" required>
 					</p>
 					<p class="float full"> 
-							 <select class="textfield2 marginBottomNone" name="occupation" id="occupation">
+							 <select class="textfield2 marginBottomNone" name="occupation" id="occupation" >
                             <option value="">Select Occupation</option>
 											<option value="Student">Student</option>
                                             <option value="Business"> Business</option>

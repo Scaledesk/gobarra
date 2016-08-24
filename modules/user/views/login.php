@@ -15,7 +15,7 @@
 					<h1><span class="log-in">Log in</span></h1>
 					<p class="float">
 						<label for="login"><i class="fa icon-user"></i>Username</label>
-						<input type="text" name="email" value="<?php if(get_cookie('userName')!=""){ echo get_cookie('userName'); } ?>" placeholder="Username or email" id="username">
+						<input type="email" name="email" value="<?php if(get_cookie('userName')!=""){ echo get_cookie('userName'); } ?>" placeholder="Username or email" id="username">
 					</p>
 					<p class="float ">
 						<label for="password"><i class="fa icon-lock"></i>Password</label>

@@ -18,10 +18,11 @@
 					<h1><span class="log-in">Forgot<span class="sign-up">Password</span></h1>
 					<p class="float full">
 						<label for="login"><i class="fa icon-user"></i>Email Id</label>
-							<input type="text" name="email" placeholder="Email" class="Email">
-					</p>				 
+							<input type="email" name="email" id="emailForgot" placeholder="Email" class="Email">
+					</p>
+					  <div id="showError"></div>
 					<p class="clearfix text-center submit"> 
-					<input type="submit" name="submit" value="submit"> 
+					<input type="submit" name="submit" value="submit">
 					</p>
 					<p><a href="<?php echo base_url();?>user/login">Login Now</a></p>
 				</form>​​
@@ -47,3 +48,4 @@
       }); }, 6000);
 					});
   </script>
+
