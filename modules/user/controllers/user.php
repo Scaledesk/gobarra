@@ -57,30 +57,54 @@ class User extends Public_Controller
                     'modified' => date('Y-m-d H:i:s')                   
                 );  
 				$validate = $this->users_model->validate_email($mail);
-				//print_r($validate); die;	
-				 if($validate)
+				/*print_r($validate); die;*/
+				 if($validate=='yes')
 				 {			
 					$this->users_model->update_password($data['email'],$data1);				
 					// Set your email information	
 
 					$to=$mail;
-					$subject="Forget Password";
+					$subject="Forgot Password";
 					$from = 'social@gobarra.com';
 					$body='Hi, <br/> <br/>Your Password Is:&nbsp;<strong>'.$password.' </strong><br>And Email Id:<strong>'.$data['email'].'</strong><br>Please change Your Password after Login your account   <br/> <br/>';
 					$headers = "From: " . strip_tags($from) . "\r\n";				
 					$headers .= "MIME-Version: 1.0\r\n";
 					$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";	 
-					mail($to,$subject,$body,$headers);					
-					// Raise error message
+					if(mail($to,$subject,$body,$headers)) {
+						// Raise error message
 
-					$this->session->set_flashdata('item', array('message' => 'Kindly check your email to reset password','class' => 'alert alert-success'));
-					redirect('user/forgotpassword');
+						$this->session->set_flashdata('item', array('message' => 'Kindly check your email to reset password', 'class' => 'alert alert-success'));
+						redirect('user/forgotpassword');
+					}else {
+
+						$this->session->set_flashdata('item', array('message' => 'Some error occurred', 'class' => 'alert alert-error'));
+						redirect('user/forgotpassword');
+					}
 
 
 					} else{
-					$this->session->set_flashdata('item', array('message' => 'Email Not Send','class' => 'alert alert-error'));
-					redirect('user/forgotpassword');
-				} } else{
+
+					 if($validate=='google') {
+						 $this->session->set_flashdata('item', array('message' => 'Your account has been registered, Please Login with Google account', 'class' => 'alert alert-danger'));
+						 redirect('user/login');
+
+					 } elseif($validate=='facebook'){
+						 $this->session->set_flashdata('item', array('message' => 'Your account has been registered, Please Login with Facebook account', 'class' => 'alert alert-danger'));
+						 redirect('user/login');
+
+					 }
+					 else{
+
+						 $this->session->set_flashdata('item', array('message' => 'Your account has been not registered', 'class' => 'alert alert-danger'));
+						 redirect('user/login');
+					    }
+
+
+
+
+
+				}
+		} else{
                $this->load->view('forgotpassword');
           }
 	}

@@ -23,16 +23,41 @@ class Users_model extends MY_Model{
 	
 	public function validate_email($email)
 	{	
-		$this->db->select('email');
+		$this->db->select('*');
 		$this->db->from('tbl_users');
 		$this->db->where('email',$email);		
-		$query = $this->db->get();		
-		if($query->num_rows == 1)
+		$query = $this->db->get()->result_array();
+        /*echo "<pre/>";
+		print_r($query);*/
+         if($query) {
+			 $google = $query[0]['google_user_id'];
+			 $facebook = $query[0]['facebook_user_id'];
+		 }
+
+	/*	die;*/
+
+		if(!empty($facebook)  or  !empty($google) )
 		{
-			return TRUE;
-		} else {
-			return false;
-		}		
+			if ($facebook){
+				$facebook='facebook';
+				return $facebook;
+			} else{
+				return $google='google';
+			}
+			/*echo  $google; die;
+			return false;*/
+			
+			
+		} elseif($query) {
+
+		$data='yes'; 
+			return $data;
+		} else{
+			$data='no';
+
+			return $data;
+
+		}
 	}
 	
 	public function get_user_row($id,$condtion='')
