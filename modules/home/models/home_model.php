@@ -58,6 +58,39 @@ class home_model extends CI_Model{
 			return $result;
 		}
 	/* get registerd members */
+
+ public  function get_travelerData(){
+
+	 $this->db->limit(5, 0);
+	 $this->db->order_by('travel_id','desc');
+	 $this->db->select('SQL_CALC_FOUND_ROWS wlp.*,wlusr.*', FALSE);
+	 $this->db->from('tbl_travel_plans as wlp');
+	 $this->db->join('tbl_users AS wlusr','wlp.user_id=wlusr.user_id','left');
+	 $this->db->where('type =','1');
+	 $this->db->where('wlp.status =','1');
+	 $q = $this->db->get();
+	 $result = $q->result_array();
+
+	 return $result;
+
+ }
+
+	public  function get_traveler_Data($limit, $start){
+
+		$this->db->limit($limit, $start);
+		$this->db->order_by('travel_id','desc');
+		$this->db->select('SQL_CALC_FOUND_ROWS wlp.*,wlusr.*', FALSE);
+		$this->db->from('tbl_travel_plans as wlp');
+		$this->db->join('tbl_users AS wlusr','wlp.user_id=wlusr.user_id','left');
+		$this->db->where('type =','1');
+		$this->db->where('wlp.status =','1');
+		$q = $this->db->get();
+		$result = $q->result_array();
+
+		return $result;
+
+	}
+
 	public function getMembers()
 	{
 	$this->db->select('user.*');
