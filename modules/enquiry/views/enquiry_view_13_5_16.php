@@ -197,7 +197,7 @@
 								<input name="reciever_id" type="hidden" value="<?php echo $receiverID; ?>" />
 								<input name="sender_id" type="hidden" value="<?php echo  $senderID ; ?>" />				
 							</div>						
-								<button onclick="return insertEnquiry()" class="btn btn-default" type="button">Send Reply</button>
+								<button onclick="return insertEnquiry()" class="btn btn-success" type="button">Send Reply</button>
 							  </form>
 							 </div>
 				

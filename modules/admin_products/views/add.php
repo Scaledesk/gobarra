@@ -63,14 +63,21 @@
                     </div>
                     <div class="fform-group col-lg-12 col-sm-12 col-xs-12 something">
                         <label class="control-label">Upload Your Imges</label>
+                        <div class ="row">
+                            <div class="col-xs-6 col-lg-6">
+
                         <input id="	"  type="file" class="file" name="img1" value="<?php echo set_value('img1');?>">
+                           </div>
+                           <div class="col-xs-6 col-lg-6">
                             <input id="input-2" type="file" class="file" name="img2" value="<?php echo set_value('img2');?>">
-                            </div>              
+                                         </div>
+                                      <br><br>
                                     <div class="form-group col-lg-12 col-sm-12 col-xs-12 something">
                                         <div class="fixArea">
                                             <button title="Add Product" name="submit" class="btn btn-md btn-primary" type="submit">Add Product</button>
                                         </div>
-                                    </div>
+                                    </div></div></div>
+                                    </div> 
                                 </div>
                             </div>
 					</div>							

@@ -174,6 +174,11 @@
 			<span class="size"> Country </span>
 			<input type="text" title="Enter Your Country" name="country_name" id="country_id" value="<?php echo $userData[0]['country_id']; ?>">	 
              </div>
+
+             <div class="col-md-4">
+            <span class="size"> Phone Number</span>
+            <input type="text" class="textfield required validate[required]" value="<?php echo $userData[0]['mobile'];?>" title="Mobile Number" placeholder="Mobile Number" id="mobile" name="mobile" pattern="[7-9]{1}[0-9]{9}" maxlength="12">      
+      </div>
               <div class="col-lg-4 marginBottom15">  
 				<span class="size"> City </span>           
                 <input type="text" title="Enter Your City" name="city_name"  class="textfield2" id="city_id" value="<?php echo $userData[0]['city_id']; ?>"> 
@@ -213,12 +218,9 @@
 						<?php } ?>
                       </select>
                   </div>
-			<div class="row">		
-			<div class="col-md-4">
-            <span class="size"> Phone Number</span>
-            <input type="text" class="textfield required validate[required]" value="<?php echo $userData[0]['mobile'];?>" title="Mobile Number" placeholder="Mobile Number" id="mobile" name="mobile" pattern="[7-9]{1}[0-9]{9}" maxlength="12"> 			
-			</div>
-			<div class="col-md-4"> 
+		<div class="row">	
+			
+			<div class="col-md-4 marginBottom25"> 
           <span class="size"> Gender - &nbsp;&nbsp;</span>
           <label class="radio-inline">
           <input type="radio" value="M" <?php if($userData[0]['gender']=="M"){echo "checked";} ?> id="gender1" name="gender" class="required"> Male

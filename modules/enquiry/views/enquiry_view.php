@@ -123,13 +123,13 @@
 							  <li>
 							     <div class="user-head">
                           <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')">
-                              <img src="<?php echo $userImage; ?>" alt="">
+                              <img src="<?php echo $userImage; ?>" alt="" width="60" height="60" class="img-circle">
                           </a>
                           <div class="user-name">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')"><?php echo $pageValue['first_name'].'&nbsp;'.$pageValue['last_name']; ?></a></h5>
                           </div>
                       </div>  </li>
-							</ul>
+							</ul> 
 							<?php } } } else
 							{
 								echo "Member List Empty";
@@ -138,7 +138,8 @@
 					</div>
 				  
               <div class="mail-box ">
-                  <aside class="sm-side col-lg-4 hidden-xs">
+                  <aside class="sm-side col-lg-4 hidden-xs white-c text-center">
+                  	<div class="m-t-20 f-18 w-800">
 				  <?php 
 					if(is_array($res) && !empty($res))
 					{
@@ -173,8 +174,8 @@
 						?>
                       <?php if($pageValue['sender_id'] == $logUserId)
 						{ 
-						?>
-					  <div class="user-head ">
+						?></div>
+					  <div class="user-head">
 					   <?php $query = $this->db->query("SELECT * FROM tbl_users WHERE user_id = $pageValue[reciever_id]"); 
 									$qury_result= $query->result_array();
 									foreach($qury_result as $keyVal => $Myvalue )
@@ -204,7 +205,7 @@
                           <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')">
                               <img src="<?php echo $MyImage; ?>" alt="">
                           </a>
-                          <div class="user-name">
+                          <div class="user-name m-t-20">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')"><?php echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name']; ?></a></h5>
                           </div>
 						<?php } ?>						  
@@ -253,7 +254,7 @@
 								<input name="reciever_id" type="hidden" value="<?php echo $receiverID; ?>" />
 								<input name="sender_id" type="hidden" value="<?php echo  $senderID ; ?>" />				
 							</div>						
-								<button onclick="return insertEnquiry()" class="btn btn-default" type="button">Send Reply</button>
+								<button onclick="return insertEnquiry()" class="btn btn-success" type="button">Send Reply</button>
 							  </form>
 							 </div>
 				
@@ -272,7 +273,7 @@
                              <div class="btn-group hidden-phone">
                                   <input type="hidden" name="reciever_id" value="<?php echo $receiverID ;?>">
 								   <input type="hidden" name="sender_id" value="<?php echo $senderID ;?>">
-								 <button type="button" class="pull-right btn btn-success10" onclick="return DeletetEnquiry()">Delete</button>
+								 <button type="button" class="pull-right btn btn-danger" onclick="return DeletetEnquiry()">Delete</button>
                              </div>  
                          </div>
 						 
@@ -383,7 +384,7 @@
 										  <p><?php echo $value['enquiry']; ?></p>																			 
 									  </div>
 								  </div>
-								  <div class="notify-arrow-email notify-arrow-blue-email left"></div>
+								 <!--  <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 					  </div>	
 				<?php } ?>					  
 				</div>
@@ -399,10 +400,9 @@
 						<div class="activity-body act-in">
 						<span class="arrow"></span>
 						<div class="text">									  
-						<p class="attribution"><a href="javascript:void(0)">Click Left To See Enquiry </a></p>
+						<p class="attribution"><a href="javascript:void(0)" class="white-c">Click Left To See Enquiry </a></p>
 						</div>
 						</div>
-						<div class="notify-arrow-email notify-arrow-blue-email left"></div>
 					  </div>									
 				</div>		
 					

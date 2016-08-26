@@ -117,9 +117,9 @@ h6 {
     top: 10px;
     width: 75px;
     z-index:0;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(360deg);
+   /* -ms-transform: rotate(7deg); 
+    -webkit-transform: rotate(7deg); 
+    transform: rotate(360deg);*/
 }
 
 .partnerResult .partnerPhoto img {
@@ -127,9 +127,9 @@ h6 {
     border-radius: 15px;
     width: 70px;
     position: inherit;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
+   /*-ms-transform: rotate(7deg); 
+    -webkit-transform: rotate(7deg);  
+    transform: rotate(90deg);*/
 }
 .partnerResult .partnerDate {
     position: absolute;
@@ -1391,7 +1391,7 @@ Label the data
     position: relative;
     width: 100%;
 	  background: #fff none repeat scroll 0 0;
-    border-bottom: 1px solid #d4d4d4;
+   
 }
 .user-head .inbox-avatar img {
     border-radius: 4px;
@@ -1791,14 +1791,14 @@ ul.inbox-pagination li {
     z-index: 10;
 }
 .notify-arrow-blue-email {
-    border-bottom-color: #FE0034 !important;
+        border-bottom-color: #D2D2A9 !important;
     border-left-color: transparent;
     border-right-color: transparent;
-    border-top-color: #FE0034  !important;
+    border-top-color: #D2D2A9 !important;
 } 
  .notify-arrow-email.left { 
     left: 50px;
-    bottom: -9px; 
+    bottom: 0px; 
 } .notify-arrow-email.right {
     right: 50px;
     bottom: -9px; 
@@ -1827,11 +1827,12 @@ overflow-y:scroll;margin-top: -20px;}
     width: 100px;
 }
 .imageFrame img {
-    height: 100px;
-    width: auto; 
-
+        border-radius: 50%!important;
+        height: 150px;
+    width: 150px; 
+/*
     border: 1px solid #;      -webkit-border-radius: 20px;      -moz-border-radius: 20px;      
-    border-radius: 15px;      width: 136px;
+    border-radius: 15px;      width: 136px;*/
 }
 .imageFrame a.changePic {
     background-color: #000;
@@ -2665,7 +2666,7 @@ footer {
 }
 
 .imageFrame.timeline.col-md-6 {
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 .ui-icon {
     display: inline-block;
@@ -2674,4 +2675,148 @@ footer {
     position: relative;
     top: 5px;
     width: 16px;
+}
+
+/*////////CSS helpers classes*/
+/*////Margins//////*/
+.m-0{
+    margin: 0!important;
+}
+.m-5{
+    margin: 5px!important;
+}
+.m-t-0{
+    margin-top: 0!important;
+}
+.m-b-0{
+    margin-bottom: 0!important;
+}
+.m-10{
+    margin: 10px!important;
+}
+.m-t-5{
+    margin-top: 5px!important;
+}
+.m-t-10{
+    margin-top: 10px!important;
+}
+.m-t-20{
+    margin-top: 20px!important;
+}
+.m-b-5{
+    margin-bottom: 5px!important;
+}
+.m-b-10{
+    margin-bottom: 10px!important;
+}
+.m-b-20{
+    margin-bottom: 20px!important;
+}
+.m-b-40{
+    margin-bottom: 40px!important;
+}
+.m-t-40{
+    margin-top: 40px!important;
+}
+.m-t-60{
+    margin-top: 60px!important;
+}
+.m-r-20{
+    margin-right: 20px!important;
+}
+.m-r-40{
+    margin-right: 40px!important;
+}
+.m-30{
+    margin: 30px!important;
+}
+/*////Ends here///*/
+/*///Padding//*/
+.p-0{
+    padding: 0!important;
+}
+.p-5{
+    padding: 5px!important;
+}
+.p-10{
+    padding: 10px!important;
+}
+.p-t-40{
+    padding-top: 40px!important;
+}
+.p-b-40{
+    padding-bottom: 40px!important;
+}
+/*///ends here////*/
+/*////Fonts////*/
+.f-12{
+    font-size: 12px!important;
+}
+.f-16{
+    font-size: 16px!important;
+}
+.f-17{
+    font-size: 17px!important;
+}
+.f-18{
+    font-size: 18px!important;
+}
+.f-20{
+    font-size: 20px!important;
+}
+.f-22{
+    font-size: 22px!important;
+}
+.f-24{
+    font-size: 24px!important;
+}
+.f-29{
+    font-size: 29px!important;
+}
+.w-100{
+    font-weight: 100!important;
+}
+.w-500{
+    font-weight: 500!important;
+}
+.w-800{
+    font-weight: 800!important;
+}
+.f-8{
+    font-size: 5em!important;
+}
+
+.white-c{
+    color: #fff!important;
+}
+
+.black-c{
+    color: #000!important;
+}
+
+
+/*///ends here///*/
+
+.user-head{
+    min-height:78px!important;
+}
+.user-head  > a img {
+
+    max-width:60px!important;
+    height:60px!important;
+    border-radius: 50%!important;
+
+}
+
+.user-name{
+    margin-top: 20px!important;
+}
+
+.attribution > a img{
+     border-radius: 50%!important;
+
+}
+.text > p:last-child  {
+
+margin-left: 35px!important;
 }
