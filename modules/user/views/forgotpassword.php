@@ -14,15 +14,15 @@
 					 <?php
 				 }
 				 ?>				 
-				<form class="form-2" id="formular" name="formular" method="post" action="<?php echo base_url(); ?>user/forgotpassword">
+				<form onsubmit="return validateEmail(this)" class="form-2" id="formular" name="formular" method="post" action="<?php echo base_url(); ?>user/forgotpassword">
 					<h1><span class="log-in">Forgot<span class="sign-up">Password</span></h1>
 					<p class="float full">
 						<label for="login"><i class="fa icon-user"></i>Email Id</label>
-							<input type="email" name="email" id="emailForgot" placeholder="Email" class="Email">
+							<input type="text" name="email"  placeholder="Email" class="Email">
 					</p>
 					  <div id="showError"></div>
 					<p class="clearfix text-center submit"> 
-					<input type="submit" name="submit" value="submit">
+					<input type="submit" name="submit" value="submit" >
 					</p>
 					<p><a href="<?php echo base_url();?>user/login">Login Now</a></p>
 				</form>​​
@@ -49,3 +49,18 @@
 					});
   </script>
 
+<script type="text/javascript">
+
+	function validateEmail(emailField){
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+		if (reg.test(emailField.value) == false)
+		{
+			alert('Invalid Email Address');
+			return false;
+		}
+
+		return true;
+
+	}
+</script>
