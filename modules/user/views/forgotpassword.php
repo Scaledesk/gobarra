@@ -112,4 +112,5 @@
 	  document.getElementById("emailForgot").focus();
 	  return false;
   }
+
 </script>
