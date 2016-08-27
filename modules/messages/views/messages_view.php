@@ -1,4 +1,13 @@
 <?php $this->load->view('header'); ?>
+
+<style type="text/css">
+.user-name a{
+	margin-left: 15px
+}
+
+</style>
+
+
 <div class="subnavbar hidden-xs">
 <div class="subnavbar-inner">
   <div class="container">

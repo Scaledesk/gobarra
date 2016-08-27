@@ -1414,3 +1414,29 @@ h1.elegantshadow {
     width: 30%;
     }
 }
+
+/*custom css by garima*/ 
+ .marginBottom25{
+     margin-top:25px;
+ }
+ 
+ 
+ /*error {
+ +
+ +  font: normal 10px arial;
+ +
+ +  padding: 3px;
+ +
+ +  margin: 3px;
+ +
+ +  background-color: #ffc;
+ +
+ +  border: 1px solid #c00;
+ +
+ }*/
+ 
+ /*Helper classes*/
+ 
+ .m-10{
+    margin-top: 10px;
+  } 
