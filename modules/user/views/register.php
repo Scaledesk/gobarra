@@ -144,14 +144,14 @@
 
 		 if(!fname=='') {
 			/* alert(5465);*/
-			
+
 			 if(!lname=='') {
 
 
 			 if (document.getElementById("useremail").value.match(emailreg)) {
 				 if(!password=='') {
 
-				 	 if(!password.length > 4) {
+				 	 if(password.length >4) {
 
                      if(password==cpassword)
 					    {
