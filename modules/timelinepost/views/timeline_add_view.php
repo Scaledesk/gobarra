@@ -187,16 +187,17 @@
 					{
                         
                        $img=substr($userData[0]->profile_image, 0,5);
-                         /* echo $img; die;*/
-                                if(!$img=='https'){
 
+                       /*  echo $img;*/
+                                if(!$img== 'https' or !$img== 'http' ){
+                                 /*  echo "sdgjhsgdjshjgs";*/
                                  $img=base_url().'uploaded_files/profile_img/'.'$userData[0]->profile_image';
                                 }else{
                                     $img=$userData[0]->profile_image;
                                 }
 
 
-				/*	$img =base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;*/
+				  /*  echo $img1 =base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;*/
 
 
 					}

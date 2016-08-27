@@ -28,9 +28,26 @@ class Home extends Public_Controller
 		$res_array 					= $this->home_model->get_traveler($config['limit'], $offset, $condition);			 
 		$config['total_rows'] 		= get_found_rows();
 		$data['res'] 				= $res_array;
-		$data['scroll_pagination']    = scroll_pagination($base_url,$config['total_rows'],$config['limit'],$page_segment);		
+		$data['scroll_pagination']    = scroll_pagination($base_url,$config['total_rows'],$config['limit'],$page_segment);
+
+
+		/*$data['res'] = $this->home_model->get_travelerData();*/
+		
 		$this->load->view('home',$data);
 	}
+
+	 public  function get_traveler_Data(){
+
+      echo json_encode("ok");
+
+		/* $limit=5;
+		 $start=5;
+		 $data['res'] = $this->home_model->get_traveler_Data($limit,$start);*/
+
+		/* echo "<pre/>";
+		 print_r($data['res']);*/
+
+	 }
 	function get_trav_plan()
 	{	
 		$condition = array();

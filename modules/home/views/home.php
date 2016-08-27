@@ -113,15 +113,31 @@
 						</div>
 					   
 				 </div>
-				 <div class="col-lg-12 rightside" id="travelpost"> 
+				 <div class="col-lg-12 rightside" id="travelpost">
+
+
+
+
+
+
+
+
+
+
 				 <!--Travel--> 
-				 <?php 
+				 <?php
+				/*  print_r($res);*/
 				if( is_array($res) && !empty($res) )
 				{ ?>
 				<div class="rowPOst">
-				<?php 
+				<?php
+				 $cont =1;
 				foreach($res as $catKey=>$pageVal)
-				{ ?>		
+				{
+					$cont ++;
+					 /*echo $cont;*/
+					?>
+
 				<div class="partnerResult">
 					<?php if($pageVal['profile_image'] !='')
 					{
@@ -265,12 +281,213 @@
 						<?php } ?>					
 						</div>
 						</div>	
-					<?php } ?>
+					<?php
+
+				      /* if($cont==5){  */?><!--
+
+						      <samp> Read More</samp>
+					    --><?php /* }*/
+
+				} ?>
 				   </div>
+					 <input	 type="hidden" value="">
 				<?php } else
 				{?>
 				
 				<?php echo "No records Found"; } ?>
+
+
+
+
+					 <samp id="reload" onclick="loadamount(this)"> Read More </samp>
+
+
+           <!-- -----------------------------------------------Read More-----  -->
+                 <span id="reload1" style="display:none">
+					 <!--Travel-->
+					 <?php
+					 /*  print_r($res);*/
+					 if( is_array($res1) && !empty($res1) )
+					 { ?>
+						 <div class="rowPOst">
+							 <?php
+							 $cont =1;
+							 foreach($res as $catKey=>$pageVal)
+							 {
+								 $cont ++;
+								 /*echo $cont;*/
+								 ?>
+
+								 <div class="partnerResult">
+									 <?php if($pageVal['profile_image'] !='')
+									 {
+
+
+										 $img=substr($pageVal['profile_image'],0,5);
+
+
+
+										 if($img=='https'){
+
+											 $img=$pageVal['profile_image'];
+										 }else{
+											 $img=base_url().'uploaded_files/profile_img/'.$pageVal['profile_image'];
+
+										 }
+
+										 /*$img =base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
+									 }
+									 else{
+										 $img =base_url()."uploaded_files/def_user/index.jpg";
+									 }
+									 ?>
+									 <?php if(@$this->session->userdata('is_logged_in')){ ?>
+
+										 <div class="partnerPhoto">
+											 <a href="<?php echo base_url();?>home/timelinepost/<?php echo $pageVal['user_id']; ?>"><img src="<?php echo $img ; ?>" width="75px" height="75px"></a>
+										 </div>
+									 <?php }else{?>
+										 <div class="partnerPhoto">
+											 <img src="<?php echo $img ; ?>" width="75px" height="75px" >
+										 </div>
+									 <?php }?>
+
+									 <div class="partnerInfo">
+										 <?php if(@$this->session->userdata('is_logged_in')){ ?>
+											 <div class="partnerName">
+												 <a href="<?php echo base_url();?>home/timelinepost/<?php echo $pageVal['user_id']; ?>"><?php echo $pageVal['first_name'] ;?> <?php echo $pageVal['last_name'] ; ?></a>
+												 &nbsp;Is Traveling From <span class="colors">
+					<?php echo $pageVal['travel_from'];?></span>&nbsp;To&nbsp;<span class="colors"><?php echo $pageVal['travel_to'];?></span>
+											 </div>
+											 <div class="partnerDate">
+												 <?php
+												 $originalDate = $pageVal['from_date'];
+												 $newDate = date("d F y", strtotime($originalDate));
+												 echo $newDate ; ?>
+												 <div class="endDate"> To <?php
+													 $originalDate = $pageVal['to_date'];
+													 $newDate = date("d F y", strtotime($originalDate));
+													 echo $newDate ; ?>	</div>
+											 </div>
+
+											 <div class="partnerInterests">
+						<span class="show-read-more">
+						<?php echo $pageVal['description'];?></span>
+												 <!-- Trigger the modal with a button -->
+											 </div>
+											 <?php
+											 $this->load->model('user/users_model');
+											 $email = $this->session->userdata('email');
+											 $userifo = $this->users_model->getuserInfo($email);
+											 $userId = $userifo[0]['user_id'];
+											 //print_r($userId);
+											 if($userifo[0]['profile_image'] !='')
+											 {
+
+												 $userImage=substr($userifo[0]['profile_image'],0,5);
+
+
+
+												 if($userImage=='https'){
+
+													 $userImage=$userifo[0]['profile_image'];
+												 }else{
+													 $userImage=base_url().'uploaded_files/profile_img/'.$userifo[0]['profile_image'];
+
+												 }
+
+												 /*$userImage = base_url()."uploaded_files/profile_img/".$userifo[0]['profile_image'];*/
+											 }
+											 else
+											 {
+												 $userImage = base_url()."uploaded_files/def_user/index.jpg";
+											 }
+											 $recieverID = $pageVal['user_id'];
+											 if($userId != $recieverID)
+											 {
+												 ?>
+												 <div class="sentmessage" id="sentmessage<?php echo $pageVal['travel_id']; ?>" >
+												 </div>
+												 <form class="uploadSecForm" name="imaguploading" id="myimg<?php echo $pageVal['travel_id']; ?>" role="form">
+													 <div class="media-left">
+														 <img src="<?php echo $userImage ; ?>" title="User Name" class="clsimg" border="0" width="60px" height="30px">
+													 </div>
+													 <div class="media-body uploadAndText">
+														 <textarea name="message" id="message<?php echo $pageVal['travel_id'];?>" class="form-control message"   class="discussPopupHome col-lg-12" placeholder="Your Message"  ></textarea>
+														 <img class="uploadSection" onclick="document.getElementById('uploadimg<?php echo $pageVal['travel_id']; ?>').click(<?php echo $pageVal['travel_id']; ?>); return false" src="<?php echo theme_url(); ?>img/camera.png">
+														 <div id="upload-file-container">
+															 <input type="file" class="hidden" name="image" id="uploadimg<?php echo $pageVal['travel_id']; ?>" onchange="readURL(this,'<?php echo $pageVal['travel_id']; ?>');">
+															 <input  type="hidden" id="sender_id<?php echo $userId ; ?>" name="sender_id" value="<?php echo $userId; ?>" />
+															 <input  type="hidden" id="reciever_id<?php echo $pageVal['user_id']; ?>" name="reciever_id" value="<?php echo $pageVal['user_id']; ?>" />
+														 </div>
+														 <button type="button" title="Send" class="btn btn-md btn-primary" onclick="return sendmessage('<?php echo $pageVal["travel_id"]; ?>')">Send</button>
+													 </div>
+													 <div class="preview">
+														 <img id="prvimg<?php echo $pageVal['travel_id'];?>" src="" alt="" style="height: auto !important; max-width: 200px; width:auto;" >
+														 <a class="hidden" href="javascript:void(0)" onclick="removeImagePreview('<?php echo $pageVal['travel_id']; ?>')" ><span class="glyphicon glyphicon-remove" id="cross<?php echo $pageVal['travel_id']; ?>" aria-hidden="true" style="display:none">&nbsp;
+						</span></a>
+														 <span class="add_pdt_img_nc"></span>
+													 </div>
+												 </form>
+
+
+											 <?php }}else {?>
+
+
+											 <div class="partnerName"><a> <?php echo $pageVal['first_name'] ;?> <?php echo $pageVal['last_name'] ; ?></a>  Is Traveling From
+												 &nbsp;<?php echo $pageVal['travel_from'];?>&nbsp;To&nbsp;
+												 <?php echo $pageVal['travel_to'];?>
+											 </div>
+											 <div class="partnerDate">
+												 <?php
+												 $originalDate = $pageVal['from_date'];
+												 $newDate = date("d F y", strtotime($originalDate));
+												 echo $newDate ; ?>
+												 <div class="endDate"> To <?php
+													 $originalDate = $pageVal['to_date'];
+													 $newDate = date("d F y", strtotime($originalDate));
+													 echo $newDate ; ?></div>
+											 </div>
+
+											 <div class="partnerInterests">
+												 <span class="show-read-more"> <?php echo $pageVal['description'];?></span>
+												 <!-- Trigger the modal with a button -->
+
+											 </div>
+
+											 <div class="partnerSupport">
+												 <a class="link myspecialbutton" rel="nofollow" href="<?php echo base_url(); ?>user/login">Send Message</a>
+											 </div>
+										 <?php } ?>
+									 </div>
+								 </div>
+								 <?php
+
+								 /* if($cont==5){  */?><!--
+
+						      <samp> Read More</samp>
+					    --><?php /* }*/
+
+							 } ?>
+						 </div>
+					 <?php } else
+					 {?>
+
+						 <?php echo "No records Found"; } ?>
+					 </span>
+  <!-- ----------------------------------------end read more ------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
 				</div>
                 </div>
 			 <!-- Right Sidebar Content end-->
@@ -620,3 +837,36 @@ $(document).ready(function() {
             });
         });
     </script>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+<script  type="text/javascript">
+	function loadamount(obj) {
+
+		var data1=document.getElementById("reload");
+		/* alert(15455);*/
+
+
+		var dd ={"data":data1};
+		/* alert(dd);*/
+		$.ajax({
+			'url' : "<?php echo base_url().'home/get_traveler_Data'; ?>",
+			'type' : 'POST',  //the way you want to send data to your URL
+			dataType: "json",
+			'data':dd,
+
+			 'success' : function(data){
+				  alert(data);
+				  console.log(data);
+			 },
+			'error': function(data){
+				/* console.log(data);*/
+				 alert(data);
+				/* alert('Some Error Occurred');*/
+			}
+		});
+
+
+	}
+
+</script>
