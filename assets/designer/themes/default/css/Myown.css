@@ -235,7 +235,7 @@ ul.scale-up-hover-list {
     }
 
 .readybuyers {
-    margin-top: 44px;
+    /*margin-top: 44px;*/
 }
 
 .myrotate-text {
@@ -656,6 +656,7 @@ h1.elegantshadow {
     width: 280px;
     font-family: 'FontSite Sans', sans-serif;
     background: white;
+        margin-left: 20px;
 }
 
     .list-container h1 {
@@ -866,6 +867,7 @@ ul.scale-up-hover-list {
 .oh {
     overflow: hidden;
     width: 315px;
+       margin-left: 20px;
 }
 
 .abox {
@@ -884,7 +886,7 @@ ul.scale-up-hover-list {
     }
 
 .readybuyers {
-    margin-top: 44px;
+   /* margin-top: 44px;*/
 }
 
 .myrotate-text {
@@ -1248,6 +1250,7 @@ h1.elegantshadow {
         margin-top: -5px;
         margin-left: 13px;
     }
+  
 
     .bg.leftDetailsSec .top10 {
         width: 100.333333%;

@@ -116,7 +116,8 @@
                               $name1=$usrinfo[0]['last_name'];
                               if($usrinfo[0]['profile_image']!='')
                               {?>
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="
+    margin-top: -7px;">
 					<span class="profile-ava">
 					<img src="<?php echo $img ;?>" alt="">
                     </span>

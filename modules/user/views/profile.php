@@ -1,10 +1,10 @@
 <?php $this->load->view('header');?>
 <style>
-        .thumbnail {
+       /* .thumbnail {
             width: 270px;
             height: 224px;
             overflow: hidden;
-        }
+        }*/
 
         .view-img img {
             width: 100%;
@@ -24,7 +24,7 @@
             line-height: 1.1;
             /* float: right; */
             margin-top: 0px;
-            margin-left: 45px;
+           /* margin-left: 45px;*/
             width: 160px;
             padding: 11px;
             position: relative;
@@ -102,7 +102,8 @@
       <?php echo form_open_multipart('user/update_profile','id=uploadPic');?>
                 <!-- full Content -->
         <div class="col-md-12 ">   
-      <div class="col-sm-4 mycol-md-4">
+      <div class="col-sm-4 col-md-4">
+        <div class="card-gobarra">
       <div class="col-lg-12">
       <h3 style="font-weight: 600;text-align:center;color: #fe0034;"><?php echo $userData[0]['first_name'];?>&nbsp;<?php echo $userData[0]['last_name'];?></h3>
       </div>
@@ -130,15 +131,15 @@
             $img=base_url()."uploaded_files/def_user/index.jpg";
             }
             ?>
-<div class="thumbnail">
+<div>
       <div class="view-img">
         <img id="profile-image-user" alt="" src="<?php echo $img ; ?>">
       </div>
 </div>
       
       <input class="field-file-upload-native" type="file" accept="image/*"  name="image" id="upload">
- <button type="button" class="btn uploadbtn field-file-upload" onclick="document.getElementById('upload').click(); return false"><span>Upload Image</span></button>     
-      
+<div class="text-center m-t-20"> <button type="button" class="btn uploadbtn field-file-upload" onclick="document.getElementById('upload').click(); return false"><span>Upload Image</span></button>     
+</div>      
           <P class="pull-left"><em>   <?php 
          if($this->session->flashdata('item'))
          {
@@ -150,11 +151,12 @@
            <?php
          }
          ?></em></P>
+       </div>
       </div>
          
   
     <div class="col-md-8"> 
-    <div class="col-lg-12 topdashboardTextArea">
+    <div class="col-lg-12 topdashboardTextArea card-gobarra" style="padding:30px;">
 
                                 <div class="row">
                                     <div class="clearfix"></div>

@@ -16,7 +16,7 @@
                     <div class="col-lg-12 topdashboardForm">
 						<div class="col-lg-12">
                             <h2 class="element">
-                                <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;"/>Earn While You Fly<img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;"/>
+                                Earn While You Fly
                             </h2>
                         </div>
                 <!-- left Sidebar Content -->
@@ -41,7 +41,7 @@
                             <div id="home" class="tab-pane fade in active">
                                 <div class="col-lg-12">
 
-                                    <div class="row">
+                                    <div class="row m-t-20">
                                         <div class="form-group col-lg-5 col-xs-6 col-sm-5 something">
                                             <label class="size">By Country</label>
                                             <div class="fixArea">
@@ -63,7 +63,7 @@
                                         </div>
                                     </div>
                                     <div class="fixArea">
-                                        <button title="Click To Search" class="btn btn-md btn-primary" id="button" type="submit">Search</button>
+                                        <button title="Click To Search" class="buyer-btn m-b-20" id="button" type="submit">Search</button>
                                     </div>
                                 </div>
                                 <div class="clearFix"></div>
@@ -220,7 +220,7 @@
 				<?php if(@$this->session->userdata('is_logged_in')){ ?> 
 				<div class="col-sm-4 col-xs-12 col-md-4 readybuyers">
                             <div class="bg leftDetailsSec">
-                                <h4 style="font-size: larger; color: #100101; font-weight: 600;">Connected Members</h4>
+                                <h4 style=" font-size: x-large; font-weight: 600; color: #52504E; text-align:center;   ">Connected Members</h4>
 								<?php $this->load->model('home/home_model');
 								$connect_user = $this->home_model->getMembers();
 								?>
@@ -315,7 +315,7 @@
 						<?php if(@$this->session->userdata('is_logged_in')) { ?>
 						<div class="col-sm-4 col-xs-12 col-md-4 readybuyers">
                             <div class="bg leftDetailsSec">
-                                <h4 style="font-size: x-large; font-weight: 600; color: #52504E;">Top 10 Travellers!</h4>
+                                <h4 style="font-size: x-large; font-weight: 600; color: #52504E; text-align:center;">Top 10 Travellers!</h4>
                                 <div class="list-container">
                                     <h1>Recent visited Travellers!</h1>
 

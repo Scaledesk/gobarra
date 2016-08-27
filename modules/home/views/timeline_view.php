@@ -69,7 +69,7 @@
 			{ ?>
 		<div class="details2"><i class="fa fa-phone-square"></i>Mobile: Not Available</div>
 			<?php } ?>
-		<div class="details2"><i class="fa fa-phone-square"></i>Email: <?php echo $user[0]->email ;?></div>	
+		<div class="details2"><i class="fa fa-envelope-o"></i>Email: <?php echo $user[0]->email ;?></div>	
 			<?php if($user[0]->gender !='' )
 			{
 				if($user[0]->gender =='M')
@@ -88,7 +88,7 @@
 	 <?php } ?>
 </div>
 
-<div class="clearfix"></div>
+<div class="clearfix text-center"></div>
 	
 	 	 </div>		 			
 			  <?php $this->load->model('user/users_model'); 
@@ -100,6 +100,7 @@
 							  if($senderId != $recieverId)								  
 							  {								  
 							?>
+							<div class="card-gobarra">
 				<h3>Send Message </h3>
 			  <form class="uploadSecForm" id="insertMessage" name="insertMessage" role="form" accept-charset="utf-8">
 				<div class="form-group">
@@ -118,7 +119,7 @@
 				<span class="glyphicon glyphicon-remove" id="cross" aria-hidden="true" style="display:none"></span></a>
 				</div>
 				</div>
-				<button onclick="return insertMessages()" class="btn btn-default" type="button">Send</button>
+				<button onclick="return insertMessages()" class="btn btn-success" type="button">Send</button></div>
 			  </form>
 			   <?php } ?>
 		<div class="clearfix"></div>	 
@@ -285,7 +286,7 @@
 						}
 					});
 				}					
-		
+		 
 	}	   
 	
 		function readURL(input) {

@@ -8,12 +8,30 @@
  <!-- Page Content -->
      <div class="page-content ">
         <div class="container"> 
+        	<div class="row">
+        		<div class="col-md-12">
+        			 <div class="successmessage text-center">
+				 <?php 
+				 if($this->session->flashdata('item'))
+				 {
+					 $message= $this->session->flashdata('item');
+					 ?>
+					 <div class="success timeline" id="postplan" role="alert">				
+				<?php 
+				echo $message['message'];?>
+			</div>
+					 <?php
+				 }
+				 ?>
+				 </div>
+        		</div>
+        	</div>
             <div class="row">
 				<div class="col-md-12 ">
 					<div class="col-lg-12 topdashboardForm">
 					<div class="col-lg-12">
                             <h2 class="element">
-                                <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" />Earn While You Fly<img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" />
+                                <!-- <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" /> --><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;Earn While You Fly&nbsp;<i class="fa fa-plane" aria-hidden="true"></i><!-- <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" /> -->
                             </h2>
                         </div>
 						
@@ -24,19 +42,7 @@
 			  <!-- Right Sidebar Content -->
 				<div class="col-sm-8 col-xs-12 col-md-8 content">
                  <!--header-->
-				 <div class="successmessage">
-				 <?php 
-				 if($this->session->flashdata('item'))
-				 {
-					 $message= $this->session->flashdata('item');
-					 ?>
-					 <div class="success timeline" id="postplan" role="alert">				
-				<?php 
-				echo $message['message'];?></div>
-					 <?php
-				 }
-				 ?>
-				 </div>
+
 				 <div class="homeFormArea">
 					<ul class="nav nav-tabs">
 					  <li class="active"><a   href="<?php echo base_url(); ?>home">Search Travelers</a></li>
@@ -65,8 +71,8 @@
 							$attributes = array('id'=>'search','method'=>"get");
 							echo  form_open('home/get_traveler',$attributes);
 							?>					
-						 <div class="col-lg-12" style="background: url('map2.png') white no-repeat;">
-								<div class="row">
+						 <div class="col-lg-12" style="background: url('../map2.png') no-repeat ;">
+								<div class="row m-t-20">
 								<div class="form-group col-lg-5 col-xs-6 col-sm-5 something"><label class="size">Leaving from</label> 
 									<div class="fixArea"> 
 										  <input class="form-control" name="travel_from" id="travelFrom" type="text" title="Type Your Leaving Source" placeholder="Type Your Leaving Source"> 
@@ -103,7 +109,7 @@
 								</div>
 								</div> 
 								<div class="fixArea">
-									<button title="Click To Search" id="button" class="btn btn-md btn-primary" type="submit">Search</button> 
+									<button title="Click To Search" id="button" class="buyer-btn m-b-20" type="submit">Search</button> 
 								</div> 
 								</div> 
 								<?php echo form_close(); ?>
@@ -113,7 +119,7 @@
 						</div>
 					   
 				 </div>
-				 <div class="col-lg-12 rightside" id="travelpost">
+				 <div class="col-lg-12 p-0 rightside" id="travelpost">
 
 
 
@@ -184,7 +190,7 @@
 						$originalDate = $pageVal['from_date'];
 						$newDate = date("d F y", strtotime($originalDate));
 						echo $newDate ; ?>			
-						<div class="endDate"> To <?php 
+						<div class="endDate"> <b>to</b> <?php 
 						$originalDate = $pageVal['to_date'];
 						$newDate = date("d F y", strtotime($originalDate));
 						echo $newDate ; ?>	</div>
@@ -276,7 +282,7 @@
 					</div>
 						
 						<div class="partnerSupport">
-						<a class="link myspecialbutton" rel="nofollow" href="<?php echo base_url(); ?>user/login">Send Message</a>
+						<a class="link btn btn-success" rel="nofollow" href="<?php echo base_url(); ?>user/login">Send Message</a>
 						</div>
 						<?php } ?>					
 						</div>
@@ -495,11 +501,11 @@
 			<?php //$this->load->view('left_ads');?>
 			<?php if(@$this->session->userdata('is_logged_in')){ ?> 
 			<div class="col-sm-4 col-xs-12 col-md-4 ">
-				<div class="bg leftDetailsSec" style="margin-top: 46px; height: 150px;">
-					<h4 style="font-size: x-large; font-weight: 600; color: #FE0034;">Ready Buyers </h4>
+				<div class="bg leftDetailsSec" style="margin-top: 46px; padding-bottom: 70px; text-align:center; box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2); padding-top: 35px;">
+					<h4 style="font-size: x-large; font-weight: 600; color: #FE0034; margin-top:20px;">Ready Buyers </h4>
 					<p>You Can Find Your Search</p>
 					<div class="fixArea">
-						<button title="Buyers" id="button" onclick="location.href='<?php echo base_url();?>home/product_details'; " class="lgnbtn" type="submit">Buyers</button>
+						<button title="Buyers" id="button" onclick="location.href='<?php echo base_url();?>home/product_details'; " class="buyer-btn" type="submit">Buyers</button>
 					</div>
 					<div class="clearfix"></div>
 					<div class="clearfix"></div>
@@ -515,11 +521,11 @@
 			</div> <!-- End col4 buyer-->
 			<?php } else { ?>
 			<div class="col-sm-4 col-xs-12 col-md-4 ">
-				<div class="bg leftDetailsSec" style="margin-top: 46px; height: 150px;">
+				<div class="bg leftDetailsSec" style="margin-top: 46px; height: 150px; text-align:center;  padding-bottom: 74px;">
 					<h4 style="font-size: x-large; font-weight: 600; color: #FE0034;">Ready Buyers </h4>
 					<p>Please Login after you can search</p>
 					<div class="fixArea">
-						<button title="Login" id="button" onclick="location.href='<?php echo base_url();?>user/login';" class="lgnbtn" type="submit">Login</button>
+						<button title="Login" id="button" onclick="location.href='<?php echo base_url();?>user/login';" class="buyer-btn" type="submit">Login</button>
 					</div>
 					<div class="clearfix"></div>
 					<div class="clearfix"></div>
@@ -537,7 +543,7 @@
 			<?php if(@$this->session->userdata('is_logged_in')){ ?> 
 			<div class="col-sm-4 col-xs-12 col-md-4 readybuyers">
 				<div class="bg leftDetailsSec">
-					<h4 style="font-size: larger; color: #100101; font-weight: 600;">New Connected Members</h4>
+					<h4 style="font-size: larger; color: #100101; font-weight: 600; text-align:center;">New Connected Members</h4>
 					<?php $this->load->model('home/home_model');
 					$connect_user = $this->home_model->getMembers();
 					?>
@@ -614,7 +620,7 @@
 			<?php if(@$this->session->userdata('is_logged_in')){ ?> 
 				<div class="col-sm-4 col-xs-12 col-md-4 readybuyers">
                             <div class="bg leftDetailsSec">
-                                <h4 style="font-size: x-large; font-weight: 600; color: #52504E;">Top 10 Travellers!</h4>
+                                <h4 style="font-size: x-large; font-weight: 600; color: #52504E; text-align:center;">Top 10 Travellers!</h4>
                                 <div class="list-container">
                                     <h1>Recent visited Travellers!</h1>									
                                     <ul class="scale-up-hover-list">

@@ -14,6 +14,9 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
 }
+body{
+    background-color: #f5f5f5;
+}
 
 .mail-option.travelplan {
     display: table-row-group !important;
@@ -53,7 +56,7 @@ h6 {
 }
 .top-nav .nav > li > a > i.icon_mail_alt {
     position: relative;
-    top: 1px;
+    top: 0.1px;
 }
 .leftbanner .col-sm-4.col-xs-4.col-md-4 {
     padding: 5px;
@@ -82,6 +85,8 @@ h6 {
 }
 
 
+
+
 .navbar-brand { 
     padding: 7px 15px!important; 
 }
@@ -99,10 +104,13 @@ h6 {
     margin-top: -30px;
 }
 .partnerResult {
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
     margin: 10px 0px;
     min-height: 96px;
     position: relative; 
+    background-color: #fff;
+    padding-top:10px;
 }
 .partnerResultpage {
     border: 1px solid #ddd;
@@ -124,9 +132,10 @@ h6 {
 
 .partnerResult .partnerPhoto img {
     border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 70px;
     position: inherit;
+    margin-top:10px;
    /*-ms-transform: rotate(7deg); 
     -webkit-transform: rotate(7deg);  
     transform: rotate(90deg);*/
@@ -146,6 +155,7 @@ h6 {
 
 .partnerResult .partnerInfo {
     margin-left: 95px;
+    padding:5px 0 10px 0;
 }
 .partnerResult .partnerName {
     font-weight: bold;
@@ -183,7 +193,9 @@ h6 {
     border-bottom: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
-    padding: 8px 0;
+background-color: #fff;
+   /* padding: 8px 0;*/
+       box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
 }
 a:hover, a:active, a:focus {
  outline: 0;
@@ -342,7 +354,7 @@ textarea.message {
     padding-top: 12px;
 } 
 .profile-ava img {
-    border: 2px solid #fff;
+  /*  border: 2px solid #fff;*/
     display: inline-block;
     width: 25px;
 }
@@ -655,9 +667,13 @@ div[data-role="editor-toolbar"] {
     width: 20px;
 }
 .profile-ava img {
-    border: 2px solid #fff; 
+    /*border: 2px solid #fff; */
     display: inline-block;
-    width: 25px;
+    
+        width: 40px;
+    height: 40px;
+    border-radius: 50%;
+        border: 1px solid #ffffff;
 }
 .dropdown-menu.extended li a {
     display: inline-block;
@@ -754,6 +770,7 @@ div[data-role="editor-toolbar"] {
 }
  .bg.leftDetailsSec{  
     padding: 20px 0!important; 
+    background-color:#fff;
     }
 .subnavbar {
     margin-bottom: 2.5em;
@@ -769,7 +786,7 @@ div[data-role="editor-toolbar"] {
         padding-bottom: 15%;
     }
     .topdashboardForm {
-    background: #fff none repeat scroll 0 0;
+    background: #f5f5f5 none repeat scroll 0 0;
     display: inline-block;
     margin: 0!important;
     padding: 0px 0 0!important;
@@ -932,15 +949,18 @@ footer {
     top: 0px;
       position: relative;
     width: auto!important;
+    background-color: #fff;
 }
  
 .bg.leftDetailsSec {
-    border-radius: 10px;
-    display: inline-block; 
+    
+       margin-top: 16px;
+    display: inline-block;
     position: relative;
     width: 100%;
-    padding:20px;
-    border: solid 1px #d4d4d4;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    background-color: #fff;
 }
 .leftDetailsSec .imageFrame.profileImages.timeline  {
     /*height: 120px!important;*/
@@ -1083,7 +1103,7 @@ footer {
     font-weight: 500;
 }
 .topdashboardForm {
-    background: #fff;
+    background: #f5f5f5;
     padding: 0px 0 0;
     margin: 0px 0 0 0;
 }
@@ -1091,7 +1111,7 @@ footer {
     background: #fff;
     padding-top: 16px; 
     padding-bottom: 16px; 
-    margin: 14px 0 14px 0;
+   /* margin: 14px 0 14px 0;*/
 }
 .topdashboardTextArea h3 {
     margin: 0 0 13px 0;
@@ -1380,7 +1400,10 @@ Label the data
 }
  
 .partnerResult .partnerDate { 
+          margin-top: 15px;
     z-index: 1041;
+    color: #777;
+    font-style: italic;
 }
 .bg.leftDetailsSecBottom {
     border-radius: 10px;
@@ -2614,6 +2637,7 @@ footer {
 }
 .uploadAndText textarea {   
     margin-right:5px !important;
+        margin-bottom: 10px;
 }
 .uploadSecForm {
     padding-right:1% !important;
@@ -2682,6 +2706,11 @@ footer {
 .m-0{
     margin: 0!important;
 }
+
+  .p-30{
+        padding:30px;
+    }
+
 .m-5{
     margin: 5px!important;
 }
@@ -2819,4 +2848,39 @@ footer {
 .text > p:last-child  {
 
 margin-left: 35px!important;
+}
+.buyer-btn{
+    border: 2px solid rgb(254,0,52);
+    color:rgb(254,0,52);
+    cursor:pointer;
+    height:30px;
+    width:150px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+
+}
+.buyer-btn:hover{
+    background-color:rgb(254,0,52);
+    color:#fff;
+}
+
+
+
+@media only screen and (max-width: 768){
+    .uploadAndText .uploadSection {
+    position: absolute;
+    right: 8px;
+    top: 23px;
+    width: 15px;
+}
+
+}
+.profile-card{
+    padding: 40px 50px 40px 50px!important;
+}
+.card-gobarra{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;
+    background-color:#ffffff!important;
+    padding:10px;
+
 }

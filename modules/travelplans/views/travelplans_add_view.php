@@ -156,7 +156,7 @@
 <div class="bg leftDetailsSec">
 	<div class="right_coloumn_box">
 	<div class="right-column-heading center-header-new">
-		<h3 class="btn btn-md btn-primary" style="width: 292px; margin-left: -20px; margin-top: -28px;">Frequently Visited Destinations!</h3>
+		<h3 class="text-center">Frequently Visited Destinations!</h3>
 	</div>
 	<div class="card__content">
 	<h1 class="card__title">My favourite</h1>
