@@ -63,7 +63,7 @@
 
 			/*$userImage =base_url()."uploaded_files/profile_img/".$val['profile_image'];		*/							
 		} else {
-			$userImage =base_url()."uploaded_files/def_user/index.jpg";
+			$userImage =base_url()."uploaded_files/def_user/dummy.png";
 		}
 			$this->load->model('user/Users_model');
 			$User_Arr = $this->Users_model->getuserInfo($this->session->userdata('email'));
@@ -90,7 +90,7 @@
 
 			/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/								
 		} else {
-			$MyImage =base_url()."uploaded_files/def_user/index.jpg";
+			$MyImage =base_url()."uploaded_files/def_user/dummy.png";
 		} ?>
 		<a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id']; ?>')">
 		<img src="<?php echo $MyImage ;?>" alt="" width="40px" height="40px"></a>
@@ -118,7 +118,7 @@
                                 }
 			/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/								
 		} else {
-			$MyImage =base_url()."uploaded_files/def_user/index.jpg";
+			$MyImage =base_url()."uploaded_files/def_user/dummy.png";
 		} ?>
 		<a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id']; ?>')">
 		<img src="<?php echo $MyImage ;?>" alt="" width="40px" height="40px"></a>
@@ -176,7 +176,7 @@
 
 		/*	$userImage =base_url()."uploaded_files/profile_img/".$val['profile_image'];	*/								
 		} else {
-			$userImage =base_url()."uploaded_files/def_user/index.jpg";
+			$userImage =base_url()."uploaded_files/def_user/dummy.png";
 		}
 			$this->load->model('user/Users_model');
 			$User_Arr = $this->Users_model->getuserInfo($this->session->userdata('email'));
@@ -201,7 +201,7 @@
 
 		/*	$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];		*/							
 		} else {
-			$MyImage =base_url()."uploaded_files/def_user/index.jpg";
+			$MyImage =base_url()."uploaded_files/def_user/dummy.png";
 		} ?>
 	<a href="javascript:void(0)" class="inbox-avatar" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id'] ; ?>')">
 	<img src="<?php echo $MyImage; ?>" alt=""></a> 
@@ -228,7 +228,7 @@
                                 }
 
 		} else {
-			$MyImage =base_url()."uploaded_files/def_user/index.jpg";
+			$MyImage =base_url()."uploaded_files/def_user/dummy.png";
 		} ?>
 	<a href="javascript:void(0)" class="inbox-avatar" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id'] ; ?>')">
 	<img src="<?php echo  $MyImage; ?>" alt=""></a> 
@@ -324,7 +324,7 @@
 
 
 		} else {
-			$MyImage =base_url()."uploaded_files/def_user/index.jpg";
+			$MyImage =base_url()."uploaded_files/def_user/dummy.png";
 	} ?> 
 	<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>"> 
 	<div class="activity-body act-in">

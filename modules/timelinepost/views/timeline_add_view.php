@@ -62,7 +62,7 @@
 
 				/*$img=base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;*/
 				} else {
-				$img=base_url()."uploaded_files/def_user/index.jpg";
+				$img=base_url()."uploaded_files/def_user/dummy.png";
 				} ?>
 	<div class="imageFrame timeline col-md-6">
 	 <span><p><a><img href="<?php echo $img ; ?>" id="profile-image-user" class="group3" src="<?php echo $img ; ?>"></a></p></span>
@@ -202,7 +202,7 @@
 
 					}
 					else{
-					$img =base_url()."uploaded_files/def_user/index.jpg";
+					$img =base_url()."uploaded_files/def_user/dummy.png";
 					}
 					?>
 					<div class="partnerPhoto">

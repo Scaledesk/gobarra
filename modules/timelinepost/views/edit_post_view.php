@@ -62,7 +62,7 @@
 					      /*$img=base_url()."uploaded_files/profile_img/".$userData[0]->profile_image;*/
 
 				} else {
-					$img=base_url()."uploaded_files/def_user/index.jpg";
+					$img=base_url()."uploaded_files/def_user/dummy.png";
 				} ?>
 	<div class="imageFrame profileImages timeline col-md-6">
 	 <div class="imageFrame profileImages"> <img id="profile-image-user" src="<?php echo $img ; ?>">

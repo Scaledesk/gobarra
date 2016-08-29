@@ -164,7 +164,7 @@
 					/*$img =base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
 					}
 					else{
-					$img =base_url()."uploaded_files/def_user/index.jpg";
+					$img =base_url()."uploaded_files/def_user/dummy.png";
 					}
 					?>
 					<?php if(@$this->session->userdata('is_logged_in')){ ?>
@@ -226,7 +226,7 @@
 					}
 					else
 					{
-						$userImage = base_url()."uploaded_files/def_user/index.jpg";
+						$userImage = base_url()."uploaded_files/def_user/dummy.png";
 						}
 						$recieverID = $pageVal['user_id'];
 						if($userId != $recieverID)
@@ -344,7 +344,7 @@
 										 /*$img =base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
 									 }
 									 else{
-										 $img =base_url()."uploaded_files/def_user/index.jpg";
+										 $img =base_url()."uploaded_files/def_user/dummy.png";
 									 }
 									 ?>
 									 <?php if(@$this->session->userdata('is_logged_in')){ ?>
@@ -406,7 +406,7 @@
 											 }
 											 else
 											 {
-												 $userImage = base_url()."uploaded_files/def_user/index.jpg";
+												 $userImage = base_url()."uploaded_files/def_user/dummy.png";
 											 }
 											 $recieverID = $pageVal['user_id'];
 											 if($userId != $recieverID)
@@ -570,7 +570,7 @@
 						}
 						else
 						{
-						$img = base_url()."uploaded_files/def_user/index.jpg";
+						$img = base_url()."uploaded_files/def_user/dummy.png";
 						}
 						$userId = $Connected_user->user_id ;
 						$name = $Connected_user->first_name."&nbsp;".$Connected_user->last_name;
@@ -601,7 +601,7 @@
 						}
 						else
 						{
-						$img = base_url()."uploaded_files/def_user/index.jpg";
+						$img = base_url()."uploaded_files/def_user/dummy.png";
 						}
 						$userId = $Connected_user->user_id ;
 						$name = $Connected_user->first_name."&nbsp;".$Connected_user->last_name;
