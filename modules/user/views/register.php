@@ -5,11 +5,11 @@
         <div class="container ">
       	<section class="main">
 		<?php echo validation_errors(); ?>
-		<form onsubmit="return emailVerify() " class="form-2 register card-gobarra p-30" id="createform" name="createform" method="post" action="<?php echo base_url(); ?>user/create_member">
+		<form onsubmit="return emailVerify()" class="form-2 register card-gobarra p-30" id="createform" name="createform" method="post" action="<?php echo base_url(); ?>user/create_member">
 					<h1 class=" text-center"><span class="log-in f-18" style="color:#91C181;">Register With Gobarra</span></h1>
 					<p class="float"> 
 						<input type="text" name="first_name" placeholder="First Name" id="fname" >
-						 
+						
 					</p>
 					<p class="float"> 
 						<input type="text" name="last_name" placeholder="Last Name" id="lname" >
@@ -59,32 +59,7 @@
 					<p class="clearfix text-center submit"> 
 						 <button type="submit" class="login-btn" name="submit" value="REGISTER "> <span class="white-c">REGISTER</span>
 					</p>
-					<div class="row m-t-20">
-
-					<div class = "col-xs-6 p-0 p-r-10">
-<!-- 				<div class="account text-center">
- -->
-<!-- 						<div class="span">
- -->							<a href="<?php echo site_url(); ?>home/facebook_login" class=" pull-left facebook-btn width-sociallnk">
-							<!-- <img src="<?php echo theme_url();?>img/facebook.png" alt=""> -->
-
-							<i class="fa fa-facebook "></i> <span>Sign In with Facebook</span>
-<!-- 							<div class="clear"></div>
- -->					</a>
-<!-- 					</div>
- -->				</div><br>
-						
-					<div class = "col-xs-6 p-0 p-l-10">
-<!-- 						<div class="span2">
- -->							<a href="<?php echo base_url();?>home/google_login" class="google-btn width-sociallnk">
-								<!-- <img src="<?php echo theme_url();?>img/gplus.png" alt=""> -->
-							<i class="fa fa-google-plus"></i>&nbsp;&nbsp;  <span>Sign In with Google+</span> 
-								<!-- <div class="clear"></div> -->
-							</a>
-<!-- 						</div>
- -->					</div>
-						</div>
-		
+					
 
 					 <!-- 	<div class="clearfix"></div> -->
 

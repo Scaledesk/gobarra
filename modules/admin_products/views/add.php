@@ -30,10 +30,12 @@
         <!-- full Content -->
   <!--  <?php echo form_open_multipart('admin_products/add','id="form" '); ?> -->
 
-  <form id="form" enctype="multipart/form-data" action="<?php echo base_url().'admin_products/add' ?>"> 
+  <form method="post" onsubmit="return addproductValidation()" id="form" enctype="multipart/form-data" action="<?php echo base_url().'admin_products/add'?>"> 
         <div id="no-more-tables col-lg-12">
             <div class="col-lg-12 topdashboardForm">
-                <div class="col-lg-12">             
+                <div class="col-lg-12">  
+
+                    <h3 id='emailError' style="color:red"></h3>           
                     <h3>Add New Product</h3>
                 </div>
                 <div class="row">
@@ -42,31 +44,33 @@
                     <div class="fixArea">
                         <input type="text" placeholder="Enter a Country..." name="country_name" id="country_id" value="<?php echo set_value('country_id');?>" class="form-control">                     
                     </div>
-                    <div id="name_error" class="val_error"></div>
+                   
                 </div>
                 <div class="form-group col-lg-4 col-sm-12 col-xs-12 something">
                     <label class="size">City Name</label>
                     <div class="fixArea" >
                  <input type="text" name="city_name" id="city_id" class="form-control" placeholder="Enter City Name">       
                     </div>
-                    <div id="name_error" class="val_error"></div>
+                    
                 </div>
                 <div class="form-group col-lg-4 col-sm-12 col-xs-12 something">
                     <label class="size">Product Name</label>
                     <div class="fixArea">
                         <input type="text" name="product_name" id="product_name" maxlength="120" value="<?php echo set_value('product_name');?>" class="textfield2 ui-autocomplete-input form-control" placeholder="Product Name" >
                         </div>
-                        <div id="name_error" class="val_error"></div>
+                      
                     </div>
                     <div class="form-group col-lg-12 col-sm-12 col-xs-12 something">
                         <label class="size">Description</label>
                         <div class="fixArea">
                             <textarea class="form-control" id="description" name="description" rows="6" maxlength="1000"><?php echo set_value('description');?></textarea>
                             <div class="clearfix">
-                                <p class="prodnote"><strong>Note: Max Char limit 1000</strong></p>
+                                
                             </div>
                         </div>
-                        <div id="name_error" class="val_error"></div>
+
+
+                        <div id="descrip_error" class="val_error"></div>
                     </div>
                     <div class="form-group col-lg-12 col-sm-12 col-xs-12 something">
                         <label class="control-label">Upload Your Imges</label>
@@ -75,7 +79,7 @@
 
                         <input id="input1"  type="file" class="file" name="img1" value="<?php echo set_value('img1');?>">
                            </div>
-                           <div id="name_error" class="val_error"></div>
+                          
 
                         
 
@@ -83,13 +87,12 @@
 
                             <input id="input2" type="file" class="file" name="img2" value="<?php echo set_value('img2');?>">
                                          </div>
-                                         <div id="name_error" class="val_error"></div>
+                                     
 
-                                         <div id="name_error" class="val_error"></div>
                                       <br><br>
                                     <div class="form-group col-lg-12 col-sm-12 col-xs-12 something">
                                         <div class="fixArea">
-                                            <button title="Add Product" name="submit" class="btn btn-md btn-primary" type="submit">Add Product</button>
+                                            <button title="Add Product" name="submit" class="btn btn-md btn-primary" type="submit" >Add Product</button>
                                         </div>
                                     </div></div></div>
                                     </div> 
@@ -111,7 +114,7 @@
     $(document).ready(function(){
     $("body").prepend('<div id="overlay" class="ui-widget-overlay" style="z-index: 1001; display: none;"></div>');
     $("body").prepend("<div id='PleaseWait' style='display: none;'><img src='<?php echo theme_url(); ?>img/loading.gif'/></div>");
-    $('#form').submit(function() {
+    /*$('#form').submit(function() {
                     var pass = true;
                     //some validations
                     if(pass == false){
@@ -123,19 +126,19 @@
         setTimeout(function(){
         $("#addproduct").fadeOut("slow", function () {
         $("#addproduct").remove();
-    }); }, 9000);
+    }); }, 9000);*/
     /* form validation */
 
  
-    var frmvalidator = new Validator("form");
-        frmvalidator.addValidation("country","req","Please Select Your Country Name");
+   /* var frmvalidator = new Validator("form");*/
+        /*frmvalidator.addValidation("country","req","Please Select Your Country Name");
 
-        frmvalidator.addValidation("cities","dontselect=0","Please Select Your City Name");
-        frmvalidator.addValidation("product_name","req","Please Enter Your Product Name");
+        frmvalidator.addValidation("cities","dontselect=0","Please Select Your City Name");*/
+       /* frmvalidator.addValidation("product_name","req","Please Enter Your Product Name");
         frmvalidator.addValidation("product_name","maxlen=120",
         "Max length for Product Name is 120");
         frmvalidator.addValidation("description","req","Please Enter Your Description");
-        frmvalidator.addValidation("description","maxlen=1000");
+        frmvalidator.addValidation("description","maxlen=1000");*/
     });
     /*google places for country */
     google.maps.event.addDomListener(window, 'load', function () {
@@ -156,142 +159,78 @@
     });
     </script>
 
+<script type="text/javascript">
 
+function addproductValidation()
+    {
+     
+      var country= document.getElementById("country_id").value;
 
-    <script>
-
-     var country= document.getElementById("country_id").value;
-
-      var city= parseInt(document.getElementById("city_id").value);
+      var city= document.getElementById("city_id").value;
      var productnm= document.getElementById("product_name").value;
      var  description=document.getElementById("description").value;
      var input_1=document.getElementById("input1").value;
      var input_2=document.getElementById("input2").value;
+/*
+      alert(country);
+      alert(city);
+     alert(productnm);
+      alert(description);     
+      alert(input_1);
+     alert(input_2);*/
+      if(!country==''){
+          if(!city==''){
+
+           if(!productnm==''){
+               if(!description==''){     
+                if(!input_1==''){
+                         if(!input_2==''){
+                          return  true;
+
+      }
+      else{
+             document.getElementById("emailError").innerHTML = " Please insert product 2  image";
+                 return false;
+      }
+      }
+      else{
+             document.getElementById("emailError").innerHTML = " Please insert product first  image";
+                 return false;
+      }
 
 
-var country_error=document.getElementById("country_error");
+      }
+      else{
+             document.getElementById("emailError").innerHTML = "Please enter product description";
+                 return false;
+      }
+      }
+      else{
+             document.getElementById("emailError").innerHTML = " Please enter product name ";
+                 return false;
+      }
 
-var city_error=document.getElementById("city_error");
+      }
+      else{
+              document.getElementById("emailError").innerHTML = " Please enter cities";
+                 return false;
+      }
 
-var product_error=document.getElementById("product_error");
-
-var descrip_error=document.getElementById("descrip_error");
-
-var inp1_error=document.getElementById("inp1_error");
-
-var inp2_error=document.getElementById("inp2_error");
-
-  
-
-function FormValidate ()
-
-    {
-
-      /* /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i
-     */ if(document.getElementById("country_id").value=="")
-
-      { 
-        // name.style.border="1px solid red";
-       country_error.innerHTML ="Country is required";
-       
-     }
-        
-
-       if(document.getElementById("city_id").value=="")
-
-      {
-           /* email.style.border="1px solid red";*/
-        city_error.innerHTML ="City is required";
-      
-
-       } 
+      }
+      else{
+              document.getElementById("emailError").innerHTML = " Please enter Country";
+                 return false;
+      }
 
 
-     if (document.getElementById("product_name").value=="")
-        {
 
-              
-               product_error.innerHTML ="Product Name is required";
-              
-        }
-              
-    if (document.getElementById("description").value=="")
-        {
-
-              
-              descrip_error.innerHTML ="Description is required";
-              
-        } else
-
-        if(description<=15 && description>=100)
-               {
-            /*     age.style.border="1px solid red";*/
-                 age_error.innerHTML ="Description should have min. 12 and  max. 100 Characters";
-                
-               }
-              
-
-
-      if(document.getElementById("input1").value=="")
-            {
-               /*age.style.border="1px solid red";*/
-        inp1_error.innerHTML ="You Can't Skip this Field";
-       
-
-        }
-       
-                
-
-        if (document.getElementById("input2").value=="")
-        {
-            /*contact.style.border="1px solid red";*/
-       inp2_error.innerHTML ="You Can't Skip this Field";
-        
-
-       }
-                 
-        
-
-        }
-//on keypress events start
-
-    function myFunction1()
-    {
-         document.getElementById("country_error").innerHTML ="";
-
+     return false;
     }
 
-    function myFunction2()
-    {
-      document.getElementById("city_error").innerHTML ="";
-    }
-
-    function myFunction3()
-    {
-         document.getElementById("product_error").innerHTML = "";
-    }
-
-    function myFunction4()
-    {
-        
-         document.getElementById("descrip_error").innerHTML ="";
-    }
-
-    function myFunction5()
-    {
-       document.getElementById("inp1_error").innerHTML ="";
-    }
-
-     function myFunction5()
-    {
-       document.getElementById("inp2_error").innerHTML ="";
-    }
-
-    //on keypress events end
-
-
-    //events
-
-   
 
 </script>
+
+
+
+
+ 
