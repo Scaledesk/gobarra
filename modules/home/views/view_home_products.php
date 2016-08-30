@@ -16,7 +16,7 @@
                     <div class="col-lg-12 topdashboardForm">
 						<div class="col-lg-12">
                             <h2 class="element">
-                                Earn While You Fly
+                               <i class="fa fa-plane" style="color:#FFE763" aria-hidden="true"></i>&nbsp;<span style="color:#91C181">Earn While You Fly</span>&nbsp;<i class="fa fa-plane" style="color:#FFE763" aria-hidden="true"></i>
                             </h2>
                         </div>
                 <!-- left Sidebar Content -->

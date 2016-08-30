@@ -78,19 +78,32 @@
 					{
 
                              $img=substr($userData[0]['profile_image'], 0,5);
-                                if(!$img='https'){
-                                   $img=base_url().'uploaded_files/profile_img/'.$userData[0]['profile_image'];
+
+                                if($img=='https' or $img=='http'){
+                                      $img=$userData[0]['profile_image'];
+                                  
                                 }else{
-                                    $img=$userData[0]['profile_image'];
+                                	 $img=base_url().'uploaded_files/profile_img/'.$userData[0]['profile_image'];
+                                   
+                                   /* echo $userData[0]['profile_image']; die;*/
                                 }
 
 
 						/*$img=base_url()."uploaded_files/profile_img/".$userData[0]['profile_image'];*/
 					}
 					else{
+<<<<<<< Updated upstream
 					$img=base_url()."uploaded_files/def_user/dummy.png";
 					}
 					?>
+=======
+
+					$img=base_url()."uploaded_files/def_user/index.jpg";
+					}/*echo $userData[0]['profile_image'];*/
+                     /*echo $img; */
+
+					?> <!-- sfasfasfafafa -->
+>>>>>>> Stashed changes
 						<a href="<?php echo base_url();?>timelinepost/timeline/<?php echo $pageVal['user_id'];?>"><img src="<?php echo $img;?>" width="75px" height="75px"></a>
 					</div>
 					<div class="partnerInfo ">

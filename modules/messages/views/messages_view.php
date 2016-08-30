@@ -404,7 +404,7 @@
 		<div class="activity-body act-in">
 		<span class="arrow"></span>
 		<div class="text">									  
-		<p class="attribution"><a href="javascript:void(0)">Click Left To See Message </a></p>
+		<p class="attribution"><a href="javascript:void(0)" class="white-c">Click Left To See Message </a></p>
 		</div>
 		</div>
 		<div class="notify-arrow-email notify-arrow-blue-email left"></div>

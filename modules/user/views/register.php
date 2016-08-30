@@ -5,8 +5,8 @@
         <div class="container ">
       	<section class="main">
 		<?php echo validation_errors(); ?>
-		<form onsubmit="return emailVerify() " class="form-2 register" id="createform" name="createform" method="post" action="<?php echo base_url(); ?>user/create_member">
-					<h1 class=" text-center"><span class="log-in">Register With Gobarra</span></h1>
+		<form onsubmit="return emailVerify() " class="form-2 register card-gobarra p-30" id="createform" name="createform" method="post" action="<?php echo base_url(); ?>user/create_member">
+					<h1 class=" text-center"><span class="log-in f-18" style="color:#91C181;">Register With Gobarra</span></h1>
 					<p class="float"> 
 						<input type="text" name="first_name" placeholder="First Name" id="fname" >
 						 
@@ -34,7 +34,7 @@
 					<p class="float"> 
 					 <input type="text" name="city_name" id="cities" placeholder="Enter City" >
 					</p>
-					<p class="float full"> 
+					<p class="float"> 
 							 <select class="textfield2 marginBottomNone" name="occupation" id="occupation" >
                             <option value="">Select Occupation</option>
 											<option value="Student">Student</option>
@@ -44,32 +44,56 @@
                                                         </select> 
 														</p>
 					<p class="float full"> 
-						<div class="form-group">
-                                    <label class="">Gender</label>
+						<div class="form-group text-center">
+                                   
                                     <label class="">
-            <input type="radio" class="required" name="gender" id="gender1" value="1" checked> Male
+            <input type="radio" class="required f-14" name="gender" id="gender1" value="1" checked> Male
                                     </label>
                                     <label class="">
-                                        <input type="radio" class="required" name="gender" id="gender2" value="2"> Female
+                                        <input type="radio" class="required f-14" name="gender" id="gender2" value="2"> Female
                                     </label>
                                 </div> 
 					
 					</p>
 		          	<h5 id='emailError' style="color:red"></h5>
 					<p class="clearfix text-center submit"> 
-						 <input type="submit" name="submit" value="REGISTER "> 
+						 <button type="submit" class="login-btn" name="submit" value="REGISTER "> <span class="white-c">REGISTER</span>
 					</p>
+					<div class="row m-t-20">
 
-					 	<div class="clearfix"></div>
+					<div class = "col-xs-6 p-0 p-r-10">
+<!-- 				<div class="account text-center">
+ -->
+<!-- 						<div class="span">
+ -->							<a href="<?php echo site_url(); ?>home/facebook_login" class=" pull-left facebook-btn width-sociallnk">
+							<!-- <img src="<?php echo theme_url();?>img/facebook.png" alt=""> -->
+
+							<i class="fa fa-facebook "></i> <span>Sign In with Facebook</span>
+<!-- 							<div class="clear"></div>
+ -->					</a>
+<!-- 					</div>
+ -->				</div><br>
+						
+					<div class = "col-xs-6 p-0 p-l-10">
+<!-- 						<div class="span2">
+ -->							<a href="<?php echo base_url();?>home/google_login" class="google-btn width-sociallnk">
+								<!-- <img src="<?php echo theme_url();?>img/gplus.png" alt=""> -->
+							<i class="fa fa-google-plus"></i>&nbsp;&nbsp;  <span>Sign In with Google+</span> 
+								<!-- <div class="clear"></div> -->
+							</a>
+<!-- 						</div>
+ -->					</div>
+						</div>
+		
+
+					 <!-- 	<div class="clearfix"></div> -->
+
+					 	
+			
 				</form>​​
 			</section>
-			<div class="account text-center">
-				<h2> Don' have an account? Log in with! </h2>
-				<div class="span"><a href="<?php echo site_url(); ?>home/facebook_login"><img src="<?php echo theme_url();?>img/facebook.png" alt=""><i>Sign In with Facebook</i><div class="clear"></div></a></div>
-				<div class="span2"><a href="<?php echo base_url();?>home/google_login"><img src="<?php echo theme_url();?>img/gplus.png" alt=""><i>Sign In with Google+</i><div class="clear"></div></a></div>
-			</div>
 		 
-		</div>
+	</div>
 		</div>
         </div>
 	<?php $this->load->view('footer'); ?>

@@ -156,10 +156,10 @@
 <div class="bg leftDetailsSec">
 	<div class="right_coloumn_box">
 	<div class="right-column-heading center-header-new">
-		<h3 class="text-center">Frequently Visited Destinations!</h3>
+		<h3 class="text-center" style="color:#fe0034">Frequently Visited Destinations!</h3>
 	</div>
 	<div class="card__content">
-	<h1 class="card__title">My favourite</h1>
+	<h1 class="card__title text-center">My favourite</h1>
 	<div class="card__news">
 	<marquee behavior="scroll" direction="down" scrolldelay="300" onmouseover="this.stop();" onmouseout="this.start();">
 	  <?php $this->load->model('travelplans/travelplans_model');											  
@@ -202,12 +202,12 @@
 		<h3 class="btn btn-md btn-primary" style="width: 250px; margin-left: 0px;">My Snapshot</h3>
 	</div>
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
+		<!-- Indicators --><div class="pull-left">
 		<ol class="carousel-indicators">
 			<!--<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
 			<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>-->
 			<li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
-		</ol>
+		</ol></div>.
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">

@@ -33,9 +33,10 @@
     <link href="<?php echo theme_url();?>css/custom.css" rel="stylesheet" /> 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <!-- Custom Fonts -->
-    <link href="<?php echo theme_url();?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="<?php echo theme_url();?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
-    
+     -->
+     <script src="https://use.fontawesome.com/d240da6a85.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -143,7 +143,7 @@
 					</ul>
 					<?php if($senderId == $user[0]->user_id) {?>
 					<?php echo form_open('home/timelinepost','id="form"') ;?>
-				 <div class="tab-content">
+				 <div class="tab-content p-30">
 					  <div id="home" class="tab-pane fade in active"> 
 						 
 						<div class="form-group col-lg-12 col-xs-12 something"> 

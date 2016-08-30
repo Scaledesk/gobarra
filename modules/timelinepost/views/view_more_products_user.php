@@ -132,8 +132,8 @@
 				  $target_path1= base_url()."uploaded_files/def_user/dummy.png";
 				} ?>
 			<div class="preview prouductDisplay">
-			<span><p><a><img src="<?php echo $target_path ;?>" alt="" class="group3" href="<?php echo $target_path; ?>"></a></p></span> 
-			<span><p><a><img src="<?php echo $target_path1 ; ?>" alt="" class="group4" href="<?php echo $target_path1 ; ?>"></a></p></span>
+			<span><p><a><img  src="<?php echo $target_path ;?>" alt="" class="group3 img-responsive" href="<?php echo $target_path; ?>"></a></p></span> 
+			<span><p><a><img src="<?php echo $target_path1 ; ?>" alt="" class="group4 img-responsive" href="<?php echo $target_path1 ; ?>"></a></p></span>
 			</div>
 		</div>
 			</div>

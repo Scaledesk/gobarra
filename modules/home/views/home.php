@@ -43,7 +43,7 @@
 					<div class="col-lg-12 topdashboardForm">
 					<div class="col-lg-12">
                             <h2 class="element">
-                                <!-- <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" /> --><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;Earn While You Fly&nbsp;<i class="fa fa-plane" aria-hidden="true"></i><!-- <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" /> -->
+                                <!-- <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" /> --><i class="fa fa-plane" style="color:#FFE763" aria-hidden="true"></i>&nbsp;<span style="color:#91C181">Earn While You Fly</span>&nbsp;<i class="fa fa-plane" style="color:#FFE763" aria-hidden="true"></i><!-- <img src="<?php echo theme_url();?>images/Dollar-sign.png" style="width: 25px;" /> -->
                             </h2>
                         </div>
 						

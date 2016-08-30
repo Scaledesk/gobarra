@@ -125,20 +125,20 @@
 				 ?>
 				 <div class="homeFormArea">
 					<ul class="nav nav-tabs">
-					  <li class="active"><a   href="<?php echo base_url(); ?>timelinepost/timeline">Post Timeline</a></li>
+					  <li class="active "><a   href="<?php echo base_url(); ?>timelinepost/timeline">Post Timeline</a></li>
 					 
 					</ul>
 				<?php echo form_open('timelinepost/timeline','id="form"') ;?>
 					<div class="tab-content">
 					  <div id="home" class="tab-pane fade in active"> 						 
 						<div class="form-group col-lg-12 col-xs-12 something"> 
-									<div class="fixArea">
+									<div class="fixArea p-20">
 										<textarea class="form-control myform timeLineTextArea" id="description" name="description" maxlength="1000"></textarea>
 									 </div>
 								</div>
 								 <div class="form-group col-lg-12 col-xs-12 something">
 								<div class="fixArea">
-									<button title="Add Post" class="btn btn-md btn-primary" type="submit">Add Post</button> 
+									<button title="Add Post" class="btn btn-md btn-primary m-l-25" type="submit">Add Post</button> 
 								</div>
 								</div>  
 						</div>
