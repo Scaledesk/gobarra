@@ -81,7 +81,7 @@
 						}
 						else
 						{
-						$img=base_url().'uploaded_files/def_user/index.jpg';	
+						$img=base_url().'uploaded_files/def_user/dummy.png';	
 						}
 							?>
                         <div class="rowPOst"> 
@@ -151,7 +151,7 @@
 											}
 											else
                                             {
-                                              $target_path= base_url()."uploaded_files/def_user/index.jpg";
+                                              $target_path= base_url()."uploaded_files/def_user/dummy.png";
                                             }
                                             ?>
 										<?php
@@ -161,7 +161,7 @@
 											}
 											else
                                             {
-                                              $target_path1= base_url()."uploaded_files/def_user/index.jpg";
+                                              $target_path1= base_url()."uploaded_files/def_user/dummy.png";
                                             }
                                             ?>
 									<div class="preview prouductDisplay">
@@ -206,7 +206,7 @@
 									}
 									else
 									{
-									$img = base_url()."uploaded_files/def_user/index.jpg";
+									$img = base_url()."uploaded_files/def_user/dummy.png";
 									}
 									$userId = $Connected_user->user_id ;
 									$name = $Connected_user->first_name."&nbsp;".$Connected_user->last_name;
@@ -238,7 +238,7 @@
 									}
 									else
 									{
-									$img = base_url()."uploaded_files/def_user/index.jpg";
+									$img = base_url()."uploaded_files/def_user/dummy.png";
 									}
 									$userId = $Connected_user->user_id ;
 									$name = $Connected_user->first_name."&nbsp;".$Connected_user->last_name;

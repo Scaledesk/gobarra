@@ -1,4 +1,16 @@
-<?php $this->load->view('header');?> 
+<?php $this->load->view('header');?>
+
+<!--........................................................................................-->
+<!-- <link href="<?php echo theme_url();?>emoji/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo theme_url();?>emoji/css/cover.css" rel="stylesheet">
+
+
+<link href="<?php echo theme_url();?>emoji/lib/css/nanoscroller.css" rel="stylesheet">
+<link href="<?php echo theme_url();?>emoji/lib/css/emoji.css" rel="stylesheet"> -->
+<!--.....................................................................................................-->
+
+
+<?php /*$this->load->view('include_emoji');*/?>
 	<div class="subnavbar hidden-xs">
         <div class="clearfix"></div>
         <!-- /subnavbar-inner -->
@@ -75,7 +87,7 @@
 								<div class="row m-t-20">
 								<div class="form-group col-lg-5 col-xs-6 col-sm-5 something"><label class="size">Leaving from</label> 
 									<div class="fixArea"> 
-										  <input class="form-control" name="travel_from" id="travelFrom" type="text" title="Type Your Leaving Source" placeholder="Type Your Leaving Source"> 
+										  <input  class="form-control" name="travel_from" id="travelFrom" type="text" title="Type Your Leaving Source" placeholder="Type Your Leaving Source"> 
 										   <!--<input name="travel_from" id="city_id1" type="hidden"> -->
 									</div>
 								</div> 
@@ -238,9 +250,11 @@
 					<div class="media-left">
 					<img src="<?php echo $userImage ; ?>" title="User Name" class="clsimg" border="0" width="60px" height="30px">
 					  </div>					 					
-					<div class="media-body uploadAndText">     
-						<textarea name="message" id="message<?php echo $pageVal['travel_id'];?>" class="form-control message"   class="discussPopupHome col-lg-12" placeholder="Your Message"  ></textarea>
-						<img class="uploadSection" onclick="document.getElementById('uploadimg<?php echo $pageVal['travel_id']; ?>').click(<?php echo $pageVal['travel_id']; ?>); return false" src="<?php echo theme_url(); ?>img/camera.png"> 
+					<div class="media-body uploadAndText ">
+				  <!--	<p class="lead emoji-picker-container">   data-emojiable="true" -->
+						<textarea  name="message" id="message<?php echo $pageVal['travel_id'];?>" class="form-control message"   class="discussPopupHome col-lg-12" placeholder="Your Message"  ></textarea>
+                       <!--   </p> -->
+						<img class="uploadSection" onclick="document.getElementById('uploadimg<?php echo $pageVal['travel_id']; ?>').click(<?php echo $pageVal['travel_id']; ?>); return false" src="<?php echo theme_url(); ?>img/camera.png">
 						<div id="upload-file-container">
 						<input type="file" class="hidden" name="image" id="uploadimg<?php echo $pageVal['travel_id']; ?>" onchange="readURL(this,'<?php echo $pageVal['travel_id']; ?>');">	
 						<input  type="hidden" id="sender_id<?php echo $userId ; ?>" name="sender_id" value="<?php echo $userId; ?>" />
@@ -305,187 +319,7 @@
 
 
 
-					 <samp id="reload" onclick="loadamount(this)"> Read More </samp>
-
-
-           <!-- -----------------------------------------------Read More-----  -->
-                 <span id="reload1" style="display:none">
-					 <!--Travel-->
-					 <?php
-					 /*  print_r($res);*/
-					 if( is_array($res1) && !empty($res1) )
-					 { ?>
-						 <div class="rowPOst">
-							 <?php
-							 $cont =1;
-							 foreach($res as $catKey=>$pageVal)
-							 {
-								 $cont ++;
-								 /*echo $cont;*/
-								 ?>
-
-								 <div class="partnerResult">
-									 <?php if($pageVal['profile_image'] !='')
-									 {
-
-
-										 $img=substr($pageVal['profile_image'],0,5);
-
-
-
-										 if($img=='https'){
-
-											 $img=$pageVal['profile_image'];
-										 }else{
-											 $img=base_url().'uploaded_files/profile_img/'.$pageVal['profile_image'];
-
-										 }
-
-										 /*$img =base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
-									 }
-									 else{
-										 $img =base_url()."uploaded_files/def_user/dummy.png";
-									 }
-									 ?>
-									 <?php if(@$this->session->userdata('is_logged_in')){ ?>
-
-										 <div class="partnerPhoto">
-											 <a href="<?php echo base_url();?>home/timelinepost/<?php echo $pageVal['user_id']; ?>"><img src="<?php echo $img ; ?>" width="75px" height="75px"></a>
-										 </div>
-									 <?php }else{?>
-										 <div class="partnerPhoto">
-											 <img src="<?php echo $img ; ?>" width="75px" height="75px" >
-										 </div>
-									 <?php }?>
-
-									 <div class="partnerInfo">
-										 <?php if(@$this->session->userdata('is_logged_in')){ ?>
-											 <div class="partnerName">
-												 <a href="<?php echo base_url();?>home/timelinepost/<?php echo $pageVal['user_id']; ?>"><?php echo $pageVal['first_name'] ;?> <?php echo $pageVal['last_name'] ; ?></a>
-												 &nbsp;Is Traveling From <span class="colors">
-					<?php echo $pageVal['travel_from'];?></span>&nbsp;To&nbsp;<span class="colors"><?php echo $pageVal['travel_to'];?></span>
-											 </div>
-											 <div class="partnerDate">
-												 <?php
-												 $originalDate = $pageVal['from_date'];
-												 $newDate = date("d F y", strtotime($originalDate));
-												 echo $newDate ; ?>
-												 <div class="endDate"> To <?php
-													 $originalDate = $pageVal['to_date'];
-													 $newDate = date("d F y", strtotime($originalDate));
-													 echo $newDate ; ?>	</div>
-											 </div>
-
-											 <div class="partnerInterests">
-						<span class="show-read-more">
-						<?php echo $pageVal['description'];?></span>
-												 <!-- Trigger the modal with a button -->
-											 </div>
-											 <?php
-											 $this->load->model('user/users_model');
-											 $email = $this->session->userdata('email');
-											 $userifo = $this->users_model->getuserInfo($email);
-											 $userId = $userifo[0]['user_id'];
-											 //print_r($userId);
-											 if($userifo[0]['profile_image'] !='')
-											 {
-
-												 $userImage=substr($userifo[0]['profile_image'],0,5);
-
-
-
-												 if($userImage=='https'){
-
-													 $userImage=$userifo[0]['profile_image'];
-												 }else{
-													 $userImage=base_url().'uploaded_files/profile_img/'.$userifo[0]['profile_image'];
-
-												 }
-
-												 /*$userImage = base_url()."uploaded_files/profile_img/".$userifo[0]['profile_image'];*/
-											 }
-											 else
-											 {
-												 $userImage = base_url()."uploaded_files/def_user/dummy.png";
-											 }
-											 $recieverID = $pageVal['user_id'];
-											 if($userId != $recieverID)
-											 {
-												 ?>
-												 <div class="sentmessage" id="sentmessage<?php echo $pageVal['travel_id']; ?>" >
-												 </div>
-												 <form class="uploadSecForm" name="imaguploading" id="myimg<?php echo $pageVal['travel_id']; ?>" role="form">
-													 <div class="media-left">
-														 <img src="<?php echo $userImage ; ?>" title="User Name" class="clsimg" border="0" width="60px" height="30px">
-													 </div>
-													 <div class="media-body uploadAndText">
-														 <textarea name="message" id="message<?php echo $pageVal['travel_id'];?>" class="form-control message"   class="discussPopupHome col-lg-12" placeholder="Your Message"  ></textarea>
-														 <img class="uploadSection" onclick="document.getElementById('uploadimg<?php echo $pageVal['travel_id']; ?>').click(<?php echo $pageVal['travel_id']; ?>); return false" src="<?php echo theme_url(); ?>img/camera.png">
-														 <div id="upload-file-container">
-															 <input type="file" class="hidden" name="image" id="uploadimg<?php echo $pageVal['travel_id']; ?>" onchange="readURL(this,'<?php echo $pageVal['travel_id']; ?>');">
-															 <input  type="hidden" id="sender_id<?php echo $userId ; ?>" name="sender_id" value="<?php echo $userId; ?>" />
-															 <input  type="hidden" id="reciever_id<?php echo $pageVal['user_id']; ?>" name="reciever_id" value="<?php echo $pageVal['user_id']; ?>" />
-														 </div>
-														 <button type="button" title="Send" class="btn btn-md btn-primary" onclick="return sendmessage('<?php echo $pageVal["travel_id"]; ?>')">Send</button>
-													 </div>
-													 <div class="preview">
-														 <img id="prvimg<?php echo $pageVal['travel_id'];?>" src="" alt="" style="height: auto !important; max-width: 200px; width:auto;" >
-														 <a class="hidden" href="javascript:void(0)" onclick="removeImagePreview('<?php echo $pageVal['travel_id']; ?>')" ><span class="glyphicon glyphicon-remove" id="cross<?php echo $pageVal['travel_id']; ?>" aria-hidden="true" style="display:none">&nbsp;
-						</span></a>
-														 <span class="add_pdt_img_nc"></span>
-													 </div>
-												 </form>
-
-
-											 <?php }}else {?>
-
-
-											 <div class="partnerName"><a> <?php echo $pageVal['first_name'] ;?> <?php echo $pageVal['last_name'] ; ?></a>  Is Traveling From
-												 &nbsp;<?php echo $pageVal['travel_from'];?>&nbsp;To&nbsp;
-												 <?php echo $pageVal['travel_to'];?>
-											 </div>
-											 <div class="partnerDate">
-												 <?php
-												 $originalDate = $pageVal['from_date'];
-												 $newDate = date("d F y", strtotime($originalDate));
-												 echo $newDate ; ?>
-												 <div class="endDate"> To <?php
-													 $originalDate = $pageVal['to_date'];
-													 $newDate = date("d F y", strtotime($originalDate));
-													 echo $newDate ; ?></div>
-											 </div>
-
-											 <div class="partnerInterests">
-												 <span class="show-read-more"> <?php echo $pageVal['description'];?></span>
-												 <!-- Trigger the modal with a button -->
-
-											 </div>
-
-											 <div class="partnerSupport">
-												 <a class="link myspecialbutton" rel="nofollow" href="<?php echo base_url(); ?>user/login">Send Message</a>
-											 </div>
-										 <?php } ?>
-									 </div>
-								 </div>
-								 <?php
-
-								 /* if($cont==5){  */?><!--
-
-						      <samp> Read More</samp>
-					    --><?php /* }*/
-
-							 } ?>
-						 </div>
-					 <?php } else
-					 {?>
-
-						 <?php echo "No records Found"; } ?>
-					 </span>
-  <!-- ----------------------------------------end read more ------------- -->
-
-
-
-
+					<!--  <samp id="reload" onclick="loadamount(this)"> Read More </samp> -->
 
 
 
@@ -784,6 +618,10 @@
         //if (key == 13) 
 		//{	
 		//event.preventDefault();
+      /*   alert(514684894);*/
+		var emoji=$('#message' + postid).emojiarea();
+
+		alert(emoji);
 		
 		if ((str =='')&& ($('#uploadimg'+postid).val()==''))
 			{
@@ -875,4 +713,32 @@ $(document).ready(function() {
 
 	}
 
+</script>
+
+
+
+<!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+
+<!-- Begin emoji-picker JavaScript -->
+<!-- <script src="<?php echo theme_url();?>emoji/lib/js/nanoscroller.min.js"></script>
+<script src="<?php echo theme_url();?>emoji/lib/js/tether.min.js"></script>
+<script src="<?php echo theme_url();?>emoji/lib/js/config.js"></script>
+<script src="<?php echo theme_url();?>emoji/lib/js/util.js"></script>
+<script src="<?php echo theme_url();?>emoji/lib/js/jquery.emojiarea.js"></script>
+<script src="<?php echo theme_url();?>emoji/lib/js/emoji-picker.js"></script> -->
+<!-- End emoji-picker JavaScript -->
+
+<script>
+	$(function() {
+		// Initializes and creates emoji set from sprite sheet
+		window.emojiPicker = new EmojiPicker({
+			emojiable_selector: '[data-emojiable=true]',
+			assetsPath: '<?php echo theme_url();?>emoji/lib/img/',
+			popupButtonClasses: 'fa fa-smile-o'
+		});
+		// Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+		// You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+		// It can be called as many times as necessary; previously converted input fields will not be converted again
+		window.emojiPicker.discover();
+	});
 </script>

@@ -128,7 +128,7 @@
             }
             else
             {
-            $img=base_url()."uploaded_files/def_user/index.jpg";
+            $img=base_url()."uploaded_files/def_user/dummy.png";
             }
             ?>
 <div>

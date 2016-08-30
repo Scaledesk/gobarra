@@ -125,7 +125,7 @@
 							<img src="<?php echo theme_url();?>/images/down-arrow.png" />
                         </a>
 						 <?php }else{
-							 $img=base_url().'uploaded_files/def_user/index.jpg';
+							 $img=base_url().'uploaded_files/def_user/dummy.png';
 							 ?>
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<span class="profile-ava">

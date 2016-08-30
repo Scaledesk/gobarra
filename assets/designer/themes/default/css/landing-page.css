@@ -265,7 +265,7 @@ textarea.message {
 }
 .uploadAndText .uploadSection {
     position: absolute;
-    right: 8px;
+    right: 36px;
     top: 30px;
     width: 15px;
 }.preview {

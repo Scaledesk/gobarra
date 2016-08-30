@@ -71,7 +71,7 @@
 					}
 					else
 					{
-					  $target_path= base_url()."uploaded_files/def_user/index.jpg";
+					  $target_path= base_url()."uploaded_files/def_user/dummy.png";
 					}
 					?>
 					<?php
@@ -81,7 +81,7 @@
 					}
 					else
 					{
-					  $target_path1= base_url()."uploaded_files/def_user/index.jpg";
+					  $target_path1= base_url()."uploaded_files/def_user/dummy.png";
 					}
 					?>  	
 					<label class="control-label">Uploaded Image1</label><label class="control-label equal">Uploaded Image2</label><br>

@@ -111,7 +111,7 @@
 
 				/*$img =base_url()."uploaded_files/profile_img/".$userData[0]['profile_image'];*/
 			} else{
-				$img =base_url()."uploaded_files/def_user/index.jpg";
+				$img =base_url()."uploaded_files/def_user/dummy.png";
 			} ?>
 		<div class="partnerPhoto">
 		<a href="<?php echo base_url();?>home/timelinepost/<?php echo $pageVal['user_id']; ?>"><img src="<?php echo $img ; ?>" width="75px" height="75px"></a>

@@ -51,7 +51,7 @@
 
 					/*$img=base_url()."uploaded_files/profile_img/".$userifo[0]->profile_image;*/
 				} else {
-					$img=base_url()."uploaded_files/def_user/index.jpg";
+					$img=base_url()."uploaded_files/def_user/dummy.png";
 				} ?>
 	<div class="imageFrame profileImages timeline col-md-6">
 	 <div class="imageFrame profileImages"> <img id="profile-image-user" src="<?php echo $img ; ?>">
@@ -104,7 +104,7 @@
 					<?php if($userifo[0]->profile_image !='') {
 						$img=base_url()."uploaded_files/profile_img/".$userifo[0]->profile_image;
 					} else {
-					$img=base_url()."uploaded_files/def_user/index.jpg";
+					$img=base_url()."uploaded_files/def_user/dummy.png";
 					} ?>
 				<img src="<?php echo $img;?>" width="75px" height="75px">
 				</div>			
@@ -123,13 +123,13 @@
 				if($pageVal['img1']!='') {
 				 $target_path = base_url()."uploaded_files/product_image1/".$pageVal['img1'];
 				} else {
-				  $target_path= base_url()."uploaded_files/def_user/index.jpg";
+				  $target_path= base_url()."uploaded_files/def_user/dummy.png";
 				} ?>
 			<?php
 				if($pageVal['img2']!='') {
 				 $target_path1 = base_url()."uploaded_files/product_image2/".$pageVal['img2'];
 				} else {
-				  $target_path1= base_url()."uploaded_files/def_user/index.jpg";
+				  $target_path1= base_url()."uploaded_files/def_user/dummy.png";
 				} ?>
 			<div class="preview prouductDisplay">
 			<span><p><a><img src="<?php echo $target_path ;?>" alt="" class="group3" href="<?php echo $target_path; ?>"></a></p></span> 

@@ -39,7 +39,7 @@
                                 }
 
 	}else{
-		$userImage = base_url()."uploaded_files/def_user/index.jpg" ;
+		$userImage = base_url()."uploaded_files/def_user/dummy.png" ;
 	}		?>
 	 <div class="imageFrame "> 
 	 <a><span><p><img id="profile-image-user" href="<?php echo $userImage ;?>" class="group3" src="<?php echo $userImage ;?>"></span></p></a>
@@ -163,7 +163,7 @@
 						/*$img=base_url()."uploaded_files/profile_img/".$pageVal['profile_image'];*/
 					}
 					else{
-					$img=base_url()."uploaded_files/def_user/index.jpg";
+					$img=base_url()."uploaded_files/def_user/dummy.png";
 					}
 					?>
 						<a href="<?php echo base_url();?>home/timelinepost/<?php echo $pageVal['user_id']; ?>"><img src="<?php echo $img ;?>" width="75px" height="75px"></a>
@@ -225,7 +225,7 @@
 											}
 											else
                                             {
-                                              $target_path= base_url()."uploaded_files/def_user/index.jpg";
+                                              $target_path= base_url()."uploaded_files/def_user/dummy.png";
                                             }
                                             ?>
 										<?php
@@ -235,7 +235,7 @@
 											}
 											else
                                             {
-                                              $target_path1= base_url()."uploaded_files/def_user/index.jpg";
+                                              $target_path1= base_url()."uploaded_files/def_user/dummy.png";
                                             }
                                             ?> 
 									<div class="preview prouductDisplay">
