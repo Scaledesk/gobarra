@@ -98,8 +98,10 @@
     <div class="page-content ">
         <div class="container">
             <div class="row">
-      <div id="successaply"></div>
-      <?php echo form_open_multipart('user/update_profile','id=uploadPic');?>
+      <div id="successaply"></div><!--
+      <?php echo form_open_multipart('user/update_profile','id=uploadPic');?>-->
+      <form method="post" onsubmit="return emailVerify1()" id="uploadPic" enctype="multipart/form-data" action="<?php echo base_url().'user/update_profile'?>"> 
+    
                 <!-- full Content -->
         <div class="col-md-12 ">   
       <div class="col-sm-4 col-md-4">
@@ -243,12 +245,14 @@
         </div> -->
 
 <div class="clearfix"></div>
+<h5 id='emailError' style="color:red"></h5>
 <div class="col-lg-12">
  <input type="submit" style="margin-right:71px;margin-top:30px;margin-bottom:15px;" class="btn btn-md btn-primary" value="Update">
     </div>
+
 </div>
      </div>
-     <!--</form>-->
+    </form>
    </div>
    </div>
    </div>
@@ -256,7 +260,7 @@
    </div>
 
          </div> 
-          <?php echo form_close();?>  
+         <!--  <?php echo form_close();?> -->   </form>
       </div> 
         
         
@@ -315,13 +319,13 @@ $(document).ready(function(){
     </script>
      <script>
   $(document).ready(function(){
-      var frmvalidator = new Validator("uploadPic");
+        /* var frmvalidator = new Validator("uploadPic");
           frmvalidator.addValidation("first_name","req","Please Enter Your First Name");
           frmvalidator.addValidation("last_name","req","Please Enter Your Last Name");
           frmvalidator.addValidation("email","req","Please Enter Your Email");
           frmvalidator.addValidation("country_id","req","Please Select Your Country");
           frmvalidator.addValidation("citi","dontselect=0","Please Select Your City Name");
-          frmvalidator.addValidation("mobile","maxlen=10","Mobile Lenght Id 10 Digit");         
+          frmvalidator.addValidation("mobile","maxlen=10","Mobile Lenght Id 10 Digit");     */    
 });
   </script>
        <script type="text/javascript">
@@ -354,3 +358,100 @@ $(document).ready(function(){
             });
         });
     </script> 
+
+
+ <script type="text/javascript">
+
+   function emailVerify1() {
+
+    
+     var fname =document.getElementById("first_name").value;
+     var lname=document.getElementById("last_name").value;
+     var useremail=document.getElementById("email").value;
+
+
+     var mobile =document.getElementById("mobile").value;
+    
+
+     var gender1=document.getElementById("gender1").value;
+     var gender2 =document.getElementById("gender2").value;
+
+
+     var occupation=document.getElementById("occupation").value;
+
+     var country1=document.getElementById("country_id").value;
+     var cities=document.getElementById("city_id").value;
+
+    /* var email = document.getElementById("username").value;*/
+     var emailreg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+     var email_error = document.getElementById("email_error");
+
+     /*console.log(password.length);
+      alert(password.length);*/
+
+     if(!fname=='') {
+      /* alert(5465);*/
+
+       if(!lname=='') {
+
+
+       if (document.getElementById("useremail").value.match(emailreg)) {
+         if(!mobile=='') {
+
+           if(mobile.length >10) {
+
+               
+              
+                         if (!country1 == '' && !cities == ''){
+                          if(!occupation==''){
+                              if (gender1.checked==false && gender2.checked==false) {
+                                   document.getElementById("emailError").innerHTML = " Please select gender";
+                                   return false;
+                                        } 
+                                        else {
+                                     return true;
+                                             }
+                }else {
+                                document.getElementById("emailError").innerHTML = "Please select Occupation";
+                    return false;
+                      }
+
+
+               } else {
+                 document.getElementById("emailError").innerHTML = " Please select Country and Cities";
+                   return false;
+                  }
+
+                 }else{
+           document.getElementById("emailError").innerHTML = "Mobile must be 10 digits number";
+           return false;
+         }
+
+         }else{
+           document.getElementById("emailError").innerHTML = " Please enter a mobile";
+           return false;
+         }
+
+
+       } else {
+         document.getElementById("emailError").innerHTML = "Your email address is invalid. Please enter a valid address. ";
+         return false;
+       }
+     }
+
+     else {
+
+       document.getElementById("emailError").innerHTML = " Please enter last name . ";
+       return false;
+     }
+
+     }else  {
+
+       document.getElementById("emailError").innerHTML = " Please enter first name . ";
+       return false;
+     }
+
+
+     return false;
+   }
+ </script>

@@ -25,21 +25,24 @@
 					</p>
 					<input type="checkbox" name="remember" value="Y" <?php if(get_cookie('userName')!=""){ ?>checked="checked" <?php } ?>> <label for="showPassword">Remember me</label>
 
-					<p class=" text-center submit"> 
-						<div class="row">
+					<!-- <p class=" text-center submit">  -->
+						<!-- <div class="row">
 							<div class="col-xs-12 text-center">
 								<button type="submit" class="login-btn" name="submit" value="Log in" id='validate' >Login</button>
-							</div>
+							</div> </div>-->
+							<p class="clearfix text-center submit"> 
+						 <input type="submit" name="submit" id='validate' value="Log in"> 
+					</p>
 
-						</div>
+						
 
 							<div class="row m-t-20">
 								<div class=" col-xs-6">
-									<p class="text-center"><a href="<?php echo base_url();?>user/forgotpassword"> &nbsp;Forgot password</a> </p>
+									<p class="text-center"><a href="<?php echo base_url();?>user/forgotpassword" style="color: #795A41;"> &nbsp;Forgot password?</a> </p>
 								</div>
 
 								<div class=" col-xs-6">
-									<p class="text-center"><a href="<?php echo base_url();?>user/signup"style="color:#91C181;" >New User? Register Here</a></p>
+									<p class="text-center"><a href="<?php echo base_url();?>user/signup"style="color:#1C6704; background-color:#f5f5f5;" >New User?&nbsp;Register Here</a></p>
 								</div>
 
 
@@ -54,7 +57,7 @@
 <!-- 				<div class="account text-center">
  -->
 <!-- 						<div class="span">
- -->							<a href="<?php echo site_url(); ?>home/facebook_login" class=" facebook-btn">
+ -->							<a href="<?php echo site_url(); ?>home/facebook_login" class=" facebook-btn m-l-40">
 							<!-- <img src="<?php echo theme_url();?>img/facebook.png" alt=""> -->
 
 							<i class="fa fa-facebook "></i>&nbsp; <span>Sign In with Facebook</span>
@@ -65,9 +68,9 @@
 						
 					<div class = "col-xs-6 p-0 p-l-10 text-center">
 <!-- 						<div class="span2">
- -->							<a href="<?php echo base_url();?>home/google_login" class=" google-btn">
+ -->							<a href="<?php echo base_url();?>home/google_login" class=" google-btn p-l-20">
 								<!-- <img src="<?php echo theme_url();?>img/gplus.png" alt=""> -->
-							<i class="fa fa-google-plus "></i>&nbsp; <span>Sign In with Google+</span> 
+							<i class="fa fa-google-plus "></i>&nbsp;&nbsp;<span>Sign In with Google+</span> 
 								<!-- <div class="clear"></div> -->
 							</a>
 <!-- 						</div>

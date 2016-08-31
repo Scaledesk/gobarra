@@ -52,13 +52,47 @@
                                     <label class="">
                                         <input type="radio" class="required f-14" name="gender" id="gender2" value="2"> Female
                                     </label>
-                                </div> 
-					
-					</p>
-		          	<h5 id='emailError' style="color:red"></h5>
+                                </div> 	</p>
+
+                               <!--  <h5 id='emailError' style="color:red"></h5>
 					<p class="clearfix text-center submit"> 
 						 <button type="submit" class="login-btn" name="submit" value="REGISTER "> <span class="white-c">REGISTER</span>
+					</p> -->
+
+					<h5 id='emailError' style="color:red"></h5>
+					<p class="clearfix text-center submit"> 
+						 <input type="submit" name="submit" value="REGISTER "> 
 					</p>
+					
+					 	<div class="clearfix"></div>
+                                <div class="row m-t-20">
+					<div class = "col-xs-6 p-0 p-r-10 text-center">
+<!-- 				<div class="account text-center">
+ -->
+<!-- 						<div class="span">
+ -->							<a href="<?php echo site_url(); ?>home/facebook_login" class=" facebook-btn m-l-40">
+							<!-- <img src="<?php echo theme_url();?>img/facebook.png" alt=""> -->
+
+							<i class="fa fa-facebook "></i>&nbsp;<span>Sign In with Facebook</span>
+<!-- 							<div class="clear"></div>
+ -->					</a>
+<!-- 					</div>
+ -->				</div>
+ 
+						
+					<div class = "col-xs-6 p-0 p-l-10 text-center">
+<!-- 						<div class="span2">
+ -->							<a href="<?php echo base_url();?>home/google_login" class=" google-btn p-l-20">
+								<!-- <img src="<?php echo theme_url();?>img/gplus.png" alt=""> -->
+							<i class="fa fa-google-plus "></i>&nbsp;&nbsp; <span>Sign In with Google+</span> 
+								<!-- <div class="clear"></div> -->
+							</a>
+<!-- 						</div>
+ -->					</div>
+						</div>
+		
+				
+		          	
 					
 
 					 <!-- 	<div class="clearfix"></div> -->
