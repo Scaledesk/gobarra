@@ -619,9 +619,9 @@
 		//{	
 		//event.preventDefault();
       /*   alert(514684894);*/
-		var emoji=$('#message' + postid).emojiarea();
+		/*var emoji=$('#message' + postid).emojiarea();
 
-		alert(emoji);
+		alert(emoji);*/
 		
 		if ((str =='')&& ($('#uploadimg'+postid).val()==''))
 			{
