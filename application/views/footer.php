@@ -23,9 +23,9 @@
 				<div class="col-lg-6 visible-lg visible-md">
 				<div class="sicons">
                   <ul class="pull-right">
-				<li><a href="home/login"><i class="fa fa-facebook"></i></a></li>
+				<li><a href=""><i class="fa fa-facebook"></i></a></li>
 				<!--<li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>-->
-				<li><a href="home/googleLoginSubmit"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href=""><i class="fa fa-google-plus"></i></a></li>
 				</ul>
 				</div>
                 </div>
