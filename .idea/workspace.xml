@@ -27,7 +27,7 @@
       <file leaf-file-name="top_application.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/top_application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="165">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -37,7 +37,7 @@
       <file leaf-file-name="list.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/admin_products/views/list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="2565">
               <caret line="171" column="55" selection-start-line="171" selection-start-column="55" selection-end-line="171" selection-end-column="55" />
               <folding />
             </state>
@@ -47,7 +47,7 @@
       <file leaf-file-name="change_password_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/user/views/change_password_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1006">
+            <state relative-caret-position="30">
               <caret line="2" column="26" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
@@ -57,7 +57,7 @@
       <file leaf-file-name="travelplan_add_view_4_6.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/travelplans/views/travelplan_add_view_4_6.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1414">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -67,8 +67,8 @@
       <file leaf-file-name="travelplans_add_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/travelplans/views/travelplans_add_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+            <state relative-caret-position="327">
+              <caret line="123" column="67" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -215,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -602,7 +603,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -697,17 +697,18 @@
       <workItem from="1472467478218" duration="1807000" />
       <workItem from="1472540337795" duration="1186000" />
       <workItem from="1472627921942" duration="1212000" />
+      <workItem from="1472637786162" duration="1349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63359000" />
+    <option name="totallyTimeSpent" value="64708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36573705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37211156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -814,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4110">
           <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
           <caret line="130" column="62" selection-start-line="130" selection-start-column="62" selection-end-line="130" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
           <caret line="94" column="37" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="76" column="115" selection-start-line="76" selection-start-column="113" selection-end-line="76" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1074,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/top_application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="165">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
@@ -1086,7 +1082,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin_products/views/list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="2565">
           <caret line="171" column="55" selection-start-line="171" selection-start-column="55" selection-end-line="171" selection-end-column="55" />
           <folding />
         </state>
@@ -1094,7 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/user/views/change_password_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1006">
+        <state relative-caret-position="30">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
@@ -1102,7 +1098,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/travelplans/views/travelplan_add_view_4_6.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1414">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1110,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/travelplans/views/travelplans_add_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+        <state relative-caret-position="327">
+          <caret line="123" column="67" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="67" />
           <folding />
         </state>
       </provider>
