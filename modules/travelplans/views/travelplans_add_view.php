@@ -199,7 +199,7 @@
 
 <div class="right_coloumn_box">
 	<div class="right-column-heading center-header-new">
-		<h3 class="btn btn-md btn-primary" style="width: 250px; margin-left: 0px;">My Snapshot</h3>
+		<h3 class="btn btn-md btn-snapsht btn-primary" style="width: 250px;">My Snapshot</h3>
 	</div>
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<!-- Indicators --><div class="pull-left">

@@ -86,7 +86,7 @@
 		{?>
 	<div class="details2"><i class="fa fa-phone-square"></i>Mobile: Not Provided </div>
 	<?php } ?>
-	<div class="details2"><i class="fa fa-phone-square"></i>Email:<?php echo $userData[0]->email ;?></div>
+	<div class="details2"><i class="fa fa-envelope"></i>Email:<?php echo $userData[0]->email ;?></div>
 	<?php if($userData[0]->gender !='')
 	  {
 	   if(($userData[0]->gender)=="M"){
@@ -123,9 +123,9 @@
 					 <?php
 				 }
 				 ?>
-				 <div class="homeFormArea">
+				 <div class="homeFormArea" style="padding-top: 17px; ">
 					<ul class="nav nav-tabs">
-					  <li class="active "><a   href="<?php echo base_url(); ?>timelinepost/timeline">Post Timeline</a></li>
+					  <li class="active " style="border-left: 1px solid #ccc;"><a   href="<?php echo base_url(); ?>timelinepost/timeline">Post Timeline</a></li>
 					 
 					</ul>
 				<?php echo form_open('timelinepost/timeline','id="form"') ;?>

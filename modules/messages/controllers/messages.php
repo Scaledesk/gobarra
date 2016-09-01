@@ -209,7 +209,7 @@ class Messages extends Public_Controller
 									  <span class="arrow"></span>
 								<div class="text">
 									  <input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
-									  <input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
+									 <br> <input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
 										   <p class="attribution">
 										   <a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
 										   <img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">

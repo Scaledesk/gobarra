@@ -225,7 +225,7 @@
     <div class="row"> 
       
       <div class="col-md-4 marginBottom25"> 
-          <span class="size"> Gender - &nbsp;&nbsp;</span>
+          <span class="size gender-m-l"> Gender - &nbsp;&nbsp;</span>
           <label class="radio-inline">
           <input type="radio" value="M" <?php if($userData[0]['gender']=="M"){echo "checked";} ?> id="gender1" name="gender" class="required"> Male
          </label>

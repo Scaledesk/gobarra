@@ -111,6 +111,10 @@ body{
     position: relative; 
     background-color: #fff;
     padding-top:10px;
+        padding-right: 10px;
+}
+.gender-m-l{
+    margin-left: 15px;
 }
 .partnerResultpage {
     border: 1px solid #ddd;
@@ -2074,7 +2078,7 @@ p.float.full {
 .form-2 input[type=submit],
 .form-2 .log-twitter {
     /* Size and position */
-    width: 65%;
+    width: 75%;
     height: 32px;
     float: none;
     position: relative;
@@ -2732,9 +2736,6 @@ footer {
 }
 
 
-.p-l-140{
-  padding-left: 140px!important;
-}
 
 .m-l-40{
     margin-left: 40px!important;
@@ -2810,6 +2811,7 @@ footer {
 .p-t-40{
     padding-top: 40px!important;
 }
+
 .p-b-40{
     padding-bottom: 40px!important;
 }
@@ -2923,6 +2925,11 @@ margin-left: 35px!important;
 }
 
 
+.padding-gobarral{
+  padding-left: 140px!important;
+}
+
+
 
 @media only screen and (max-width: 768){
     .uploadAndText .uploadSection {
@@ -2932,7 +2939,34 @@ margin-left: 35px!important;
     width: 15px;
 }
 
+
 }
+/*for iphone
+*/
+@media only screen and  (min-device-width: 360px) and (max-device-width: 667px){
+.google-btn{
+   
+     margin-left: 30px;
+    margin-top: 5px;
+    }
+
+    .padding-gobarral{
+  padding-left: 0px!important;
+} 
+.btn-snapsht {
+    margin-left: 28px!important;
+}
+}
+
+@media only screen and  (min-device-width: 768px) and (max-device-width: 1024px){
+.google-btn{
+   
+     margin-left: 30px;
+    margin-top: 5px;
+    }
+
+}
+
 .profile-card{
     padding: 40px 50px 40px 50px!important;
 }

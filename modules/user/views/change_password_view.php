@@ -20,7 +20,7 @@
 <!-- Page Content -->
 <div class="page-content ">
    <div class="container profilePage">
-      <div class="row topdashboardForm card-gobarra m-10 p-30">
+      <div class="row topdashboardForm card-gobarra m-20 p-30">
          <!-- full Content -->
          <?php echo form_open_multipart('user/ChangePassword','id="form" ','class="form-horizontal" ','role="form"'); ?>         
          <div class="col-lg-6 ">
@@ -67,7 +67,7 @@
                </div>
             </div>
          </div>
-         <div class="col-lg-6 p-l-140 ">
+         <div class="col-lg-6 padding-gobarral ">
             <img src="<?php echo theme_url();?>img/EmailKey3.png" alt="" /> 
          </div>
          <div class="clearfix"></div>

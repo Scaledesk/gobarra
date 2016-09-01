@@ -420,7 +420,7 @@
 			<?php } else { ?>
 			<div class="col-sm-4 col-xs-12 col-md-4 readybuyers">
 				<div class="bg leftDetailsSec">
-					<h4 style="font-size: larger; color: #100101; font-weight: 600;">New Connected Members</h4>
+					<h4 style="font-size: larger; color: #100101; font-weight: 600;  text-align:center;">New Connected Members</h4>
 					<div class='oh'>
 					<?php 
 					 $this->load->model('home/home_model');
@@ -497,7 +497,7 @@
 			<?php } else { ?>
 			<div class="col-sm-4 col-xs-12 col-md-4 readybuyers">
                             <div class="bg leftDetailsSec">
-                                <h4 style="font-size: x-large; font-weight: 600; color: #52504E;">Top 10 Travellers!</h4>
+                                <h4 style="font-size: x-large; font-weight: 600; color: #52504E;  text-align:center;">Top 10 Travellers!</h4>
                                 <div class="list-container">
                                     <h1>Recent visited Travellers!</h1>
 
