@@ -291,10 +291,31 @@ class Messages extends Public_Controller
 										$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 										?>	
 										<div class="preview prouductDisplay">
-										<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
+										<span><p><a><button type="button" data-toggle="modal" class="btn" data-target="#myModal"><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></button></a></p></span>
 										</div>
 										  <?php 									
-										  } ?>										
+										  } ?>
+										   <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       
+      </div>
+      <div class="modal-body">
+       <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-Success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>										
 									  </div>
 								  </div>
 								  <div class="notify-arrow-email notify-arrow-blue-email left"></div>

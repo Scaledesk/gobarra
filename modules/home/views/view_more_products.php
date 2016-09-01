@@ -42,6 +42,7 @@
 		$userImage = base_url()."uploaded_files/def_user/dummy.png" ;
 	}		?>
 	 <div class="imageFrame "> 
+
 	 <a><span><p><img id="profile-image-user" href="<?php echo $userImage ;?>" class="group3" src="<?php echo $userImage ;?>"></span></p></a>
 						  </div>
 	</div>
