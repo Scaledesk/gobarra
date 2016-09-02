@@ -300,9 +300,9 @@ class Messages extends Public_Controller
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="modal-content" onClick="alert('ugu')">
+      <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal"><span style="color:#000000">close&times;</span></button>
        
       </div>
       <div class="modal-body">
@@ -310,12 +310,18 @@ class Messages extends Public_Controller
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-Success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-Success" data-dismiss="modal" onClick="$myModal.">Close</button>
       </div>
     </div>
 
   </div>
-</div>										
+</div>	
+<script>
+$(function(){ // let all dom elements are loaded
+    $('#myodal').on('hide.bs.modal', function (e) {
+        alert('event fired')
+    });
+});</script>									
 									  </div>
 								  </div>
 								  <div class="notify-arrow-email notify-arrow-blue-email left"></div>

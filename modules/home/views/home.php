@@ -260,7 +260,7 @@
 						<input  type="hidden" id="sender_id<?php echo $userId ; ?>" name="sender_id" value="<?php echo $userId; ?>" />
 						<input  type="hidden" id="reciever_id<?php echo $pageVal['user_id']; ?>" name="reciever_id" value="<?php echo $pageVal['user_id']; ?>" />
 						</div>
-<button type="button" title="Send" class="btn btn-md btn-primary" onclick="return sendmessage('<?php echo $pageVal["travel_id"]; ?>')">Send</button>
+<button type="button" title="Send" class="buyer-btn1" onclick="return sendmessage('<?php echo $pageVal["travel_id"]; ?>')">Send</button>
 						</div>
 						<div class="preview">
 						<img id="prvimg<?php echo $pageVal['travel_id'];?>" src="" alt="" style="height: auto !important; max-width: 200px; width:auto;" >
@@ -458,7 +458,7 @@
                                 <div class="list-container">
                                     <h1>Recent visited Travellers!</h1>									
                                     <ul class="scale-up-hover-list">
-                                       <marquee behavior="scroll" direction="down" scrolldelay="250" onmouseover="this.stop();" onmouseout="this.start();">
+                                       <marquee behavior="scroll" direction="down" scrolldelay="250" class="marq-clss" onmouseover="this.stop();" onmouseout="this.start();">
 										<?php 
 										foreach($res as $catKey=>$pageVal)
 										{						
@@ -499,10 +499,10 @@
                             <div class="bg leftDetailsSec">
                                 <h4 style="font-size: x-large; font-weight: 600; color: #52504E;  text-align:center;">Top 10 Travellers!</h4>
                                 <div class="list-container">
-                                    <h1>Recent visited Travellers!</h1>
+                                    <h1 class="text-center">Recent visited Travellers!</h1>
 
                                    <ul class="scale-up-hover-list">
-                                        <marquee behavior="scroll" direction="down" scrolldelay="250" onmouseover="this.stop();" onmouseout="this.start();">
+                                        <marquee behavior="scroll" direction="down" scrolldelay="250" class="marq-clss" onmouseover="this.stop();" onmouseout="this.start();">
 										<?php 
 											foreach($res as $catKey=>$pageVal)
 											{						
