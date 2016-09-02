@@ -175,7 +175,17 @@ class User extends Public_Controller
 				if( is_array($uploaded_data)  && !empty($uploaded_data) )
 				{ 
 				$uploaded_file = $uploaded_data['upload_data']['file_name'];
+				} else{
+
+                         $this->session->set_flashdata('item', array('message' => 'Please upload Image Size less than 5mb.','class' =>'alert alert-danger'));
+                             redirect('user/profile');
 				}
+
+
+
+
+
+
 				 $country = $this->input->post('country_name');
 				 $country_name = explode(',',$country);
 				 $Mycountry = $country_name[0];

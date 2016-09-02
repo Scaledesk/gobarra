@@ -192,8 +192,9 @@ class Messages extends Public_Controller
 						 <div class="actTimeArea" > 
 					 <?php
 						foreach($result as $key=>$value)
-						{ 
-						
+						{
+					/*echo ;
+							print_r($value);*/
 						if($value['profile_image'] !='')
 						{
 							$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];									
@@ -202,124 +203,285 @@ class Messages extends Public_Controller
 						{
 							$MyImage =base_url()."uploaded_files/def_user/index.jpg";
 						}	
-						?> 
-					 <div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>"> 
-					 
-								  <div class="activity-body act-in">
-									  <span class="arrow"></span>
-								<div class="text">
-									  <input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
-									 <br> <input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
-										   <p class="attribution">
-										   <a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
-										   <img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
-										   <?php 
-											echo $value['first_name']." ".$value['last_name'];?></a>
-							 <em> <?php
-									$created_time = $value['msg_add_date'];
-		//echo $created_time;
-		
-		date_default_timezone_set('Asia/Calcutta'); //Change as per your default time
-        $str = strtotime($created_time);
-        $today = strtotime(date('Y-m-d H:i:s'));
+						?>
+                         <!--       -----------------sender ------------------------------------------->
+                      <?php
+							if($value['email']==$this->session->userdata('email')){   ?>
+                                
+								<div class="act-time"  id="messagemain<?php echo $value['sender_id'] ;?>">
 
-        // It returns the time difference in Seconds...
-        $time_differnce = $today-$str;
+									<div class="activity-body act-in" style="background-color: red;">
+										<span class="arrow"></span>
+										<div class="text">
+											<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
+											<br> <input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
+											<p class="attribution">
+												<a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
+													<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
+													<?php
+													echo $value['first_name']." ".$value['last_name'];?></a>
+												<em> <?php
+													$created_time = $value['msg_add_date'];
+													//echo $created_time;
 
-        // To Calculate the time difference in Years...
-        $years = 60*60*24*365;
+													date_default_timezone_set('Asia/Calcutta'); //Change as per your default time
+													$str = strtotime($created_time);
+													$today = strtotime(date('Y-m-d H:i:s'));
 
-        // To Calculate the time difference in Months...
-        $months = 60*60*24*30;
+													// It returns the time difference in Seconds...
+													$time_differnce = $today-$str;
 
-        // To Calculate the time difference in Days...
-        $days = 60*60*24;
+													// To Calculate the time difference in Years...
+													$years = 60*60*24*365;
 
-        // To Calculate the time difference in Hours...
-        $hours = 60*60;
+													// To Calculate the time difference in Months...
+													$months = 60*60*24*30;
 
-        // To Calculate the time difference in Minutes...
-        $minutes = 60;
+													// To Calculate the time difference in Days...
+													$days = 60*60*24;
 
-        if(intval($time_differnce/$years) > 1)
-        {
-            echo intval($time_differnce/$years)." years ago";
-        }else if(intval($time_differnce/$years) > 0)
-        {
-            echo intval($time_differnce/$years)." year ago";
-        }else if(intval($time_differnce/$months) > 1)
-        {
-            echo intval($time_differnce/$months)." months ago";
-        }else if(intval(($time_differnce/$months)) > 0)
-        {
-            echo intval(($time_differnce/$months))." month ago";
-        }else if(intval(($time_differnce/$days)) > 1)
-        {
-            echo intval(($time_differnce/$days))." days ago";
-        }else if (intval(($time_differnce/$days)) > 0) 
-        {
-            echo intval(($time_differnce/$days))." day ago";
-        }else if (intval(($time_differnce/$hours)) > 1) 
-        {
-            echo intval(($time_differnce/$hours))." hours ago";
-        }else if (intval(($time_differnce/$hours)) > 0) 
-        {
-            echo intval(($time_differnce/$hours))." hour ago";
-        }else if (intval(($time_differnce/$minutes)) > 1) 
-        {
-            echo intval(($time_differnce/$minutes))." minutes ago";
-        }else if (intval(($time_differnce/$minutes)) > 0) 
-        {
-            echo intval(($time_differnce/$minutes))." minute ago";
-        }else if (intval(($time_differnce)) > 1) 
-        {
-            echo intval(($time_differnce))." seconds ago";
-        }else
-        {
-            echo "few seconds ago";
-        }								
-		?></em></p>
-										  <p><?php 
-										  if($value['message_image'] =='')
-										  {?>										 
-										  <p><?php echo $value['message'];?> </p>
-										  <?php }
-										  else
-										  {  
-										  ?></p>
-										<?php  echo $value['message']; 
-										$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
-										?>	
-										<div class="preview prouductDisplay">
-										<span><p><a><button type="button" data-toggle="modal" class="btn" data-target="#myModal"><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></button></a></p></span>
+													// To Calculate the time difference in Hours...
+													$hours = 60*60;
+
+													// To Calculate the time difference in Minutes...
+													$minutes = 60;
+
+													if(intval($time_differnce/$years) > 1)
+													{
+														echo intval($time_differnce/$years)." years ago";
+													}else if(intval($time_differnce/$years) > 0)
+													{
+														echo intval($time_differnce/$years)." year ago";
+													}else if(intval($time_differnce/$months) > 1)
+													{
+														echo intval($time_differnce/$months)." months ago";
+													}else if(intval(($time_differnce/$months)) > 0)
+													{
+														echo intval(($time_differnce/$months))." month ago";
+													}else if(intval(($time_differnce/$days)) > 1)
+													{
+														echo intval(($time_differnce/$days))." days ago";
+													}else if (intval(($time_differnce/$days)) > 0)
+													{
+														echo intval(($time_differnce/$days))." day ago";
+													}else if (intval(($time_differnce/$hours)) > 1)
+													{
+														echo intval(($time_differnce/$hours))." hours ago";
+													}else if (intval(($time_differnce/$hours)) > 0)
+													{
+														echo intval(($time_differnce/$hours))." hour ago";
+													}else if (intval(($time_differnce/$minutes)) > 1)
+													{
+														echo intval(($time_differnce/$minutes))." minutes ago";
+													}else if (intval(($time_differnce/$minutes)) > 0)
+													{
+														echo intval(($time_differnce/$minutes))." minute ago";
+													}else if (intval(($time_differnce)) > 1)
+													{
+														echo intval(($time_differnce))." seconds ago";
+													}else
+													{
+														echo "few seconds ago";
+													}
+													?></em></p>
+											<p><?php
+												if($value['message_image'] =='')
+												{?>
+											<p><?php echo $value['message'];?> </p>
+
+											<?php }
+
+
+											else
+											{
+
+
+											?></p>
+											<?php  echo $value['message'];
+											$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
+											?>
+											<div class="preview prouductDisplay">
+												<span><p><a><button type="button" data-toggle="modal" class="btn" data-target="#myModal"><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></button></a></p></span>
+											</div>
+
+											<?php
+											} ?>
+
+
+
+
+<!--
+
+
+
+											<div id="myModal1" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+
+
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;x</button>
+
+														</div>
+														<?php /*echo $value['message_id']; */?>
+														<div class="modal-body">
+															<img class="group2" width="100%" height="80%" href="<?php /*echo $Image; */?>" src="<?php /*echo $Image; */?>">
+
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-Success" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+
+												</div>
+											</div>
 										</div>
-										  <?php 									
-										  } ?>
-										   <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+-->
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-       
-      </div>
-      <div class="modal-body">
-       <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-Success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+									</div>
+									<div class="notify-arrow-email notify-arrow-blue-email left"></div>
+								</div>
 
-  </div>
-</div>										
-									  </div>
-								  </div>
-								  <div class="notify-arrow-email notify-arrow-blue-email left"></div>
-					  </div>	
+
+							<?php }else{ ?>
+                                          <!----------------------------$receiverID start--------------------------->
+								<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
+
+									<div class="activity-body act-in" style="background-color: green;">
+										<span class="arrow"></span>
+										<div class="text">
+											<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
+											<br> <input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
+											<p class="attribution">
+												<a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
+													<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
+													<?php
+													echo $value['first_name']." ".$value['last_name'];?></a>
+												<em> <?php
+													$created_time = $value['msg_add_date'];
+													//echo $created_time;
+
+													date_default_timezone_set('Asia/Calcutta'); //Change as per your default time
+													$str = strtotime($created_time);
+													$today = strtotime(date('Y-m-d H:i:s'));
+
+													// It returns the time difference in Seconds...
+													$time_differnce = $today-$str;
+
+													// To Calculate the time difference in Years...
+													$years = 60*60*24*365;
+
+													// To Calculate the time difference in Months...
+													$months = 60*60*24*30;
+
+													// To Calculate the time difference in Days...
+													$days = 60*60*24;
+
+													// To Calculate the time difference in Hours...
+													$hours = 60*60;
+
+													// To Calculate the time difference in Minutes...
+													$minutes = 60;
+
+													if(intval($time_differnce/$years) > 1)
+													{
+														echo intval($time_differnce/$years)." years ago";
+													}else if(intval($time_differnce/$years) > 0)
+													{
+														echo intval($time_differnce/$years)." year ago";
+													}else if(intval($time_differnce/$months) > 1)
+													{
+														echo intval($time_differnce/$months)." months ago";
+													}else if(intval(($time_differnce/$months)) > 0)
+													{
+														echo intval(($time_differnce/$months))." month ago";
+													}else if(intval(($time_differnce/$days)) > 1)
+													{
+														echo intval(($time_differnce/$days))." days ago";
+													}else if (intval(($time_differnce/$days)) > 0)
+													{
+														echo intval(($time_differnce/$days))." day ago";
+													}else if (intval(($time_differnce/$hours)) > 1)
+													{
+														echo intval(($time_differnce/$hours))." hours ago";
+													}else if (intval(($time_differnce/$hours)) > 0)
+													{
+														echo intval(($time_differnce/$hours))." hour ago";
+													}else if (intval(($time_differnce/$minutes)) > 1)
+													{
+														echo intval(($time_differnce/$minutes))." minutes ago";
+													}else if (intval(($time_differnce/$minutes)) > 0)
+													{
+														echo intval(($time_differnce/$minutes))." minute ago";
+													}else if (intval(($time_differnce)) > 1)
+													{
+														echo intval(($time_differnce))." seconds ago";
+													}else
+													{
+														echo "few seconds ago";
+													}
+													?></em></p>
+											<p><?php
+												if($value['message_image'] =='')
+												{?>
+											<p><?php echo $value['message'];?> </p>
+											<?php }
+											else
+											{
+											?></p>
+											<?php  echo $value['message'];
+											$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
+											?>
+											<div class="preview prouductDisplay">
+												<span><p><a><button type="button" data-toggle="modal" class="btn" data-target="#myModal"><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></button></a></p></span>
+											</div>
+
+											<?php
+											} ?>
+											<!-- Modal -->
+											<div id="myModal1" class="modal fade" role="dialog">
+												<div class="modal-dialog">
+
+
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;x</button>
+
+														</div>
+														<?php echo $value['message_id']; ?>
+														<div class="modal-body">
+															<img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-Success" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+									<div class="notify-arrow-email notify-arrow-blue-email left"></div>
+								</div>
+
+						<?php	}
+
+
+                             ?>
+
+
+							<!--		--------------------------------end ----------------------------------------------->
+
+
+
+
+
+
 				<?php } ?>					  
 				</div>
 				</form>

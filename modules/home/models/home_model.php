@@ -1,7 +1,7 @@
 <?php
 class home_model extends CI_Model{
 		function __construct(){
-			
+			/*$this->load->library('profile_image_thumb');	*/
 			parent::__construct();
 		}		
 		 public function getUserID($email){
@@ -55,9 +55,108 @@ class home_model extends CI_Model{
 			$q = $this->db->get();        
 			$result = $q->result_array();
 			$result = ($limit == '1') ? $result[0] : $result;
+          /*   
+           echo "<pre/>";
+               $i=1;
+             print_r($result);
+             foreach ($result as $data) {
+             	# code...
+               echo $data['profile_image'];
+               if(!$data['profile_image']==''){
+                 $i++;
+               
+               $url = 'destination'.$i.'.jpg';
+              
+              $source_url=base_url().'uploaded_files/profile_img/'.$data['profile_image'];
+                
+                 $info = getimagesize($source_url); 
+                 if ($info['mime'] == 'image/jpeg') $image = imagecreatefromjpeg($source_url); 
+
+					elseif ($info['mime'] == 'image/gif') $image = imagecreatefromgif($source_url); 
+
+					elseif ($info['mime'] == 'image/png') $image = imagecreatefrompng($source_url); 
+
+                  $image= $data['profile_image'];
+                       clearstatcache();
+					imagejpeg($image,$url, 80);
+
+                     $this->load->library('upload');					
+				      $uploaded_data =  $this->upload->my_upload($url,'profile_img');
+
+					echo $url;
+					
+					$data=$this->image_thumb_profile($source_url, 100, 100);
+
+					echo $data; 
+                   echo "<br>";*/
+/*                   
+
+					$data_to_store = array(
+                    'first_name' 	=> $this->input->post('first_name'),
+                    'last_name' 	=> $this->input->post('last_name'),
+                    'couple' 		=> $this->input->post('couple'),
+                    'gender' 		=> $this->input->post('gender'),
+                    'country_id'	=> $Mycountry,
+                    'city_id'		=> $Mycity,
+                    'occupation' 	=> $this->input->post('occupation'),
+					'mobile' 		=> $this->input->post('mobile'),
+					'profile_image' => $uploaded_file,	
+                    'status' 		=> 1,
+                    'modified' 		=> date('Y-m-d H:i:s')                   
+                );*/
+
+
+           /* }
+
+             }*/
+
+           /*   echo $result[0]['profile_image'];*/
+
+                 /* die; 
+                   $source_url=base_url().'uploaded_files/profile_img/'.$result['profile_image'];
+
+					 $info = getimagesize($source_url); 
+
+					if ($info['mime'] == 'image/jpeg') $image = imagecreatefromjpeg($source_url); 
+					elseif ($info['mime'] == 'image/gif') $image = imagecreatefromgif($source_url); 
+					elseif ($info['mime'] == 'image/png') $image = imagecreatefrompng($source_url); 
+					imagejpeg($image, $destination_url, $quality); 
+					return $destination_url;*/
+     /*        die;*/
+
+
 			return $result;
 		}
 	/* get registerd members */
+
+
+
+	function image_thumb_profile( $image_path, $height, $width ) {
+    // Get the CodeIgniter super object
+    $CI =& get_instance();
+
+    // Path to image thumbnail
+    $image_thumb = dirname( $image_path ) . '/' . $height . '_' . $width . '.jpg';
+
+    if ( !file_exists( $image_thumb ) ) {
+        // LOAD LIBRARY
+        $CI->load->library( 'image_lib' );
+
+        // CONFIGURE IMAGE LIBRARY
+        $config['image_library']    = 'gd2';
+        $config['source_image']     = $image_path;
+        $config['new_image']        = $image_thumb;
+        $config['maintain_ratio']   = TRUE;
+        $config['height']           = $height;
+        $config['width']            = $width;
+        $CI->image_lib->initialize( $config );
+        $CI->image_lib->resize();
+        $CI->image_lib->clear();
+    }
+   return $image_thumb;
+  /*  return '<img src="' . dirname( $_SERVER['SCRIPT_NAME'] ) . '/' . $image_thumb . '" />';*/
+}
+
 
  public  function get_travelerData(){
 
