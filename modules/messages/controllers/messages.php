@@ -310,7 +310,7 @@ class Messages extends Public_Controller
 
 
 
-<!--
+
 
 
 
@@ -336,7 +336,7 @@ class Messages extends Public_Controller
 												</div>
 											</div>
 										</div>
--->
+
 
 
 									</div>
@@ -345,7 +345,7 @@ class Messages extends Public_Controller
 
 
 							<?php }else{ ?>
-                                          <!----------------------------$receiverID start--------------------------->
+                                         
 								<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
 
 									<div class="activity-body act-in" style="background-color: green;">
@@ -474,8 +474,6 @@ class Messages extends Public_Controller
 
                              ?>
 
-
-							<!--		--------------------------------end ----------------------------------------------->
 
 
 
