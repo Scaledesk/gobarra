@@ -957,6 +957,8 @@ footer {
 }
  
 .bg.leftDetailsSec {
+       
+    overflow: hidden;
     
        margin-top: 16px;
     display: inline-block;
@@ -1830,8 +1832,8 @@ ul.inbox-pagination li {
     right: 50px;
     bottom: -9px; 
 }
-.actTimeArea{height:450px;
-overflow-y:scroll;margin-top: -20px;}
+.actTimeArea{/*height:450px;*/
+/*overflow-y:scroll;*/margin-top: -20px;}
 
 .user-profile-image {
     display: inline-block;
@@ -2925,6 +2927,23 @@ margin-left: 35px!important;
 }
 
 
+.buyer-btn1{
+    border: 2px solid #5cb85c;
+    color:#5cb85c;
+    cursor:pointer;
+    height:30px;
+    width:100px;
+        border-radius: 4px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+
+}
+.buyer-btn1:hover{
+    background-color:#5cb85c;
+    color:#fff;
+}
+
+
 .padding-gobarral{
   padding-left: 140px!important;
 }
@@ -2956,6 +2975,10 @@ margin-left: 35px!important;
 .btn-snapsht {
     margin-left: 28px!important;
 }
+
+.marq-clss{
+    height:156px;
+}
 }
 
 @media only screen and  (min-device-width: 768px) and (max-device-width: 1024px){
@@ -2964,6 +2987,10 @@ margin-left: 35px!important;
      margin-left: 30px;
     margin-top: 5px;
     }
+
+    .marq-clss{
+    height:166px;
+}
 
 }
 
@@ -3198,9 +3225,8 @@ margin-left: 35px!important;
 }
 
 /*ADDED TO STOP SCROLLING TO TOP*/
-.close {
-  display: none; 
+
+
+.marq-clss{
+    height:150px;
 }
-
-
-

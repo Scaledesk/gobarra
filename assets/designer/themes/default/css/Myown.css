@@ -1,6 +1,6 @@
 ﻿
 .list-container {
-    padding: 1em;
+  
     width: 280px;
     font-family: 'FontSite Sans', sans-serif;
     background: white;
@@ -236,6 +236,7 @@ ul.scale-up-hover-list {
 
 .readybuyers {
     /*margin-top: 44px;*/
+        margin-bottom: 10px;
 }
 
 .myrotate-text {
@@ -656,11 +657,11 @@ h1.elegantshadow {
 }
 
 .list-container {
-    padding: 1em;
-    width: 280px;
+    
+    width: 100%!important;
     font-family: 'FontSite Sans', sans-serif;
     background: white;
-        margin-left: 20px;
+       
 }
 
     .list-container h1 {
@@ -671,6 +672,7 @@ ul.scale-up-hover-list {
     padding-left: .1em;
     width: 95%;
     list-style-type: none;
+        height: 198px;
 }
 
 .scale-up-hover-list li {
@@ -1354,6 +1356,7 @@ h1.elegantshadow {
     }
 
     .list-container {
+            height: 200px;
         width: 150px;
     }
 }
