@@ -230,7 +230,7 @@
 				  
 				  <!--loop-->			
 				 
-                  <aside class="lg-side card-gobarra col-lg-6"> 
+                  <aside class="lg-side card-gobarra col-lg-6" style="overflow-y:scroll;"> 
                       <div class="inbox-body" id="enquiryBox">  
 					
 						<?php

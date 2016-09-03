@@ -131,7 +131,7 @@ class Enquiry extends Public_Controller
 								<input name="sender_id" type="hidden" value="<?php echo $receiverID; ?>" />
 								<input name="reciever_id" type="hidden" value="<?php echo $senderID ; ?>" />				
 							</div>						
-								<button onclick="return insertEnquiry()" class="btn btn-default" type="button">Send Reply</button>
+								<button onclick="return insertEnquiry()" class="buyer-btn1" type="button">Send Reply</button>
 							  </form>
 							 </div>
 							 <?php if(is_array($result) && !empty($result) )
@@ -151,7 +151,7 @@ class Enquiry extends Public_Controller
                              <div class="btn-group hidden-phone">
                                   <input type="hidden" name="sender_id" value="<?php echo $receiverID ;?>">
 								   <input type="hidden" name="reciever_id" value="<?php echo $senderID ;?>">
-								 <button type="button" class="pull-right btn btn-success10" onclick="return DeletetEnquiry()">Delete</button>
+								 <button type="button" class="pull-right buyer-btn" style="width:108px;" onclick="return DeletetEnquiry()">Delete</button>
                              </div>  
                          </div>
 						 
@@ -171,8 +171,9 @@ class Enquiry extends Public_Controller
 
 							
 					 <div class="act-time" id="enquirymain<?php echo $value['sender_id'] ;?>"> 
-					 
-								  <div class="activity-body act-in" style="background-color: #00CC00">
+					<!--  receiver enquiry block -->
+<div class="row"><div class="col-md-9 pull-right">
+								  <div class="activity-body act-in" style="background-color: #E0DDDD; padding:5px;border-radius:3px;">
 									  <span class="arrow"></span>
 								<div class="text">
 									<input type="checkbox" value="<?php echo $value['enquiry_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -180,7 +181,7 @@ class Enquiry extends Public_Controller
 									<p class="attribution"><a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
 									<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
 									 <?php 
-											echo $value['first_name']." ".$value['last_name']; ?>
+											echo $value['first_name']." ".$value['last_name']; ?>&nbsp;<span class="f-12">(you)</span>
 											</a>
 										<em> <?php
 										$created_time = $value['enquiry_date'];
@@ -246,19 +247,20 @@ class Enquiry extends Public_Controller
             echo "few seconds ago";
         }							
 		?></em></p>
-										  <p><?php echo $value['enquiry']; ?></p>																			 
+										  <p style="font-size:12px; font-weight:300;"><?php echo $value['enquiry']; ?></p>																			 
 									  </div>
-								  </div>
-								  <div class="notify-arrow-email notify-arrow-blue-email left"></div>
+								  </div></div></div>
+								<!--   <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 					  </div>
 
 
 
 					<?php } else{?>
-
+                                    
+<div class="row"><div class="col-md-9 pull-left">
 									<div class="act-time" id="enquirymain<?php echo $value['sender_id'] ;?>">
 
-										<div class="activity-body act-in" style="background-color: #00a0df">
+										<div class="activity-body act-in" style="background-color: rgba(154,170, 197, 0.58); padding:5px; border-radius:3px;">
 											<span class="arrow"></span>
 											<div class="text">
 												<input type="checkbox" value="<?php echo $value['enquiry_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -332,11 +334,11 @@ class Enquiry extends Public_Controller
 															echo "few seconds ago";
 														}
 														?></em></p>
-												<p><?php echo $value['enquiry']; ?></p>
+												<p style="font-size:12px; font-weight:300;"><?php echo $value['enquiry']; ?></p>
 											</div>
 										</div>
-										<div class="notify-arrow-email notify-arrow-blue-email left"></div>
-									</div>
+										<!-- <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
+									</div></div></div>
 
 				<?php } }?>
 				</div>
@@ -418,7 +420,7 @@ class Enquiry extends Public_Controller
 							}?></span><i class="fa fa-flask "></i>                          
                         </a>
 			<ul class="dropdown-menu extended inbox scroll-menu">
-                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <!-- <div class="notify-arrow notify-arrow-blue"></div> -->
 							<?php if ($enquiry > 0)
 							{ ?>						
                             <li>
