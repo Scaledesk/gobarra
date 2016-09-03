@@ -1470,7 +1470,7 @@ a.mail-dropdown {
 
 .inbox-body {
     padding: 20px;
-    max-height: 65px;
+    max-height: 50px;
         /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
 }
 
