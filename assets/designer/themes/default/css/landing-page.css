@@ -270,7 +270,7 @@ textarea.message {
 }
 .uploadAndText{
     position:relative;
-  /*  padding-top: 23px;*/
+    padding-top: 23px;
 }
 .uploadAndText .uploadSection {
     position: absolute;
@@ -1470,7 +1470,6 @@ a.mail-dropdown {
 
 .inbox-body {
     padding: 20px;
-    max-height: 65px;
         /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
 }
 
@@ -1611,10 +1610,10 @@ ul.labels-info li a i {
     font-size: 13px;
 }
 .attribution a {
-    font-size: 14px;
+    font-size: 20px;
 }
 .text > p {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     word-wrap: break-word;
 }
@@ -2667,7 +2666,7 @@ footer {
 }
 .uploadAndText textarea {   
     margin-right:5px !important;
-       /* margin-bottom: 10px;*/
+        margin-bottom: 10px;
 }
 .uploadSecForm {
     padding-right:1% !important;
@@ -3027,7 +3026,6 @@ margin-left: 35px!important;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;
     background-color:#ffffff!important;
     padding:10px;
-
 
 }
 

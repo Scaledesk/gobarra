@@ -192,9 +192,11 @@ class Messages extends Public_Controller
 				</div>
 				<div class="actTimeArea" >
 					<?php
+
+					$i=1;
 					foreach($result as $key=>$value)
 					{
-
+ 						
 						if($value['profile_image'] !='')
 						{
 							$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];
@@ -296,7 +298,10 @@ class Messages extends Public_Controller
 									$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 									?>
 									<div class="preview prouductDisplay">
+
 										<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
+
+										
 									</div>
 									<?php
 									} ?>
@@ -399,27 +404,27 @@ class Messages extends Public_Controller
 										</div>
 										<?php
 										} ?>
-																				   <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+																															   <!-- Modal -->
+											<div id="myModal" class="modal fade" role="dialog">
+											  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content" >
-      <div class="modal-header" >
-        <button type="button" class="close" data-dismiss="modal"><span style="color:#000000">close&times;</span></button>
-       
-      </div>
-      <div class="modal-body">
-       <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+												<!-- Modal content-->
+												<div class="modal-content" >
+												  <div class="modal-header" >
+													<button type="button" class="close" data-dismiss="modal"><span style="color:#000000">close&times;</span></button>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-Success" data-dismiss="modal" onClick="$myModal.">Close</button>
-      </div>
-    </div>
+												  </div>
+												  <div class="modal-body">
+												   <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
 
-  </div>
-</div>	
+												  </div>
+												  <div class="modal-footer">
+													<button type="button" class="btn btn-Success" data-dismiss="modal" onClick="$myModal.">Close</button>
+												  </div>
+												</div>
+
+											  </div>
+											</div>
 									</div>
 								</div></div></div>
 
