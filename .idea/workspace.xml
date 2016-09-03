@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0445762-7e88-4f76-bdb7-b566dc1c3c77" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gobarra.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php" afterPath="$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" afterPath="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" />
-    </list>
+    <list default="true" id="e0445762-7e88-4f76-bdb7-b566dc1c3c77" name="Default" comment="" />
     <ignored path="gobarra.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -810,16 +802,16 @@
       <workItem from="1472882992131" duration="693000" />
       <workItem from="1472899806585" duration="599000" />
       <workItem from="1472901717111" duration="1359000" />
-      <workItem from="1472905914214" duration="942000" />
+      <workItem from="1472905914214" duration="1541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73869000" />
+    <option name="totallyTimeSpent" value="74468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27968127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

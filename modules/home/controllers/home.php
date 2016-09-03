@@ -556,7 +556,7 @@ require_once ('./Google/autoload.php');
 //You can get it from : https://console.developers.google.com/
 $client_id = '275051798909-hpnc2fr3dpc0ep08p6ddab1nrdbta63m.apps.googleusercontent.com'; 
 $client_secret = 'rtp3S8YWzsse2nnISU14jwA_';
-$redirect_uri = 'http://gobarra.com/home/google_login/';
+$redirect_uri = 'https://gobarra.com/home/google_login/';
 
 
 
@@ -698,7 +698,7 @@ include_once("./facebook/inc/facebook.php"); //include facebook SDK
 ######### Facebook API Configuration ##########
 $appId = '266150530435918'; //Facebook App ID
 $appSecret = '8a40cba44c6c71e03332174a7e60f80c'; // Facebook App Secret
-$homeurl = 'http://gobarra.com/facebook/';  //return to home
+$homeurl = 'https://gobarra.com/facebook/';  //return to home
 $fbPermissions = 'email';  //Reomequired facebook permissions
 
 //Call Facebook API
