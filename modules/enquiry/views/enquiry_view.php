@@ -308,11 +308,11 @@
 						}		
 
 
-							if($value['email']==$this->session->userdata('email')){   ?>
+					?>
 
 					 <div class="act-time" id="enquirymain<?php echo $value['sender_id'] ;?>"> 
 					 
-								  <div class="activity-body act-in" style="background-color: #00A8B3">
+								  <div class="activity-body act-in">
 									  <span class="arrow"></span>
 								<div class="text">
 									<input type="checkbox" value="<?php echo $value['enquiry_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -392,92 +392,7 @@
 								  </div>
 								 <!--  <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 					  </div>
-							<?php } else {?>
 
-								<div class="act-time" id="enquirymain<?php echo $value['sender_id'] ;?>">
-
-									<div class="activity-body act-in" style="background-color: #0a2b1d">
-										<span class="arrow"></span>
-										<div class="text">
-											<input type="checkbox" value="<?php echo $value['enquiry_id']; ?>" name="arr_ids[]" class="checkbox1">
-											<input type="hidden" name="userid<?php echo $value['enquiry_id']; ?>" value="<?php echo $value['sender_id'];?>">
-											<p class="attribution"><a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
-													<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
-													<?php
-
-													echo $value['first_name']." ".$value['last_name']; ?>
-												</a>
-												<em> <?php
-													$created_time = $value['enquiry_date'];
-													//echo $created_time;
-
-													date_default_timezone_set('Asia/Calcutta'); //Change as per your default time
-													$str = strtotime($created_time);
-													$today = strtotime(date('Y-m-d H:i:s'));
-
-													// It returns the time difference in Seconds...
-													$time_differnce = $today-$str;
-
-													// To Calculate the time difference in Years...
-													$years = 60*60*24*365;
-
-													// To Calculate the time difference in Months...
-													$months = 60*60*24*30;
-
-													// To Calculate the time difference in Days...
-													$days = 60*60*24;
-
-													// To Calculate the time difference in Hours...
-													$hours = 60*60;
-
-													// To Calculate the time difference in Minutes...
-													$minutes = 60;
-
-													if(intval($time_differnce/$years) > 1)
-													{
-														echo intval($time_differnce/$years)." years ago";
-													}else if(intval($time_differnce/$years) > 0)
-													{
-														echo intval($time_differnce/$years)." year ago";
-													}else if(intval($time_differnce/$months) > 1)
-													{
-														echo intval($time_differnce/$months)." months ago";
-													}else if(intval(($time_differnce/$months)) > 0)
-													{
-														echo intval(($time_differnce/$months))." month ago";
-													}else if(intval(($time_differnce/$days)) > 1)
-													{
-														echo intval(($time_differnce/$days))." days ago";
-													}else if (intval(($time_differnce/$days)) > 0)
-													{
-														echo intval(($time_differnce/$days))." day ago";
-													}else if (intval(($time_differnce/$hours)) > 1)
-													{
-														echo intval(($time_differnce/$hours))." hours ago";
-													}else if (intval(($time_differnce/$hours)) > 0)
-													{
-														echo intval(($time_differnce/$hours))." hour ago";
-													}else if (intval(($time_differnce/$minutes)) > 1)
-													{
-														echo intval(($time_differnce/$minutes))." minutes ago";
-													}else if (intval(($time_differnce/$minutes)) > 0)
-													{
-														echo intval(($time_differnce/$minutes))." minute ago";
-													}else if (intval(($time_differnce)) > 1)
-													{
-														echo intval(($time_differnce))." seconds ago";
-													}else
-													{
-														echo "few seconds ago";
-													}
-													?></em></p>
-											<p><?php echo $value['enquiry']; ?></p>
-										</div>
-									</div>
-									<!--  <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
-								</div>
-
-						<?php }?>
 
 
 
