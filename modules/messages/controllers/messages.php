@@ -165,7 +165,7 @@ class Messages extends Public_Controller
 						<div class="clearfix"></div>
 					</div>
 				</div>
-				<button onclick="return insertMessage()" class="btn btn-default" type="button">Send Reply</button>
+				<button onclick="return insertMessage()" class="buyer-btn1" type="button">Send Reply</button>
 			</form>
 		</div>
 		<?php if(is_array($result) && !empty($result) )
@@ -186,7 +186,7 @@ class Messages extends Public_Controller
 					<div class="btn-group hidden-phone">
 						<input type="hidden" name="sender_id" value="<?php echo $receiverID ;?>">
 						<input type="hidden" name="reciever_id" value="<?php echo $senderID ;?>"  />
-						<button type="button" class="pull-right btn btn-success10" onclick="return DeletetMessage()">Delete</button>
+						<button type="button" class="pull-right buyer-btn" style="width:108px;" onclick="return DeletetMessage()">Delete</button>
 					</div>
 				</div>
 				<div class="actTimeArea" >
@@ -208,8 +208,8 @@ class Messages extends Public_Controller
 						if($value['email']==$this->session->userdata('email')){   ?>
 
 						<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
-
-							<div class="activity-body act-in" style="background-color: red">
+<!-- sender receiver code of messaging --><div class="row"><div class="col-md-9 pull-right"> 
+							<div class="activity-body act-in" style="background-color: #E0DDDD; padding:20px;border-radius:10px;">
 								<span class="arrow"></span>
 								<div class="text">
 									<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -301,13 +301,14 @@ class Messages extends Public_Controller
 									} ?>
 								</div>
 							</div>
+						</div></div>
 
 							<?php } else {?>
 
 
 							<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
-
-								<div class="activity-body act-in" style="background-color: #00a0df">
+<div class="row"><div class="col-md-9 pull-left"> 
+								<div class="activity-body act-in" style="background-color: rgb(154, 170, 197); padding:20px; border-radius:10px;">
 									<span class="arrow"></span>
 									<div class="text">
 										<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -398,12 +399,12 @@ class Messages extends Public_Controller
 										<?php
 										} ?>
 									</div>
-								</div>
+								</div></div></div>
 
 
 							<?php } ?>
-
-							<div class="notify-arrow-email notify-arrow-blue-email left"></div>
+<!-- 
+							<div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 						</div>
 					<?php } ?>
 				</div>

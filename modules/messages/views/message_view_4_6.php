@@ -261,7 +261,7 @@
 		<p class="attribution"><a href="javascript:void(0)">Click Left To See Message </a></p>
 		</div>
 		</div>
-		<div class="notify-arrow-email notify-arrow-blue-email left"></div>
+	<!-- 	<div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 	  </div>									
 	</div>		 
 	<?php } ?>

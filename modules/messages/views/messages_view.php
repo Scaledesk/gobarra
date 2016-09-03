@@ -158,7 +158,7 @@
 
 <!----- desk top view --> 	
     <div class="mail-box ">
-	<aside class="sm-side col-lg-4 hidden-xs"> 
+	<aside class="sm-side col-lg-4 hidden-xs card-gobarra"> 
 	<?php if(is_array($res) && !empty($res)){
 		foreach($res as $val) {
 		if($val['profile_image'] !='') {
@@ -255,7 +255,7 @@
 	<?php }} } }else{
 		echo "Member List Empty "; } ?>
     </aside>
-    <aside class="lg-side col-lg-6"> 
+    <aside class="lg-side col-lg-6 card-gobarra "> 
     <div class="inbox-body" id="messageBox">
 				<!--loop-->
 	<?php
@@ -289,7 +289,7 @@
 		<div class="clearfix"></div>
 		</div>
 		</div>
-		<button onclick="return insertMessage()" class="btn btn-default" type="button">Send Reply</button>
+		<button onclick="return insertMessage()" class="buyer-btn1" type="button">Send Reply</button>
 		</form>
 		</div>					 
 		<form action="" method="post" id="messagedelete" >
@@ -393,23 +393,24 @@
 	<?php } ?>										
 	</div>
 	</div>
-	<div class="notify-arrow-email notify-arrow-blue-email left"></div>
+	<!-- <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 	</div>	
 	<?php } ?>					  
 	</div>
 	</form>
 	<?php } else { ?>
+	 <div class="row"> <div class="col-md-10">
 	<div class="actTimeArea"> 
-	 <div class="act-time hidden-xs">                                      
+	 <div class="act-time1 hidden-xs gender-m-l1 m-t-200gobarra p-65">                                      
 		<div class="activity-body act-in">
 		<span class="arrow"></span>
 		<div class="text">									  
-		<p class="attribution"><a href="javascript:void(0)" class="white-c">Click Left To See Message </a></p>
+		<p class="attribution"><a href="javascript:void(0)" class="white-c text-center">Click Left To See Message </a></p>
 		</div>
 		</div>
-		<div class="notify-arrow-email notify-arrow-blue-email left"></div>
+		<!-- <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 	  </div>									
-	</div>		 
+	</div></div></div>		 
 	<?php } ?>
   <!--loop-->
 	</div>
