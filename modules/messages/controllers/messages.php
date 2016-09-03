@@ -167,6 +167,7 @@ class Messages extends Public_Controller
 				</div>
 				<button onclick="return insertMessage()" class="buyer-btn1" type="button">Send Reply</button>
 			</form>
+			<hr>
 		</div>
 		<?php if(is_array($result) && !empty($result) )
 		{
@@ -209,7 +210,7 @@ class Messages extends Public_Controller
 
 						<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
 <!-- sender receiver code of messaging --><div class="row"><div class="col-md-9 pull-right"> 
-							<div class="activity-body act-in" style="background-color: #E0DDDD; padding:20px;border-radius:10px;">
+							<div class="activity-body act-in" style="background-color: #E0DDDD; padding:5px;border-radius:3px;">
 								<span class="arrow"></span>
 								<div class="text">
 									<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -219,7 +220,7 @@ class Messages extends Public_Controller
 											<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
 											<?php
 											echo $value['first_name']." ".$value['last_name'];?></a>
-										<em> <?php
+										<em><span class="f-12">(you)</span> &nbsp; <?php
 											$created_time = $value['msg_add_date'];
 											//echo $created_time;
 
@@ -286,7 +287,7 @@ class Messages extends Public_Controller
 									<p><?php
 										if($value['message_image'] =='')
 										{?>
-									<p><?php echo $value['message'];?> </p>
+									<p style="font-size:12px; font-weight:300;"><?php echo $value['message'];?> </p>
 									<?php }
 									else
 									{
@@ -308,7 +309,7 @@ class Messages extends Public_Controller
 
 							<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
 <div class="row"><div class="col-md-9 pull-left"> 
-								<div class="activity-body act-in" style="background-color: rgb(154, 170, 197); padding:20px; border-radius:10px;">
+								<div class="activity-body act-in" style="background-color: rgba(154,170, 197, 0.58); padding:5px; border-radius:3px;">
 									<span class="arrow"></span>
 									<div class="text">
 										<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
@@ -318,7 +319,7 @@ class Messages extends Public_Controller
 												<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
 												<?php
 												echo $value['first_name']." ".$value['last_name'];?></a>
-											<em> <?php
+											<em>&nbsp; <?php
 												$created_time = $value['msg_add_date'];
 												//echo $created_time;
 
@@ -385,7 +386,7 @@ class Messages extends Public_Controller
 										<p><?php
 											if($value['message_image'] =='')
 											{?>
-										<p><?php echo $value['message'];?> </p>
+										<p style="font-size:12px; font-weight:300;"><?php echo $value['message'];?> </p>
 										<?php }
 										else
 										{
@@ -394,10 +395,31 @@ class Messages extends Public_Controller
 										$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 										?>
 										<div class="preview prouductDisplay">
-											<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
+											<span><p><a><button type="button" data-toggle="modal" class="btn" data-target="#myModal"><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></button></a></p></span>
 										</div>
 										<?php
 										} ?>
+																				   <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" >
+      <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal"><span style="color:#000000">close&times;</span></button>
+       
+      </div>
+      <div class="modal-body">
+       <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-Success" data-dismiss="modal" onClick="$myModal.">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>	
 									</div>
 								</div></div></div>
 

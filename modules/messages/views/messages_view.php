@@ -157,7 +157,7 @@
 	</div>	
 
 <!----- desk top view --> 	
-    <div class="mail-box ">
+    <div class="mail-box m-b-10 ">
 	<aside class="sm-side col-lg-4 hidden-xs card-gobarra"> 
 	<?php if(is_array($res) && !empty($res)){
 		foreach($res as $val) {
@@ -255,7 +255,7 @@
 	<?php }} } }else{
 		echo "Member List Empty "; } ?>
     </aside>
-    <aside class="lg-side col-lg-6 card-gobarra "> 
+    <aside class="lg-side col-lg-6 card-gobarra " style="overflow-y:scroll;"> 
     <div class="inbox-body" id="messageBox">
 				<!--loop-->
 	<?php

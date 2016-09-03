@@ -250,7 +250,7 @@
 					<div class="media-left">
 					<img src="<?php echo $userImage ; ?>" title="User Name" class="clsimg" border="0" width="60px" height="30px">
 					  </div>					 					
-					<div class="media-body uploadAndText ">
+					<div class="media-body uploadAndText m-b-10 ">
 				  <!--	<p class="lead emoji-picker-container">   data-emojiable="true" -->
 						<textarea  name="message" id="message<?php echo $pageVal['travel_id'];?>" class="form-control message"   class="discussPopupHome col-lg-12" placeholder="Your Message"  ></textarea>
                        <!--   </p> -->
