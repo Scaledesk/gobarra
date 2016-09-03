@@ -138,7 +138,7 @@
 					</div>
 				  
               <div class="mail-box ">
-                  <aside class="sm-side col-lg-4 hidden-xs white-c text-center">
+                  <aside class="sm-side col-lg-4 hidden-xs card-gobarra text-center">
                   	<div class="m-t-20 f-18 w-800">
 				  <?php 
 					if(is_array($res) && !empty($res))
@@ -230,7 +230,7 @@
 				  
 				  <!--loop-->			
 				 
-                  <aside class="lg-side col-lg-6"> 
+                  <aside class="lg-side card-gobarra col-lg-6"> 
                       <div class="inbox-body" id="enquiryBox">  
 					
 						<?php
@@ -254,7 +254,7 @@
 								<input name="reciever_id" type="hidden" value="<?php echo $receiverID; ?>" />
 								<input name="sender_id" type="hidden" value="<?php echo  $senderID ; ?>" />				
 							</div>						
-								<button onclick="return insertEnquiry()" class="btn btn-success" type="button">Send Reply</button>
+								<button onclick="return insertEnquiry()" class="buyer-btn1" style="width:108px;" type="button">Send Reply</button>
 							  </form>
 							 </div>
 				
@@ -273,7 +273,7 @@
                              <div class="btn-group hidden-phone">
                                   <input type="hidden" name="reciever_id" value="<?php echo $receiverID ;?>">
 								   <input type="hidden" name="sender_id" value="<?php echo $senderID ;?>">
-								 <button type="button" class="pull-right btn btn-danger" onclick="return DeletetEnquiry()">Delete</button>
+								 <button type="button" class="pull-right buyer-btn" style="width:108px;" onclick="return DeletetEnquiry()">Delete</button>
                              </div>  
                          </div>
 						 
