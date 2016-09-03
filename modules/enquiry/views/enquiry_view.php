@@ -280,8 +280,7 @@
 						 <div class="actTimeArea" > 
 					 <?php
 						foreach($result as $key=>$value)
-							/*echo "<pre>";
-							 print_r($value);*/
+							
 						{
 						if($value['profile_image'] !='')
 						{
@@ -298,6 +297,8 @@
 		                             $MyImage=base_url().'uploaded_files/profile_img/'.$value['profile_image'];
 		                              }
 		                              
+
+
 
 							/*$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];	*/								
 						}

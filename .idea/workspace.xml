@@ -51,14 +51,14 @@
       <file leaf-file-name="enquiry_view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="285" column="56" selection-start-line="285" selection-start-column="56" selection-end-line="285" selection-end-column="56" />
+            <state relative-caret-position="60">
+              <caret line="282" column="28" selection-start-line="282" selection-start-column="28" selection-end-line="282" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#aside#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#aside#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <marker date="1472902355035" expanded="true" signature="3314:3354" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1472902355035" expanded="true" signature="7222:7262" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1472902355035" expanded="true" signature="10268:10308" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1472903427963" expanded="true" signature="3314:3354" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1472903427963" expanded="true" signature="7222:7262" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1472903427963" expanded="true" signature="10268:10308" placeholder="SELECT * FRO... tbl_users" />
               </folding>
             </state>
           </provider>
@@ -701,12 +701,12 @@
       <workItem from="1472881156399" duration="980000" />
       <workItem from="1472882992131" duration="693000" />
       <workItem from="1472899806585" duration="599000" />
-      <workItem from="1472901717111" duration="764000" />
+      <workItem from="1472901717111" duration="1359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72332000" />
+    <option name="totallyTimeSpent" value="72927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1128,14 +1128,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="285" column="56" selection-start-line="285" selection-start-column="56" selection-end-line="285" selection-end-column="56" />
+        <state relative-caret-position="60">
+          <caret line="282" column="28" selection-start-line="282" selection-start-column="28" selection-end-line="282" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#aside#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#aside#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1472902355035" expanded="true" signature="3314:3354" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1472902355035" expanded="true" signature="7222:7262" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1472902355035" expanded="true" signature="10268:10308" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1472903427963" expanded="true" signature="3314:3354" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1472903427963" expanded="true" signature="7222:7262" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1472903427963" expanded="true" signature="10268:10308" placeholder="SELECT * FRO... tbl_users" />
           </folding>
         </state>
       </provider>
