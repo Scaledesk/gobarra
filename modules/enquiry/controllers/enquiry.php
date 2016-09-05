@@ -66,6 +66,7 @@ class Enquiry extends Public_Controller
 				$reciever_id	= $this->input->get_post('reciever_id');
 				$EnqCount 		= $this->enquiry_model->EnqCount($sender_id,$reciever_id);
 				$countThread	= count($EnqCount);
+			/*	$thread_id		= $EnqCount[0]['enq_thread_id'];*/
 				if($EnqCount){$thread_id		= $EnqCount[0]['enq_thread_id'];}
 				if($countThread  == 0)
 				{
@@ -353,7 +354,7 @@ class Enquiry extends Public_Controller
 		}	
 		/*Function for Enquiry Messages */
 		
-		public function deleteEnquiry()
+		public function deleteEnquiry()	
 		{					  
 							  $this->load->model('user/users_model'); 
                               $email     =$this->session->userdata('email');
@@ -378,10 +379,12 @@ class Enquiry extends Public_Controller
 									{
 										$data=array(
 										 'reciever_delete' => '0'
-										 );										
+										 );
 									}
 									$this->db->where('enquiry_id',"$value");
-									$this->db->update('tbl_enquiry',$data);
+								   $this->db->delete('tbl_enquiry');
+
+									/*$this->db->update('tbl_enquiry',$data);*/
 								}
 							} 
 						}

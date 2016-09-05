@@ -81,10 +81,11 @@
 							<ul>
 							<?php if($pageValue['sender_id'] == $logUserId)
 								  { 
-								   ?>
+
+								   /**/?>
 							   <li>
 							     <div class="user-head">
-								  <?php $query = $this->db->query("SELECT * FROM tbl_users WHERE user_id = $pageValue[reciever_id]"); 
+								  <?php $query = $this->db->query("SELECT * FROM tbl_users WHERE user_id = $pageValue[reciever_id]");
 									$qury_result= $query->result_array();
 									foreach($qury_result as $keyVal => $Myvalue )
 									{
@@ -103,7 +104,7 @@
 
 		                             $MyImage=base_url().'uploaded_files/profile_img/'.$Myvalue['profile_image'];
 		                              }
-										/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/								
+
 									}
 									else
 									{
@@ -168,15 +169,19 @@
 						{
 							$userImage =base_url()."uploaded_files/def_user/index.jpg";
 						}
+                      /* print_r($pageValue);*/
+
 						$this->load->model('user/Users_model');
 									$User_Arr = $this->Users_model->getuserInfo($this->session->userdata('email'));
 									$logUserId =$User_Arr[0]['user_id'];
+									/*echo $logUserId;
+									echo $pageValue['sender_id'];*/
 						?>
                       <?php if($pageValue['sender_id'] == $logUserId)
 						{ 
-						?></div>
+						/**/?><!--</div>
 					  <div class="user-head">
-					   <?php $query = $this->db->query("SELECT * FROM tbl_users WHERE user_id = $pageValue[reciever_id]"); 
+					   <?php /*$query = $this->db->query("SELECT * FROM tbl_users WHERE user_id = $pageValue[reciever_id]");
 									$qury_result= $query->result_array();
 									foreach($qury_result as $keyVal => $Myvalue )
 									{
@@ -195,22 +200,22 @@
 		                             $MyImage=base_url().'uploaded_files/profile_img/'.$Myvalue['profile_image'];
 		                              }
 
-										/*$MyImage =base_url()."uploaded_files/profile_img/".$Myvalue['profile_image'];	*/								
+																
 									}
 									else
 									{
 										$MyImage =base_url()."uploaded_files/def_user/index.jpg";
 									}											
-									?>
-                          <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')">
-                              <img src="<?php echo $MyImage; ?>" alt="">
+									*/?>
+                          <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php /*echo $pageValue['reciever_id']; */?>','<?php /*echo $pageValue['sender_id']; */?>')">
+                              <img src="<?php /*echo $MyImage; */?>" alt="">
                           </a>
                           <div class="user-name m-t-20">
-                              <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')"><?php echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name']; ?></a></h5>
+                              <h5><a href="javascript:void(0);" onclick="return messageById('<?php /*echo $pageValue['reciever_id']; */?>','<?php /*echo $pageValue['sender_id']; */?>')"><?php /*echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name']; */?></a></h5>
                           </div>
-						<?php } ?>						  
-                      </div> 
-					  <?php } else
+						<?php /*} */?>
+                      </div>
+					  --><?php } else
 					  { 
 						?>
 					   <div class="user-head ">					 
