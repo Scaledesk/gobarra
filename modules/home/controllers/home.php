@@ -557,6 +557,7 @@ require_once ('./Google/autoload.php');
 $client_id = '275051798909-hpnc2fr3dpc0ep08p6ddab1nrdbta63m.apps.googleusercontent.com'; 
 $client_secret = 'rtp3S8YWzsse2nnISU14jwA_';
 $redirect_uri = 'https://gobarra.com/home/google_login/';
+/*$redirect_uri = 'https://gobarra.com/home/google_login/';*/
 
 
 
