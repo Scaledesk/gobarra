@@ -154,9 +154,9 @@ class Messages extends Public_Controller
 						<input name="sender_id" type="hidden" value="<?php echo $receiverID ;?>" />
 						<input name="reciever_id" type="hidden" value="<?php echo $senderID ;?>"  />
 
+					</div>
 				</div>
-				</div>
-				    <div class="preview">
+				<div class="preview">
 					<div id="upload-file-container">
 						<img id="blah" src="" alt="" style="height: auto !important; max-width: 200px; width:auto;"/>
 						<a id="remove" class="" href="javascript:void(0)" onclick="removeImagePreview('')" >
@@ -164,11 +164,11 @@ class Messages extends Public_Controller
 						<span class="add_pdt_img_nc"></span>
 						<div class="clearfix"></div>
 					</div>
-				    </div>
+				</div>
 				<button onclick="return insertMessage()" class="buyer-btn1" type="button">Send Reply</button>
 			</form>
 			<hr>
-		    </div>
+		</div>
 		<?php if(is_array($result) && !empty($result) )
 		{
 			?>
@@ -211,7 +211,7 @@ class Messages extends Public_Controller
 						if($value['email']==$this->session->userdata('email')){   ?>
 
 						<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
-<!-- sender receiver code of messaging --> <div class="row"><div class="col-md-9 pull-right">  
+<!-- sender receiver code of messaging --><div class="row"><div class="col-md-9 pull-right"> 
 							<div class="activity-body act-in" style="background-color: #E0DDDD; padding:5px;border-radius:3px;">
 								<span class="arrow"></span>
 								<div class="text">
@@ -305,31 +305,9 @@ class Messages extends Public_Controller
 									</div>
 									<?php
 									} ?>
-
-									<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content" onClick="alert('ugu')">
-      <div class="modal-header" >
-        <button type="button" class="close" data-dismiss="modal"><span style="color:#000000">close&times;</span></button>
-       
-      </div>
-      <div class="modal-body">
-       <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-Success" data-dismiss="modal" onClick="$myModal.">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>	
-							
-							
-						</div></div></div></div>
+								</div>
+							</div>
+						</div></div>
 
 							<?php } else {?>
 
@@ -448,16 +426,15 @@ class Messages extends Public_Controller
 											  </div>
 											</div>
 									</div>
-								</div></div></div></div>
+								</div></div></div>
 
 
 							<?php } ?>
 <!-- 
 							<div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
+						</div>
 					<?php } ?>
-				<!-- </div> -->		
-					<?php } ?>
-				<!-- </div> -->
+				</div>
 			</form>
 			<?php
 		}
