@@ -66,7 +66,7 @@ class Enquiry extends Public_Controller
 				$reciever_id	= $this->input->get_post('reciever_id');
 				$EnqCount 		= $this->enquiry_model->EnqCount($sender_id,$reciever_id);
 				$countThread	= count($EnqCount);
-				$thread_id		= $EnqCount[0]['enq_thread_id'];
+				if($EnqCount){$thread_id		= $EnqCount[0]['enq_thread_id'];}
 				if($countThread  == 0)
 				{
 					$posted_data = array(
