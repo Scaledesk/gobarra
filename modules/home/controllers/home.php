@@ -559,7 +559,7 @@ $client_secret = 'rtp3S8YWzsse2nnISU14jwA_';
 $redirect_uri = 'https://gobarra.com/home/google_login/';
 /*$redirect_uri = 'https://gobarra.com/home/google_login/';*/
 
-
+ 	
 
 
 //incase of logout request, just unset the session var
