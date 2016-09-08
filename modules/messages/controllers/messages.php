@@ -313,7 +313,8 @@ class Messages extends Public_Controller
 
 
 							<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
-<div class="row"><div class="col-md-9 pull-left"> 
+
+								<div class="row"><div class="col-md-9 pull-left">
 								<div class="activity-body act-in" style="background-color: rgba(154,170, 197, 0.58); padding:5px; border-radius:3px;">
 									<span class="arrow"></span>
 									<div class="text">
@@ -400,35 +401,54 @@ class Messages extends Public_Controller
 										$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 										?>
 										<div class="preview prouductDisplay">
-											<span><p><a><button type="button" data-toggle="modal" class="btn" data-target="#myModal"><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></button></a></p></span>
+											<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
 										</div>
 										<?php
 										} ?>
 																															   <!-- Modal -->
-											<div id="myModal" class="modal fade" role="dialog">
-											  <div class="modal-dialog">
 
-												<!-- Modal content-->
-												<div class="modal-content" >
-												  <div class="modal-header" >
-													<button type="button" class="close" data-dismiss="modal"><span style="color:#000000">close&times;</span></button>
+                                             <!--.................................................................-->
 
-												  </div>
-												  <div class="modal-body">
-												   <img class="group2" width="100%" height="80%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+										<!--
+										<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+											Launch demo modal
+										</button>
 
-												  </div>
-												  <div class="modal-footer">
-													<button type="button" class="btn btn-Success" data-dismiss="modal" onClick="$myModal.">Close</button>
-												  </div>
+
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" onclick="modaldiv()">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+													</div>
+													<div class="modal-body">
+														...sddddddddddddddddddddd
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+														<button type="button" class="btn btn-primary">Save changes</button>
+													</div>
 												</div>
-
-											  </div>
 											</div>
+										</div>
+-->
+
+										<!--..............................................................................-->
+
+
 									</div>
-								</div></div></div>
+								</div>
+	                          </div>
 
 
+
+
+
+                           
+
+
+                           </div>
 							<?php } ?>
 <!-- 
 							<div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
@@ -562,5 +582,8 @@ class Messages extends Public_Controller
 	}
 
 }
+
+
+
 
 /* End of file demo.php */

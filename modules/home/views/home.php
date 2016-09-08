@@ -88,6 +88,7 @@
 								<div class="form-group col-lg-5 col-xs-6 col-sm-5 something"><label class="size">Leaving from</label> 
 									<div class="fixArea"> 
 										  <input  class="form-control" name="travel_from" id="travelFrom" type="text" title="Type Your Leaving Source" placeholder="Type Your Leaving Source"> 
+
 										   <!--<input name="travel_from" id="city_id1" type="hidden"> -->
 									</div>
 								</div> 
@@ -681,6 +682,7 @@ $(document).ready(function() {
             });
         });
     </script>
+    
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 
