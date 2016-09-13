@@ -611,11 +611,12 @@ h1.elegantshadow {
     }
 
     .uploadAndText .uploadSection {
-        width: 16.333333%;
-        margin-top: 0px;
-        margin-right: 0px;
-            right: 10px;
-             top: 22px;
+            width: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    right: 10px;
+    top: 28px;
+}
    
 
     }

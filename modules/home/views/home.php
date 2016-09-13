@@ -261,7 +261,7 @@
 						<input  type="hidden" id="sender_id<?php echo $userId ; ?>" name="sender_id" value="<?php echo $userId; ?>" />
 						<input  type="hidden" id="reciever_id<?php echo $pageVal['user_id']; ?>" name="reciever_id" value="<?php echo $pageVal['user_id']; ?>" />
 						</div>
-<button type="button" title="Send" class="buyer-btn1" onclick="return sendmessage('<?php echo $pageVal["travel_id"]; ?>')">Send</button>
+<button type="button" title="Send" class="buyer-btn1" onclick="return sendmessage('<?php echo $pageVal["travel_id"]; ?>')" style="margin-top:15px;">Send</button>
 						</div>
 						<div class="preview">
 						<img id="prvimg<?php echo $pageVal['travel_id'];?>" src="" alt="" style="height: auto !important; max-width: 200px; width:auto;" >

@@ -163,7 +163,7 @@ body{
 }
 
 .partnerResult .partnerInfo {
-    margin-left: 95px;
+    margin-left: 110px;
     padding:5px 0 10px 0;
 }
 .partnerResult .partnerName {
@@ -563,7 +563,7 @@ div[data-role="editor-toolbar"] {
 }
 
 .top-nav ul.top-menu > li > a {
-        padding: 6px 6px 0px 6px;
+    padding: 0px 9px;
     background: none;
     margin-right: 0;
 }
@@ -904,7 +904,7 @@ div[data-role="editor-toolbar"] {
         }
         
         .form-2 { 
-    width: 290px!important;
+    width: 100%!important;
 } 
 ul.inbox-pagination {  
     margin: 0 5px !important;
@@ -2668,6 +2668,7 @@ footer {
 .uploadAndText textarea {   
     margin-right:5px !important;
        /* margin-bottom: 10px;*/
+       margin-top: 22px;
 }
 .uploadSecForm {
     padding-right:1% !important;
