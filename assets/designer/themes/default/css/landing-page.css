@@ -1437,7 +1437,7 @@ Label the data
 }
 .user-head .user-name {
     display: inline-block;
-    margin:0 0 0 10px;
+    margin:0;
 }
 
 .user-head .user-name h5 {

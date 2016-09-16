@@ -28,7 +28,7 @@
 	<?php  echo $message['message'];?></div>
 	<?php } ?>				
 	<div class="col-md-12 ">
-	<div class="col-lg-8 topdashboardForm">
+	<div class="col-lg-8 col-sm-8 topdashboardForm">
 	<div class="col-lg-12">  <h3>Add Your Travel Details</h3></div>
 <?php echo form_open_multipart('travelplans/planschedul','id="form"'); ?>				 
 		<div class="form-group col-lg-3 col-xs-6 something"><label class="size">Leaving from</label> 
@@ -152,7 +152,7 @@
 		else{ echo "<center><strong> No record(s) found !</strong></center>" ; } ?>
 	</div><!-- end row 8-->
 					
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4">
 <div class="bg leftDetailsSec">
 	<div class="right_coloumn_box">
 	<div class="right-column-heading center-header-new">
@@ -167,7 +167,7 @@
 	  ?>
 		<div class="item mywidth">
 			<a href="#">
-				<div class="container-fluid rightpost myborder">
+				<div class="container-fluid rightpost">
 				<?php foreach($plan as $travelplan) {
 						  $travl_frm = $travelplan->travel_from;
 						  $travl_to  = $travelplan->travel_to;  ?>
@@ -197,7 +197,7 @@
 </div>
 </div>
 
-<div class="right_coloumn_box text-center">
+<div class="right_coloumn_box text-center m-t-60">
 	<div class="right-column-heading center-header-new">
 		<h3 class="btn btn-md btn-snapsht btn-primary" style="width: 250px;">My Snapshot</h3>
 	</div>
