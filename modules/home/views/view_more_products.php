@@ -19,7 +19,7 @@
                 <div class="col-sm-4 leftSidebar hidden-xs">
                  
 				 <div class="bg leftDetailsSec">
-	<div class="imageFrame timeline col-md-6">
+	<div class="imageFrame timeline col-md-6 p-r-10">
 	<?php if($UserInfo->profile_image !='')
 	{
 
@@ -137,7 +137,7 @@
 				   if( is_array($res_array) && !empty($res_array) )
 				  {	
 					?>
-                <div class="col-sm-12 col-xs-12 col-md-8 content">                    
+                <div class="col-sm-8 col-md-8 content">                    
                     <div class="homeFormArea">                       
                      <div class="rowPOst">
 						
@@ -145,7 +145,7 @@
 					{
 						
 						?>
-					<div class="partnerResult">
+					<div class="partnerResult m-t-15">
 					<div class="partnerPhoto">
 					<?php if($pageVal['profile_image'] !='')
 					{

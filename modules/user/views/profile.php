@@ -104,7 +104,7 @@
     
                 <!-- full Content -->
         <div class="col-md-12 ">   
-      <div class="col-sm-4 col-md-4">
+      <div class=" col-md-4">
         <div class="card-gobarra">
       <div class="col-lg-12">
       <h3 style="font-weight: 600;text-align:center;color: #fe0034;"><?php echo $userData[0]['first_name'];?>&nbsp;<?php echo $userData[0]['last_name'];?></h3>

@@ -152,7 +152,7 @@
 		else{ echo "<center><strong> No record(s) found !</strong></center>" ; } ?>
 	</div><!-- end row 8-->
 					
-<div class="col-sm-4 mycol-md-4">
+<div class="col-md-4">
 <div class="bg leftDetailsSec">
 	<div class="right_coloumn_box">
 	<div class="right-column-heading center-header-new">
@@ -197,7 +197,7 @@
 </div>
 </div>
 
-<div class="right_coloumn_box">
+<div class="right_coloumn_box text-center">
 	<div class="right-column-heading center-header-new">
 		<h3 class="btn btn-md btn-snapsht btn-primary" style="width: 250px;">My Snapshot</h3>
 	</div>

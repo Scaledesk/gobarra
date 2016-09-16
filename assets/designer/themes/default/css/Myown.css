@@ -539,9 +539,12 @@ h1.elegantshadow {
 }
 
 @media only screen and (max-width: 1024px) {
-    .col-sm-4 {
+  /*  .col-sm-4 {
         width: 33.333333%;
+    }*/    .imageFrame img{
+         margin-left: 0px!important; 
     }
+        
 
     .button-wrap {
         position: absolute;
@@ -637,9 +640,7 @@ h1.elegantshadow {
         padding-left: 25px;
     }
 
-    .col-sm-4 {
-        width: 97.333333%;
-    }
+   
 
     @media only screen and (max-width: 480px) {
         .list-container {
@@ -1371,7 +1372,7 @@ h1.elegantshadow {
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
     .helpbutton {
         float: right;
         margin-top: -12px;
@@ -1379,7 +1380,7 @@ h1.elegantshadow {
     }
 
     .act-time {
-        display: none;
+        display: block;
     }
 
     .partnerResult .partnerSupport {

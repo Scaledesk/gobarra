@@ -753,6 +753,7 @@ div[data-role="editor-toolbar"] {
 }
 
 
+
 .adjest.pull-right.planstyle {
     margin-right: 8px;
     margin-top: 27px;
@@ -1470,7 +1471,7 @@ a.mail-dropdown {
 
 .inbox-body {
     padding: 20px;
-    max-height: 50px;
+    max-height: 360px;
         /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
 }
 
@@ -2378,7 +2379,7 @@ footer {
 .expand ul li {
     display: inline-block;
     height: 50px;
-    margin: 0 0 5px;
+    margin: 0 0 15px;
     padding: 5px 0;
     width: 100%;
 }
@@ -2996,6 +2997,8 @@ margin-left: 35px!important;
     margin-top: 5px;
     }
 
+    .
+
     .padding-gobarral{
   padding-left: 0px!important;
 } 
@@ -3006,6 +3009,12 @@ margin-left: 35px!important;
 .marq-clss{
     height:156px;
 }
+
+.row-sm
+}
+
+.act-time{
+    padding: 12px 15px
 }
 
 @media only screen and  (min-device-width: 768px) and (max-device-width: 1024px){
