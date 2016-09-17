@@ -411,12 +411,15 @@
 					
 					<div class="actTimeArea"> 
 				
-					 <div class="act-time hidden-xs">                                      
+					 <div class="act-time1 hidden-xs gender-m-l1 m-t-200gobarra p-65">
+
 						<div class="activity-body act-in">
 						<span class="arrow"></span>
 						<div class="text">									  
-						<p class="attribution"><a href="javascript:void(0)" class="white-c">Click Left To See Enquiry </a></p>
+						<p class="attribution"><a href="javascript:void(0)" class="white-c text-center m-l-90">Click Left To See Enquiry </a></p>
 						</div>
+
+
 						</div>
 					  </div>									
 				</div>		

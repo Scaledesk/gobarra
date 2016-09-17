@@ -138,7 +138,7 @@
 				$senderId=$usrinfo[0]['user_id'];
 					?>
 					<ul class="nav nav-tabs">
-					  <li class="active"><a href="<?php echo base_url(); ?>timelinepost/timeline">Post Timeline</a></li>
+					  <li class="active m-t-15"><a href="<?php echo base_url(); ?>timelinepost/timeline">Post Timeline</a></li>
 					 
 					</ul>
 					<?php if($senderId == $user[0]->user_id) {?>

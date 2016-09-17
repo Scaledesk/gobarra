@@ -131,7 +131,7 @@ body{
     height: 75px;
     left: 10px;
     position: absolute;
-    top: 10px;
+    top: 2px;
     width: 75px;
     z-index:0;
    /* -ms-transform: rotate(7deg); 
@@ -2779,6 +2779,10 @@ footer {
 .m-10{
     margin: 10px!important;
 }
+.m-l-90{
+    margin-left: 90px!important;
+}
+
 .m-t-5{
     margin-top: 5px!important;
 }
