@@ -2383,7 +2383,7 @@ footer {
     padding: 5px 0;
     width: 100%;
 }
-.expand  ul li:hover{ border-bottom:solid 1px #fe0034 ; }
+.expand  ul li:hover{ /*border-bottom:solid 1px #fe0034 ;*/ }
 
 .form-group > div {
   

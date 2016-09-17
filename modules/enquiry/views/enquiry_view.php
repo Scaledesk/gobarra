@@ -113,7 +113,7 @@
 									?>
                           <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')">
                               <img src="<?php echo $MyImage; ?>" alt="">
-                          </a>
+                          </a>&nbsp;&nbsp;
                           <div class="user-name">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')"><?php echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name']; ?></a></h5>
                           </div>
@@ -125,7 +125,7 @@
 							     <div class="user-head">
                           <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')">
                               <img src="<?php echo $userImage; ?>" alt="" width="60" height="60" class="img-circle">
-                          </a>
+                          </a>&nbsp;&nbsp;
                           <div class="user-name">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')"><?php echo $pageValue['first_name'].'&nbsp;'.$pageValue['last_name']; ?></a></h5>
                           </div>
@@ -221,7 +221,7 @@
 					   <div class="user-head ">					 
                           <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')">
                               <img src="<?php echo $userImage; ?>" alt="">
-                          </a>
+                          </a>&nbsp;&nbsp;
                           <div class="user-name">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')"><?php echo $pageValue['first_name'].'&nbsp;'.$pageValue['last_name']; ?></a></h5>
                           </div>						 
@@ -416,7 +416,7 @@
 						<div class="activity-body act-in">
 						<span class="arrow"></span>
 						<div class="text">									  
-						<p class="attribution"><a href="javascript:void(0)" class="white-c text-center m-l-90">Click Left To See Enquiry </a></p>
+						<p class="attribution"><a href="javascript:void(0)" class="white-c text-center m-l-25">Click Left To See Enquiry </a></p>
 						</div>
 
 

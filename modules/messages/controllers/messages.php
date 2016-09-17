@@ -211,12 +211,12 @@ class Messages extends Public_Controller
 						if($value['email']==$this->session->userdata('email')){   ?>
 
 						<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
-<!-- sender receiver code of messaging --><div class="row"><div class="col-xs-12 col-md-9 p-0 pull-left"> 
+<!-- sender receiver code of messaging --><div class="row"><div class="col-md-9 pull-right"> 
 							<div class="activity-body act-in" style="background-color: #E0DDDD; padding:5px;border-radius:3px;">
 								<span class="arrow"></span>
 								<div class="text">
 									<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
-									<input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
+									<br><input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
 									<p class="attribution">
 										<a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
 											<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
@@ -314,12 +314,12 @@ class Messages extends Public_Controller
 
 							<div class="act-time" id="messagemain<?php echo $value['sender_id'] ;?>">
 
-								<div class="row"><div class="col-xs-12 col-md-9 p-0 pull-right">
+								<div class="row"><div class="col-md-9 pull-left">
 								<div class="activity-body act-in" style="background-color: rgba(154,170, 197, 0.58); padding:5px; border-radius:3px;">
 									<span class="arrow"></span>
 									<div class="text">
 										<input type="checkbox" value="<?php echo $value['message_id']; ?>" name="arr_ids[]" class="checkbox1">
-										<input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
+										<br><input type="hidden" name="userid<?php echo $value['message_id']; ?>" value="<?php echo $value['user_id'];?>">
 										<p class="attribution">
 											<a href="<?php echo base_url();?>home/timelinepost/<?php echo $value['user_id']; ?>">
 												<img src="<?php echo $MyImage; ?>" alt="" width="30px" height="30px">
