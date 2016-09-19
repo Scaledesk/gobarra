@@ -105,8 +105,9 @@
 
 						<a href="<?php echo base_url();?>timelinepost/timeline/<?php echo $pageVal['user_id'];?>"><img src="<?php echo $img;?>" width="75px" height="75px"></a>
 					</div>
-					<div class="partnerInfo ">
-						<div class="pull-right">
+
+					<div class="col-lg-12">
+                         <div class="pull-right">
 								
 									<a href="<?php echo "admin_products/edit/".$pageVal['product_id']; ?>">
 									  <i class="fa fa-pencil-square-o" title="Edit"></i>
@@ -114,6 +115,11 @@
 									<?php echo ($pageVal['status']=='1')?'<i class="fa fa-eye" title="Publish"></i>':'<i class="fa fa-eye-slash" title="Un-Publish"></i>';?>|
 								  <input type="checkbox" name="arr_ids[]" value="<?php echo $pageVal['product_id'];?>" class="mail-checkbox mail-group-checkbox" title="Select">								 
 					</div>
+
+					</div>
+					<div class="partnerInfo ">
+						
+
 						<div class="col-md-6">
 						<div class="partnerName"><?php echo $pageVal['product_name'];?> <em class="smallText">Added By</em><a href="<?php echo base_url();?>timelinepost/timeline/<?php echo $pageVal['user_id'];?>"> <?php echo $userData[0]['first_name'];?>&nbsp;<?php echo $userData[0]['last_name'];?></a> <br>
 						 <span><?php echo $pageVal['country_id'];?> ( <?php echo $pageVal['city_id'];?> )</span>
@@ -121,7 +127,8 @@
 						<div class="partnerInterests">
 					 <span class="show-read-more"> <?php echo str_replace('<br/>',"\n",$pageVal['description'] );?></span>
 						   <!-- Trigger the modal with a button --> 
-						 					                                     
+
+
 						 </div>
 						</div>
 						<div class="col-md-6">
