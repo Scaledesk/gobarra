@@ -39,19 +39,21 @@
 				 ?>
 				 <div class="col-lg-12 topdashboardForm">
 								 <div class="col-lg-12">  <h3>Update Product</h3></div>
-								<div class="form-group col-lg-4 col-xs-4 something">
+								
+								<div class="form-group col-lg-4 col-sm-4 something">
                     <label class="size">Country Name</label>
                     <div class="fixArea">
-                        <input data-placeholder="Inter a Country..." name="country_name" value="<?php echo set_value('country_id',$res['country_id']);?>" class="form-control" id="country_id" style="width:350px;">
+                        <input data-placeholder="Inter a Country..." name="country_name" value="<?php echo set_value('country_id',$res['country_id']);?>" class="textfield2 ui-autocomplete-input form-control" id="country_id" >
                     </div>
                 </div>
-				<div class="form-group col-lg-4 col-xs-6 something">
+
+				<div class="form-group col-lg-4 col-sm-4 something">
                 <label class="size">City Name</label>
                 <div class="fixArea" >
-				 <input type="text" name="city_name" id="city_id" class="form-control" style="width:350px;" value="<?php echo set_value('city_id',$res['city_id']);?>">
+				 <input type="text" name="city_name" id="city_id" class="form-control"  value="<?php echo set_value('city_id',$res['city_id']);?>">
                 </div>
                 </div>
-				<div class="form-group col-lg-4 col-xs-6 something"><label class="size">Product Name</label> 
+				<div class="form-group col-lg-4 col-sm-4 something"><label class="size">Product Name</label> 
 					<div class="fixArea">
 						<input type="text" name="product_name" id="product_name" maxlength="255" value="<?php echo set_value('product_name',$res['product_name']);?>" class="textfield2 ui-autocomplete-input form-control">
 					</div>
@@ -83,11 +85,13 @@
 					{
 					  $target_path1= base_url()."uploaded_files/def_user/dummy.png";
 					}
-					?>  	
-					<label class="control-label">Uploaded Image1</label><label class="control-label equal">Uploaded Image2</label><br>
-					 <img src="<?php echo $target_path;?>" alt="" width="200px" height="200px">								 
-					 <img src="<?php echo $target_path1;?>" alt="" width="200px" height="200px">
+					?> <div class="row"><div class="col-xs-6"> 
+				<!-- 	<label class="control-label">Uploaded Image1</label><label class="control-label equal">Uploaded Image2</label></div></div><br> -->
+					<!-- <div class="row"><div class="col-xs-6"> --><figure> <img src="<?php echo $target_path;?>" alt="" width="150px" height="150px"><figcaption class="control-label ">Uploaded Image1</figcaption></figure></div><!-- </div> -->								 
+					<!-- <div class="col-xs-6"> --><div class="col-xs-6"> <figure> <img src="<?php echo $target_path1;?>" alt="" width="150px" height="150px"><figcaption class="control-label ">Uploaded Image2</figcaption></figure></div><!-- </div></div> -->
 					</div>
+					</div>
+					<br>
 					<div class="form-group col-lg-12 col-xs-12">
 					
 					   <label class="control-label">Upload Your Imges</label> 
