@@ -158,15 +158,15 @@
          
   
     <div class="col-md-8"> 
-    <div class="col-lg-12 topdashboardTextArea card-gobarra" style="padding:30px;">
+    <div class="col-lg-12 topdashboardTextArea card-gobarra" style="padding:39px;">
 
                                 <div class="row">
                                     <div class="clearfix"></div>
                                     <div class="row">
                                         <div class="col-md-12 profilePage">
       <div id="home" class="tab-pane fade active in tabContainer">
-        <div class="row">        
-        <div class="col-lg-4 marginBottom15"> 
+       <div class="row">        
+        <div class="col-lg-4 marginBottom15">
     <span class="size"> First Name </span>
               <input type="text" class="textfield required input-block-level validate[required]" value="<?php echo $userData[0]['first_name'];?>" title="First Name" placeholder="First Name" id="first_name" name="first_name"></div>               
                <div class="col-lg-4 marginBottom15"> <span class="size"> Last Name </span>
