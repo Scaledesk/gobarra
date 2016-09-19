@@ -35,7 +35,7 @@
             <div class="col-lg-12 topdashboardForm">
                 <div class="col-lg-12">  
 
-                    <h3 id='emailError' style="color:red"></h3>           
+                             
                     <h3>Add New Product</h3>
                 </div>
                 <div class="row">
@@ -92,6 +92,7 @@
                                       <br><br>
                                     <div class="form-group col-lg-12 col-sm-12 col-xs-12 something">
                                         <div class="fixArea">
+                                           <h3 id='emailError' style="color:red"></h3>  
                                             <button title="Add Product" name="submit" class="btn btn-md btn-primary" type="submit" >Add Product</button>
                                         </div>
                                     </div></div></div>
