@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0445762-7e88-4f76-bdb7-b566dc1c3c77" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/message_image/12705567_812556562207272_4995412067140273615_nzjnx.jpg" afterPath="$PROJECT_DIR$/uploaded_files/message_image/12705567_812556562207272_4995412067140273615_nzjnx.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/product_image1/382239.jpg" afterPath="$PROJECT_DIR$/uploaded_files/product_image1/382239.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/product_image2/382239.jpg" afterPath="$PROJECT_DIR$/uploaded_files/product_image2/382239.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/profile_img/12705567_812556562207272_4995412067140273615_nfZMB.jpg" afterPath="$PROJECT_DIR$/uploaded_files/profile_img/12705567_812556562207272_4995412067140273615_nfZMB.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/profile_img/indian-flag3GMp.png" afterPath="$PROJECT_DIR$/uploaded_files/profile_img/indian-flag3GMp.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/messages/controllers/messages.php" afterPath="$PROJECT_DIR$/modules/messages/controllers/messages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/messages/views/messages_view.php" afterPath="$PROJECT_DIR$/modules/messages/views/messages_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" afterPath="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" />
     </list>
     <ignored path="gobarra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,31 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="messages_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/messages/views/messages_view.php">
+      <file leaf-file-name="enquiry_view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7755">
-              <caret line="517" column="0" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
+            <state relative-caret-position="277">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
-                <marker date="1473164962317" expanded="true" signature="3073:3113" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1473164962317" expanded="true" signature="4582:4622" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1473164962317" expanded="true" signature="8463:8503" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1473164962317" expanded="true" signature="9853:9893" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1473164962317" expanded="true" signature="12763:12803" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474366814031" expanded="true" signature="3319:3359" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474366814031" expanded="true" signature="10375:10415" placeholder="SELECT * FRO... tbl_users" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
+      <file leaf-file-name="enquiry.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="426" column="58" selection-start-line="426" selection-start-column="58" selection-end-line="426" selection-end-column="58" />
+            <state relative-caret-position="256">
+              <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="89" />
               <folding>
-                <marker date="1473166180333" expanded="true" signature="4481:4521" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1473166180333" expanded="true" signature="18372:18482" placeholder="SELECT *, CO... tbl_message" />
-                <marker date="1473166180333" expanded="true" signature="19171:19211" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474366553515" expanded="true" signature="4146:4186" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474366553515" expanded="true" signature="15915:16025" placeholder="SELECT *, CO... tbl_enquiry" />
+                <marker date="1474366553515" expanded="true" signature="16968:17008" placeholder="SELECT * FRO... tbl_users" />
               </folding>
             </state>
           </provider>
@@ -98,10 +99,10 @@
         <option value="$PROJECT_DIR$/modules/admin_products/views/list.php" />
         <option value="$PROJECT_DIR$/modules/travelplans/views/travelplans_add_view.php" />
         <option value="$PROJECT_DIR$/modules/home/controllers/home.php" />
-        <option value="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" />
         <option value="$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php" />
         <option value="$PROJECT_DIR$/modules/messages/views/messages_view.php" />
         <option value="$PROJECT_DIR$/modules/messages/controllers/messages.php" />
+        <option value="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" />
       </list>
     </option>
   </component>
@@ -116,9 +117,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -504,10 +505,6 @@
               <option name="myItemId" value="enquiry" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -561,8 +558,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -674,33 +671,34 @@
       <workItem from="1473161315353" duration="1905000" />
       <workItem from="1473163239417" duration="1257000" />
       <workItem from="1473165054393" duration="1605000" />
+      <workItem from="1474365759341" duration="968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84447000" />
+    <option name="totallyTimeSpent" value="86314000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3195219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3306773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1041,24 +1039,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="374" column="63" selection-start-line="374" selection-start-column="63" selection-end-line="374" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/enquiry/models/enquiry_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1078,12 +1062,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="426" column="58" selection-start-line="426" selection-start-column="58" selection-end-line="426" selection-end-column="58" />
+        <state relative-caret-position="239">
+          <caret line="386" column="12" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
           <folding>
-            <marker date="1473166180333" expanded="true" signature="4481:4521" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1473166180333" expanded="true" signature="18372:18482" placeholder="SELECT *, CO... tbl_message" />
-            <marker date="1473166180333" expanded="true" signature="19171:19211" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474269367218" expanded="true" signature="4481:4521" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474269367218" expanded="true" signature="17066:17176" placeholder="SELECT *, CO... tbl_message" />
+            <marker date="1474269367218" expanded="true" signature="17865:17905" placeholder="SELECT * FRO... tbl_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="89" />
+          <folding>
+            <marker date="1474366553515" expanded="true" signature="4146:4186" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474366553515" expanded="true" signature="15915:16025" placeholder="SELECT *, CO... tbl_enquiry" />
+            <marker date="1474366553515" expanded="true" signature="16968:17008" placeholder="SELECT * FRO... tbl_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <marker date="1474366814031" expanded="true" signature="3319:3359" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474366814031" expanded="true" signature="10375:10415" placeholder="SELECT * FRO... tbl_users" />
           </folding>
         </state>
       </provider>

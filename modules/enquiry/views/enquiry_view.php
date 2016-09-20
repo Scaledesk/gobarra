@@ -109,15 +109,22 @@
 									else
 									{
 										$MyImage =base_url()."uploaded_files/def_user/index.jpg";
-									}											
-									?>
-                          <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')">
+									}
+								  if($Myvalue['email']==$this->session->userdata('email')){}else{ ?>
+
+
+
+								  <a href="javascript:void(0);" class="inbox-avatar" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')">
                               <img src="<?php echo $MyImage; ?>" alt="">
                           </a>&nbsp;&nbsp;
                           <div class="user-name">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['reciever_id']; ?>','<?php echo $pageValue['sender_id']; ?>')"><?php echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name']; ?></a></h5>
                           </div>
-									<?php } ?>
+
+
+
+
+									<?php }} ?>
                       </div>  </li>
 								  <?php } else
 								  {?>
