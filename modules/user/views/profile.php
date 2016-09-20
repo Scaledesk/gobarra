@@ -98,7 +98,7 @@
     <div class="page-content ">
         <div class="container">
             <div class="row">
-      <div id="successaply"></div><!--
+      <div id="successaply" style="padding-right:85px;"></div><!--
       <?php echo form_open_multipart('user/update_profile','id=uploadPic');?>-->
       <form method="post" onsubmit="return emailVerify1()" id="uploadPic" enctype="multipart/form-data" action="<?php echo base_url().'user/update_profile'?>"> 
     

@@ -2478,7 +2478,7 @@ a{
     padding-bottom: 50px;
 }
 .success{
-width:759px;
+width:300px;
 padding-top:8px;
 padding-bottom:8px;
 padding-left:8px;
@@ -2486,7 +2486,7 @@ color: #4F8A10;
 background-color: #DFF2BF;
 font-weight:normal;
 text-align: center;
-margin-left: 165px;
+
 font-size:16px;-moz-border-radius: 6px;-webkit-border-radius: 6px;
 }
 .success.timeline {
