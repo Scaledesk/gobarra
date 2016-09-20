@@ -129,6 +129,7 @@
                           <div class="user-name">
                               <h5><a href="javascript:void(0);" onclick="return messageById('<?php echo $pageValue['sender_id']; ?>','<?php echo $pageValue['reciever_id']; ?>')"><?php echo $pageValue['first_name'].'&nbsp;'.$pageValue['last_name']; ?></a></h5>
                           </div>
+                          
                       </div>  </li>
 							</ul> 
 							<?php } } } else

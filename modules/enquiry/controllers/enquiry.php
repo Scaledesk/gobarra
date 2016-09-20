@@ -63,6 +63,7 @@ class Enquiry extends Public_Controller
 		{	
 
 				$sender_id		= $this->input->get_post('sender_id');
+				
 				$reciever_id	= $this->input->get_post('reciever_id');
 				$EnqCount 		= $this->enquiry_model->EnqCount($sender_id,$reciever_id);
 				$countThread	= count($EnqCount);
