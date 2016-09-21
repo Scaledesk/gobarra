@@ -163,7 +163,23 @@ class Enquiry extends Public_Controller
 						{
 						if($value['profile_image'] !='')
 						{
-							$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];									
+
+							$MyImage = substr($value['profile_image'], 0, 5);
+
+							if ($MyImage == 'https') {
+
+								$MyImage=$value['profile_image'];
+							}else{
+								$MyImage=base_url().'uploaded_files/profile_img/'.$value['profile_image'];
+
+							}
+
+
+							/*$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];	*/
+
+
+
+
 						}
 						else
 						{
