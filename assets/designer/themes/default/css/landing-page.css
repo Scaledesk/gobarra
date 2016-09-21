@@ -2578,9 +2578,9 @@ textarea.form-control.myform{
 .modal-footer textarea {
     height:90px !important;
 }
-.modal-footer {
+/*.modal-footer {
     margin: -1px 0px -28px 0px !important;
-}
+}*/
 @media(max-width:767px) {
 .partnerResult .partnerSupport {
     overflow: hidden;

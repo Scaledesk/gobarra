@@ -4,7 +4,9 @@
 .user-name a{
 	margin-left: 15px
 }
-
+.modal-backdrop{
+	z-index: 0 !important;
+}
 </style>
 
 

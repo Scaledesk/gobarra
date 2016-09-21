@@ -194,9 +194,11 @@ class Messages extends Public_Controller
 					<?php
 
 					$i=1;
+					$j=1;
 					foreach($result as $key=>$value)
 					{
- 						
+ 						$i++;
+					    $j++;
 						if($value['profile_image'] !='')
 						{
 							$MyImage =base_url()."uploaded_files/profile_img/".$value['profile_image'];
@@ -299,10 +301,46 @@ class Messages extends Public_Controller
 									?>
 									<div class="preview prouductDisplay">
 
-										<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
 
-										
+										<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $i;  ?>">
+
+											<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
+
+										</button>
 									</div>
+
+<!--									.............................Modal............................
+-->
+
+
+
+									<!-- Trigger the modal with a button -->
+
+
+									<!-- Modal -->
+									<div id="myModal<?php echo $i;  ?>" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+
+											<!-- Modal content-->
+											<div class="modal-content">
+												<!--<div class="modal-header">-->
+													<!--<button type="button" class="close" data-dismiss="modal">X</button>-->
+													<!--<h4 class="modal-title">Modal Header</h4>-->
+												<!--</div>-->
+												<div class="modal-body">
+													<img class="group2" width="479px" height="300px" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+
+									      <!--....................Modal end ................................................-->
+
 									<?php
 									} ?>
 								</div>
@@ -401,8 +439,45 @@ class Messages extends Public_Controller
 										$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 										?>
 										<div class="preview prouductDisplay">
+											<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $j;  ?>">
 											<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
+										    </button>
 										</div>
+
+
+
+										<!--									.............................Modal............................
+-->
+
+
+
+										<!-- Trigger the modal with a button -->
+
+
+										<!-- Modal -->
+										<div id="myModal<?php echo $j;  ?>" class="modal fade" role="dialog">
+											<div class="modal-dialog">
+
+												<!-- Modal content-->
+												<div class="modal-content">
+													<!--<div class="modal-header">-->
+													<!--<button type="button" class="close" data-dismiss="modal">X</button>-->
+													<!--<h4 class="modal-title">Modal Header</h4>-->
+													<!--</div>-->
+													<div class="modal-body">
+														<img class="group2" width="479px" height="300px" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+
+										<!--....................Modal end ................................................-->
+
 										<?php
 										} ?>														
 

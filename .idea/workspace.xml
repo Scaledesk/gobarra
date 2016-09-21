@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0445762-7e88-4f76-bdb7-b566dc1c3c77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/message_image/12705567_812556562207272_4995412067140273615_nzjnx.jpg" afterPath="$PROJECT_DIR$/uploaded_files/message_image/12705567_812556562207272_4995412067140273615_nzjnx.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/product_image1/382239.jpg" afterPath="$PROJECT_DIR$/uploaded_files/product_image1/382239.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/product_image2/382239.jpg" afterPath="$PROJECT_DIR$/uploaded_files/product_image2/382239.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/profile_img/12705567_812556562207272_4995412067140273615_nfZMB.jpg" afterPath="$PROJECT_DIR$/uploaded_files/profile_img/12705567_812556562207272_4995412067140273615_nfZMB.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploaded_files/profile_img/indian-flag3GMp.png" afterPath="$PROJECT_DIR$/uploaded_files/profile_img/indian-flag3GMp.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" afterPath="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/designer/themes/default/css/landing-page.css" afterPath="$PROJECT_DIR$/assets/designer/themes/default/css/landing-page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/messages/controllers/messages.php" afterPath="$PROJECT_DIR$/modules/messages/controllers/messages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/messages/views/messages_view.php" afterPath="$PROJECT_DIR$/modules/messages/views/messages_view.php" />
     </list>
     <ignored path="gobarra.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="enquiry_view.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
+      <file leaf-file-name="messages_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/messages/views/messages_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+            <state relative-caret-position="490">
+              <caret line="274" column="13" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="13" />
               <folding>
-                <marker date="1474366814031" expanded="true" signature="3319:3359" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1474366814031" expanded="true" signature="10375:10415" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474435082532" expanded="true" signature="3115:3155" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474435082532" expanded="true" signature="4624:4664" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474435082532" expanded="true" signature="8505:8545" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474435082532" expanded="true" signature="9895:9935" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474435082532" expanded="true" signature="12805:12845" placeholder="SELECT * FRO... tbl_users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1814">
+              <caret line="328" column="40" selection-start-line="328" selection-start-column="40" selection-end-line="328" selection-end-column="40" />
+              <folding>
+                <marker date="1474436862180" expanded="true" signature="4481:4521" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474436862180" expanded="true" signature="19460:19570" placeholder="SELECT *, CO... tbl_message" />
+                <marker date="1474436862180" expanded="true" signature="20259:20299" placeholder="SELECT * FRO... tbl_users" />
               </folding>
             </state>
           </provider>
@@ -46,12 +60,21 @@
       <file leaf-file-name="enquiry.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="89" />
+            <state relative-caret-position="346">
+              <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enquiry_view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="265" column="94" selection-start-line="265" selection-start-column="76" selection-end-line="265" selection-end-column="94" />
               <folding>
-                <marker date="1474366553515" expanded="true" signature="4146:4186" placeholder="SELECT * FRO... tbl_users" />
-                <marker date="1474366553515" expanded="true" signature="15915:16025" placeholder="SELECT *, CO... tbl_enquiry" />
-                <marker date="1474366553515" expanded="true" signature="16968:17008" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474366814031" expanded="true" signature="3319:3359" placeholder="SELECT * FRO... tbl_users" />
+                <marker date="1474366814031" expanded="true" signature="10375:10415" placeholder="SELECT * FRO... tbl_users" />
               </folding>
             </state>
           </provider>
@@ -85,7 +108,6 @@
         <option value="$PROJECT_DIR$/modules/timelinepost/views/edit_post_view.php" />
         <option value="$PROJECT_DIR$/modules/timelinepost/views/timeline_add_view.php" />
         <option value="$PROJECT_DIR$/modules/home/views/include_emoji.php" />
-        <option value="$PROJECT_DIR$/assets/designer/themes/default/css/landing-page.css" />
         <option value="$PROJECT_DIR$/modules/home/views/home.php" />
         <option value="$PROJECT_DIR$/modules/admin_products/views/edit.php" />
         <option value="$PROJECT_DIR$/modules/home/views/timeline_view.php" />
@@ -100,9 +122,10 @@
         <option value="$PROJECT_DIR$/modules/travelplans/views/travelplans_add_view.php" />
         <option value="$PROJECT_DIR$/modules/home/controllers/home.php" />
         <option value="$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php" />
-        <option value="$PROJECT_DIR$/modules/messages/views/messages_view.php" />
-        <option value="$PROJECT_DIR$/modules/messages/controllers/messages.php" />
         <option value="$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php" />
+        <option value="$PROJECT_DIR$/modules/messages/views/messages_view.php" />
+        <option value="$PROJECT_DIR$/assets/designer/themes/default/css/landing-page.css" />
+        <option value="$PROJECT_DIR$/modules/messages/controllers/messages.php" />
       </list>
     </option>
   </component>
@@ -117,9 +140,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -439,32 +462,6 @@
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobarra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gobarra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -538,7 +535,81 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobarra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobarra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="designer" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobarra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobarra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="designer" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobarra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gobarra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="designer" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -558,8 +629,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -671,34 +742,37 @@
       <workItem from="1473161315353" duration="1905000" />
       <workItem from="1473163239417" duration="1257000" />
       <workItem from="1473165054393" duration="1605000" />
-      <workItem from="1474365759341" duration="968000" />
+      <workItem from="1474365759341" duration="1653000" />
+      <workItem from="1474378142603" duration="507000" />
+      <workItem from="1474434513948" duration="1751000" />
+      <workItem from="1474436310062" duration="1859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86314000" />
+    <option name="totallyTimeSpent" value="91116000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3306773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34741035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -749,13 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/designer/themes/default/css/landing-page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4110">
-          <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1046,48 +1113,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/messages/views/messages_view.php">
+    <entry file="file://$PROJECT_DIR$/assets/designer/themes/default/css/landing-page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7755">
-          <caret line="517" column="0" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
-          <folding>
-            <marker date="1473164962317" expanded="true" signature="3073:3113" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1473164962317" expanded="true" signature="4582:4622" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1473164962317" expanded="true" signature="8463:8503" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1473164962317" expanded="true" signature="9853:9893" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1473164962317" expanded="true" signature="12763:12803" placeholder="SELECT * FRO... tbl_users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="386" column="12" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
-          <folding>
-            <marker date="1474269367218" expanded="true" signature="4481:4521" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1474269367218" expanded="true" signature="17066:17176" placeholder="SELECT *, CO... tbl_message" />
-            <marker date="1474269367218" expanded="true" signature="17865:17905" placeholder="SELECT * FRO... tbl_users" />
-          </folding>
+        <state relative-caret-position="370">
+          <caret line="2585" column="21" selection-start-line="2585" selection-start-column="21" selection-end-line="2585" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/enquiry/controllers/enquiry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="171" column="32" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="89" />
+        <state relative-caret-position="346">
+          <caret line="177" column="41" selection-start-line="177" selection-start-column="41" selection-end-line="177" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/messages/controllers/messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1814">
+          <caret line="328" column="40" selection-start-line="328" selection-start-column="40" selection-end-line="328" selection-end-column="40" />
           <folding>
-            <marker date="1474366553515" expanded="true" signature="4146:4186" placeholder="SELECT * FRO... tbl_users" />
-            <marker date="1474366553515" expanded="true" signature="15915:16025" placeholder="SELECT *, CO... tbl_enquiry" />
-            <marker date="1474366553515" expanded="true" signature="16968:17008" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474436862180" expanded="true" signature="4481:4521" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474436862180" expanded="true" signature="19460:19570" placeholder="SELECT *, CO... tbl_message" />
+            <marker date="1474436862180" expanded="true" signature="20259:20299" placeholder="SELECT * FRO... tbl_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/messages/views/messages_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="274" column="13" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="13" />
+          <folding>
+            <marker date="1474435082532" expanded="true" signature="3115:3155" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474435082532" expanded="true" signature="4624:4664" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474435082532" expanded="true" signature="8505:8545" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474435082532" expanded="true" signature="9895:9935" placeholder="SELECT * FRO... tbl_users" />
+            <marker date="1474435082532" expanded="true" signature="12805:12845" placeholder="SELECT * FRO... tbl_users" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/enquiry/views/enquiry_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="265" column="94" selection-start-line="265" selection-start-column="76" selection-end-line="265" selection-end-column="94" />
           <folding>
             <marker date="1474366814031" expanded="true" signature="3319:3359" placeholder="SELECT * FRO... tbl_users" />
             <marker date="1474366814031" expanded="true" signature="10375:10415" placeholder="SELECT * FRO... tbl_users" />
