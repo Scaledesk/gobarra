@@ -321,7 +321,7 @@ class Messages extends Public_Controller
 
 											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
                                              <div class="hidden iphonevisi">
-                                            <span class="btn" style="font-weight:bold;">IMAGE</span>
+                                            <button class="btn" style="font-weight:bold;">IMAGE</button>
                                             </div>
 										</button>
 									</div>
@@ -462,7 +462,7 @@ class Messages extends Public_Controller
 
 											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
 										    <div class="hidden-lg hidden-md">
-                                            <span class="btn"> This is image</span>
+                                            <button class="btn" style="font-weight:bold;">IMAGE</button>
                                             </div>
 										    </button>
 										</div>
