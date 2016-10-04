@@ -412,6 +412,15 @@
 		</div>
 		</div>
 		<!-- <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
+	  </div>
+	  <div class="act-time1 hidden-lg hidden-md">                                      
+		<div class="activity-body act-in">
+		<span class="arrow"></span>
+		<div class="text">									  
+		<p class="attribution"><a href="javascript:void(0)" class="white-c text-center">Click To See Message </a></p>
+		</div>
+		</div>
+		<!-- <div class="notify-arrow-email notify-arrow-blue-email left"></div> -->
 	  </div>									
 	</div></div></div>		 
 	<?php } ?>

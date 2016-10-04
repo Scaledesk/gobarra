@@ -1244,13 +1244,6 @@ footer {
     }
 
 
-.inbox-body {
-   padding:0px;
-    background-color:#f5f5f5;
-
-    max-height: 360px;
-        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
-}
 }
 
 footer {
@@ -1870,7 +1863,7 @@ ul.inbox-pagination li {
     bottom: -9px; 
 }
 .actTimeArea{/*height:450px;*/
-/*overflow-y:scroll;*/margin-top: -20px;}
+/*overflow-y:scroll; margin-top: -20px;*/}
 
 .user-profile-image {
     display: inline-block;
@@ -2588,13 +2581,7 @@ textarea.form-control.myform{
     overflow: hidden;
 }
 
-.inbox-body {
-   padding:0px;
-    background-color:#f5f5f5;
 
-    max-height: 360px;
-        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
-}
 .logopage{
  margin-top:0px;
   margin-bottom:60px;
@@ -2672,7 +2659,7 @@ footer {
     width: 80%;
 }
 .prouductDisplay span {
-    width:298px !important;
+    width:298px;
     /*height:150px !important;*/
     margin:2px;
 }
@@ -2730,13 +2717,6 @@ footer {
     width: 200px;
 }
 
-.inbox-body {
-   padding:0px;
-    background-color:#f5f5f5;
-
-    max-height: 360px;
-        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
-}
 
 }
 
@@ -3025,14 +3005,7 @@ margin-left: 35px!important;
     margin-top: 5px;
     }
 
-    
-.inbox-body {
-   padding:0px;
-    background-color:#f5f5f5;
 
-    max-height: 360px;
-        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
-}
     .padding-gobarral{
   padding-left: 0px!important;
 } 
@@ -3316,18 +3289,23 @@ margin-left: 35px!important;
 }
 
 
-.inbox-body {
-   padding:0px;
-    background-color:#f5f5f5;
 
-    max-height: 360px;
-        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
-}
 
 .user-head > a img {
    max-width:60px;
    
     border-radius: 50%!important;
 }
+
+.iphonephoto{
+    display:none;
+}
+
+.iphonevisi{
+    display: inline-block !important; 
+}
+
+.prouductDisplay span {
+    width: 80px;
 
 }

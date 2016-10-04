@@ -314,12 +314,15 @@ class Messages extends Public_Controller
 									$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 									?>
 									<div class="preview prouductDisplay">
+											
 
 
 										<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $i;  ?>">
 
-											<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
-
+											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
+                                             <div class="hidden iphonevisi">
+                                            <span class="btn" style="font-weight:bold;">IMAGE</span>
+                                            </div>
 										</button>
 									</div>
 
@@ -452,9 +455,15 @@ class Messages extends Public_Controller
 										<?php  echo $value['message'];
 										$Image =base_url()."uploaded_files/message_image/".$value['message_image'];
 										?>
-										<div class="preview prouductDisplay">
+										
+										<div class="preview prouductDisplay ">
+
 											<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $j;  ?>">
-											<span><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
+
+											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
+										    <div class="hidden-lg hidden-md">
+                                            <span class="btn"> This is image</span>
+                                            </div>
 										    </button>
 										</div>
 
