@@ -1410,9 +1410,9 @@ Label the data
       max-width: 48px;
     float: left;
 }
-.user-head .inbox-avatar img {
+/*.user-head .inbox-avatar img {
       max-width: 48px; 
-}
+}*/
  
 .partnerResult .partnerDate { 
           margin-top: 15px;
@@ -2912,18 +2912,21 @@ footer {
 /*///ends here///*/
 
 .user-head{
-    min-height:78px!important;
+    min-height:60px!important;
 }
 .user-head  > a img {
 
-    max-width:60px;
-    height:60px;
+      width: 40px!important;
+   height: 40px!important;
+vertical-align: middle;
+
+    
     border-radius: 50%!important;
 
 }
 
 .user-name{
-    margin-top: 20px!important;
+    margin-top: 15px!important;
 }
 
 .attribution > a img{
@@ -3287,7 +3290,7 @@ margin-left: 35px!important;
 
 .user-head > a img {
    max-width:60px;
-    height:50px;
+   
     border-radius: 50%!important;
 }
 

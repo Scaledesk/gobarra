@@ -36,8 +36,9 @@
 				 <h3>My Inbox</h3>
 				 <div id="no-more-tables col-lg-12">
 				<!--mail inbox start-->
-				<div class="mobile-nav hidden-md hidden-sm hidden-lg"><span class="pull-left m-t-20 nameheading">Member Name List</span>
-				<div class="menu-btn" id="menu-btn pull-left">					
+				<div class="mobile-nav hidden-md hidden-sm hidden-lg">
+				<div class="menu-btn" id="menu-btn pull-left">
+				<div class="pull-left m-t-20 nameheading">Member Name List</div>					
 				<div></div>
 				<span></span>
 				<span></span>
@@ -206,7 +207,7 @@
 			$MyImage =base_url()."uploaded_files/def_user/dummy.png";
 		} ?>
 	<a href="javascript:void(0)" class="inbox-avatar" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id'] ; ?>')">
-	<img src="<?php echo $MyImage; ?>" alt=""></a> 
+	<img src="<?php echo $MyImage; ?>" ></a> 
 	<div class="user-name">
 	<h5><a href="javascript:void(0)" onclick="return messageById('<?php echo $val['reciever_id']; ?>','<?php echo $val['sender_id'] ; ?>')"><?php echo $Myvalue['first_name'].'&nbsp;'.$Myvalue['last_name'];?></a></h5>                            
 	</div> 
