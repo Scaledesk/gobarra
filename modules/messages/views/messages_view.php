@@ -36,14 +36,14 @@
 				 <h3>My Inbox</h3>
 				 <div id="no-more-tables col-lg-12">
 				<!--mail inbox start-->
-				<div class="mobile-nav hidden-md hidden-sm hidden-lg">
+				<div class="mobile-nav hidden-md hidden-sm hidden-lg"><span class="pull-left m-t-20 nameheading">Member Name List</span>
 				<div class="menu-btn" id="menu-btn pull-left">					
 				<div></div>
 				<span></span>
 				<span></span>
 				<span></span> 
 				</div>
-		<span class="pull-left nameheading">Member Name List</span>
+		<!-- <span class="pull-left nameheading">Member Name List</span> -->
 		<span class="clearfix"> </span>							
 		<div class="responsive-menu">
 		<?php if(is_array($res) && !empty($res)) { 

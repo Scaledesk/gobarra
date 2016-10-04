@@ -301,6 +301,7 @@ textarea.message {
     text-align: center;
     margin-right: 10px;
     padding-top: 15%;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 .sicons ul li a i.fa-facebook {
@@ -639,6 +640,7 @@ div[data-role="editor-toolbar"] {
     position: absolute;
     right: 7px;
     top: -18px;
+    -webkit-transition: all 0.25s ease 0s;
     transition: all 0.25s ease 0s;
     width: 0;
     z-index: 10;
@@ -1471,6 +1473,7 @@ a.mail-dropdown {
 
 .inbox-body {
     padding: 20px;
+
     max-height: 360px;
         /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
 }
@@ -1838,6 +1841,7 @@ ul.inbox-pagination li {
     margin-top: 10px;
     opacity: 1;
     position: absolute;
+    -webkit-transition: all 0.25s ease 0s;
     transition: all 0.25s ease 0s;
     width: 0;
     z-index: 10;
@@ -2077,9 +2081,6 @@ p.float.full {
     border: 3px solid #ebe6e2;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -2127,9 +2128,6 @@ p.clearfix.text-center.submit {
 .form-2 input[type=submit] { 
      margin:0 auto;
     background: #fbd568; /* Fallback */
-    background: -moz-linear-gradient(#fbd568, #ffb347);
-    background: -ms-linear-gradient(#fbd568, #ffb347);
-    background: -o-linear-gradient(#fbd568, #ffb347);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbd568), to(#ffb347));
     background: -webkit-linear-gradient(#fbd568, #ffb347);
     background: linear-gradient(#fbd568, #ffb347);
@@ -2142,9 +2140,6 @@ p.clearfix.text-center.submit {
     margin-right: auto;
      margin-left: auto;
     background: #34a5cf; /* Fallback */
-    background: -moz-linear-gradient(#34a5cf, #2a8ac4);
-    background: -ms-linear-gradient(#34a5cf, #2a8ac4);
-    background: -o-linear-gradient(#34a5cf, #2a8ac4);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#34a5cf), to(#2a8ac4));
     background: -webkit-linear-gradient(#34a5cf, #2a8ac4);
     background: linear-gradient(#34a5cf, #2a8ac4);
@@ -2314,9 +2309,6 @@ footer {
     border: 3px solid #ebe6e2;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -2509,7 +2501,7 @@ text-align: center;
 font-size:16px; 
 }
 .preview.prouductDisplay span p a {
-    display: inline-block;
+   /* display: inline-block;*/
     height: 138px;
     overflow: hidden;
     width: 360px;
@@ -2764,7 +2756,7 @@ footer {
 
 
 .m-l-40{
-    margin-left: 40px!important;
+    margin-left: 40px;
 }
 
 .m-l-25{
@@ -2924,8 +2916,8 @@ footer {
 }
 .user-head  > a img {
 
-    max-width:60px!important;
-    height:60px!important;
+    max-width:60px;
+    height:60px;
     border-radius: 50%!important;
 
 }
@@ -2950,6 +2942,7 @@ margin-left: 35px!important;
     width:150px;
         border-radius: 4px;
     background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
 }
@@ -2967,6 +2960,7 @@ margin-left: 35px!important;
     width:100px;
         border-radius: 4px;
     background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
 }
@@ -3011,13 +3005,11 @@ margin-left: 35px!important;
     height:156px;
 }
 
-.row-sm
-}
 
 .act-time{
     padding: 12px 15px
 }
-
+}
 @media only screen and  (min-device-width: 768px) and (max-device-width: 1024px){
 .google-btn{
    
@@ -3137,6 +3129,7 @@ margin-left: 35px!important;
 #myImg {
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -3191,8 +3184,8 @@ margin-left: 35px!important;
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {-webkit-transform:scale(0);transform:scale(0)} 
+    to {-webkit-transform:scale(1);transform:scale(1)}
 }
 
 /* The Close Button */
@@ -3203,6 +3196,7 @@ margin-left: 35px!important;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -3233,8 +3227,7 @@ margin-left: 35px!important;
   top: -100%;  
   z-index: 11; 
   width: 360px;
-  .translate(0, -500%);
-  .transition-transform(~"0.3s ease-out");
+
 
 }
 
@@ -3267,4 +3260,35 @@ margin-left: 35px!important;
 
 .marq-clss{
     height:150px;
+}
+
+.iphone{
+
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+.m-l-40{margin-left:30px;}
+
+.iphone{
+    padding-right:15px!important;
+    padding-left:15px!important;
+    
+}
+
+
+.inbox-body {
+   padding:0px;
+    background-color:#f5f5f5;
+
+    max-height: 360px;
+        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2)!important;*/
+}
+
+.user-head > a img {
+   max-width:60px;
+    height:50px;
+    border-radius: 50%!important;
+}
+
 }

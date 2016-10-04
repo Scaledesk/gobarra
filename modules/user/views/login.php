@@ -53,7 +53,7 @@
 						 
 
 				<div class="row m-t-20">
-					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-r-10 text-center">
+					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-r-10 iphone text-center">
 <!-- 				<div class="account text-center">
  -->
 <!-- 						<div class="span">
@@ -66,7 +66,7 @@
 <!-- 					</div>
  -->				</div>
 						
-					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-l-10 text-center">
+					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-l-10  text-center iphone">
 <!-- 						<div class="span2">
  -->							<a href="<?php echo base_url();?>home/google_login" class=" google-btn p-l-20">
 								<!-- <img src="<?php echo theme_url();?>img/gplus.png" alt=""> -->
