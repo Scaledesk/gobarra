@@ -29,6 +29,20 @@ body{
     font-size: 14px; 
 }
 
+
+.buyer-btn2{
+    border: 2px solid #5cb85c;
+    color:#5cb85c;
+    cursor:pointer;
+   
+        border-radius: 4px;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -3274,9 +3288,7 @@ margin-left: 35px!important;
     height:150px;
 }
 
-.iphone{
 
-}
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px){
@@ -3288,7 +3300,27 @@ margin-left: 35px!important;
     
 }
 
+ .buyer-btn2{
+       width: 100px;
+    height: 40px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+        justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+        align-items: center;
 
+
+
+
+
+
+
+    align-items: center;
+ }
 
 
 .user-head > a img {
