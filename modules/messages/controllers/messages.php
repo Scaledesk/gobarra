@@ -317,7 +317,9 @@ class Messages extends Public_Controller
 											
 
 
-										<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $i;  ?>">
+										<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $i;  ?>" style="width: 100px;
+    height: 40px;
+    line-height: 40px;">
 
 											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
                                              <div class="hidden iphonevisi">
@@ -458,7 +460,9 @@ class Messages extends Public_Controller
 										
 										<div class="preview prouductDisplay ">
 
-											<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $j;  ?>">
+											<button type="button"  data-toggle="modal" data-target="#myModal<?php echo $j;  ?>" style="width: 100px;
+    height: 40px;
+    line-height: 40px;">
 
 											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
 										    <div class="hidden-lg hidden-md">
