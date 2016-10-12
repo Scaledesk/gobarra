@@ -1903,7 +1903,7 @@ ul.inbox-pagination li {
         border-radius: 50%!important;
         height: 150px;
     width: 150px;
-        margin-left: 70px; 
+       /* margin-left: 70px; */
 /*
     border: 1px solid #;      -webkit-border-radius: 20px;      -moz-border-radius: 20px;      
     border-radius: 15px;      width: 136px;*/

@@ -460,7 +460,7 @@ class Messages extends Public_Controller
 
 											<button type="button" class="buyer-btn2"  data-toggle="modal" data-target="#myModal<?php echo $j;  ?>">
 
-											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>">/a></p></span>
+											<span class="iphonephoto"><p><a><img class="group2" width="40%" href="<?php echo $Image; ?>" src="<?php echo $Image; ?>"></a></p></span>
 										    <div class="hidden-lg hidden-md">
                                            <span class="btn" style="font-weight:bold; padding-bottom:10px;">Image</span>
                                             </div>

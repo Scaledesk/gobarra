@@ -66,25 +66,24 @@
 					
 					 	<div class="clearfix"></div>
                                 <div class="row m-t-20">
-					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-r-10 text-center">
+					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-r-10 iphone text-center">
 <!-- 				<div class="account text-center">
  -->
 <!-- 						<div class="span">
  -->							<a href="<?php echo site_url(); ?>home/facebook_login" class=" facebook-btn m-l-40">
 							<!-- <img src="<?php echo theme_url();?>img/facebook.png" alt=""> -->
 
-							<i class="fa fa-facebook "></i>&nbsp;<span>Sign In with Facebook</span>
+							<i class="fa fa-facebook "></i>&nbsp; <span>Sign In with Facebook</span>
 <!-- 							<div class="clear"></div>
  -->					</a>
 <!-- 					</div>
  -->				</div>
- 
 						
-					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-l-10 text-center">
+					<div class = "col-xs-12 col-md-6 col-sm-6 p-0 p-l-10  text-center iphone">
 <!-- 						<div class="span2">
  -->							<a href="<?php echo base_url();?>home/google_login" class=" google-btn p-l-20">
 								<!-- <img src="<?php echo theme_url();?>img/gplus.png" alt=""> -->
-							<i class="fa fa-google-plus "></i>&nbsp;&nbsp; <span>Sign In with Google+</span> 
+							<i class="fa fa-google-plus "></i>&nbsp;&nbsp;<span>Sign In with Google+</span> 
 								<!-- <div class="clear"></div> -->
 							</a>
 <!-- 						</div>
