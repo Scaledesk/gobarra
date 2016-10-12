@@ -119,12 +119,12 @@
 <div class="clearfix"></div>
 	 	 </div>
 		 <?php } else{?>
-			 <ul class="nav nav-tabs">
+			<!--  <ul class="nav nav-tabs">
 							<li><a   href="<?php echo base_url(); ?>home">Search Travelers</a></li>
                             <li class="active">
 							<a href="<?php echo base_url();?>home/product_details">Ready Buyers</a>
                             </li>
-                        </ul>
+                        </ul> -->
 		 <?php }?>
 				 </div>
 				 
